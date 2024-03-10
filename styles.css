@@ -1,0 +1,617 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+}
+
+.container {
+    overflow-x: hidden;
+}
+
+/* social hub secion */
+
+.socialhub {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2em;
+    background-color: #017bfd38;
+    align-items: center;
+    position: relative;
+}
+
+.companyname {
+    color: white;
+}
+
+.socialmedialogos {
+    display: flex;
+    gap: 5%;
+}
+
+/* hero */
+
+.herosection {
+    background-image: url(images/hero.png);
+    background-size: cover;
+}
+
+.logo > img{
+    padding-right: 1em;
+}
+
+.herocontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 10rem;
+
+}
+
+.herotitle {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 7rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.flair {
+    width: 5rem;
+    height: .2rem;
+    border-radius: 2rem;
+    background-color: #0179FD;
+    content: '';
+}
+
+.herosubtitle {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 3.5rem;
+    margin-top: 2.5rem;
+}
+
+.herobtn {
+    color: white;
+    background-color: #0179FD;
+    border: none;
+    border-radius: 4rem;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: white;
+    padding: 1.3rem;
+    padding-inline: 3rem;
+    margin-bottom: 16rem;
+}
+
+/* nav bar section */
+
+li, a{
+    list-style: none;
+    color: #FFFFFF99;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    padding-inline: 5rem;
+}
+
+ul{
+    display: flex;
+    gap: 6rem;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* about section */
+
+.aboutus {
+    padding-left: 16.5rem;
+}
+
+.aboutus > h1 {
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 2.2rem;
+    padding-top: 10rem;
+    margin-bottom: 1.2rem;
+    color: #52565E;
+}
+
+.aboutcontent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutcontent > h2 {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.2rem;
+    max-width: 58ch;
+    margin-top: 2rem;
+    color: #364D59;
+}
+
+.aboutcontent > img {
+    margin-right: 3rem;
+    width: 26rem;
+}
+
+/* why choose us */
+.whychooseus {
+    background-image: url("images/whysection.jpeg");
+    background-color: #08264fc9;
+    background-position: 20%;
+    background-size: cover;
+    color: white;
+}
+
+.test {
+    background-color: #08264fc9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 9rem;
+    width: 100%;
+}
+
+.test > h1 {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+}
+
+.test  > h1::after,
+    .test  > h1::before {
+    content:'';
+    background-color: white;
+    height: .125rem;
+    width: 3.15rem;
+    position: absolute;
+    
+}
+
+
+.whychooseuscontent {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.whychooseuscontent > .child {
+    border-style: solid;
+    border-width: .4rem;
+    border-color: white;
+    border-radius: 2rem;
+    padding-left: 2.2rem;
+    padding-top: 3rem;
+    max-width: 23rem;
+    min-width: 23rem;
+    min-height: 18rem;
+}
+
+.whychooseuscontent > .child > h1 {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.whychooseuscontent > .child  > h2, a{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.whychooseuscontent > .child > h2{
+    padding-bottom: 1rem;
+    text-align:justify;
+    width: 35ch;
+}
+
+.whychooseuscontent > .child > .flair {
+    background-color: white;
+    width: 10rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.1rem;
+}
+
+/* achivment section */
+.achievments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.achievments > h1 {
+    margin-bottom: 4.8rem;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.achievments > h1::after,.achievments > h1::before {
+    content: '';
+    background-color: #028F2E;
+    height: .15rem;
+    width: 3rem;
+}
+
+.achievments > .wrapper {
+    display: flex;
+    gap: 3.3rem;
+}
+
+.textwrapper {
+    color: white;
+    background-color: black;
+    margin-top: -.3rem;
+    min-height: 6rem;
+    align-content: center;
+}
+
+.textwrapper > p {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 10%;
+}
+
+/* services section */
+.tabs-container {
+    margin-top: 7.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabs-title {
+    width: 63%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs-title > li > a {
+    color: #52565E;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.tabs-panels {
+    margin-top: 3.12rem;
+
+}
+
+.panelwrapper[aria-expanded = "true"] {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panelwrapper h1 {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 2rem;
+    color: #364D59;
+    margin-bottom: 2.5rem;
+    width: 43ch;
+}
+
+.panelwrapper p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1rem;
+    color: #364D59;
+    width: 55ch;
+}
+
+/* highlightes secion */
+.highlightes {
+    background-color: #081222;
+    display: flex;
+    justify-content: center;
+    padding-block: 5rem;
+    margin-top: 5.7rem;
+    gap: 1.5rem;
+}
+
+.highlightes > .wrapper {
+    display: flex;
+    background-color: white;
+    padding: 1.5rem 2rem;
+}
+
+.highlightes h1 {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 2.25rem;
+    color: #52565E;
+    padding-right: 9.5rem;
+}
+
+.highlightes h2 {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+/* blogs and anounsments section */
+.blogssection {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    background-color: #EDEEF3;
+    padding-bottom: 5rem;
+}
+
+.blogssection > h1 {
+    margin-bottom: 3.5rem;
+    font-size: 2rem;
+}
+
+.blogssection > .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2.25rem;
+    max-width: 26rem;
+    text-align: center;
+}
+
+.blogssection > .wrapper h1 {
+    font-size: 1rem;
+    color: #5C6068;
+    padding-bottom: 1.62rem;
+    padding-top: 1rem;
+}
+
+.blogssection > .wrapper p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: .9rem;
+    color: #364D59;
+    padding-bottom: 1.62rem;
+}
+
+.blogssection > .wrapper .date {
+    position: relative;
+    bottom: 2.4rem;
+    left: 22.5rem;
+    background-color: #0179FD;
+    padding: .5rem;
+    width: fit-content;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: .81rem;
+}
+
+.blogssection > .wrapper .child {
+    background-color: white;
+    position: relative;
+    bottom: 2.4rem;
+}
+
+/* footer section */
+.footer {
+    background-image: url(images/footer.jpeg);
+    background-position: 10% 80%;
+}
+
+.footer-wrapper {
+    background-color: #031024e1;
+    padding-top: 10.3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-wrapper > section {
+    display: flex;
+    gap: 10rem;
+}
+
+.copyright {
+    display: flex;
+    gap: .3rem;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: .9rem;
+    margin-bottom: 3.8rem;
+}
+
+.copyright > h1 {
+    font-weight: 700;
+    font-size: .9rem;
+
+}
+
+.footer-wrapper > .flair {
+    width: 63%;
+    margin-block: 2rem;
+    background-color: #FFFFFF26;
+}
+
+.linkswrapper {
+    font-family: 'Open Sans';
+    display: flex;
+    gap: 2rem;
+}
+
+.links {
+    min-width: 220px;
+}
+
+.links > ul {
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.links > h1 {
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 1.7rem;
+}
+
+.links a {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: .9rem;
+    color: #FFFFFF99;
+}
+
+.address {
+    margin-left: 10rem;
+    position: relative;
+    bottom: .6rem;
+}
+
+.address p {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.address > p {
+    margin-bottom: 2rem;
+}
+
+.address > div {
+    margin-bottom:.8rem;
+}
+
+.address h2 {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.address h2::after {
+    content: ":";
+    padding-right: .3rem;
+}
+
+.address > img {
+    margin-bottom: 1.25rem;
+    position: relative;
+    right: 2rem;
+}
+
+.label {
+    display: flex;
+}
+
+
+
+@media (max-width: 50em) {
+    .logo > img{
+        width: 12em;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav [data-visible="true"] {
+        transform: translatex(0%);
+    }
+
+    .nav > ul {
+        flex-direction: column;
+        color: hsla(215, 82%, 17%, 0.788);
+        background-color: hsl(215 82% 17% / .5);
+        backdrop-filter: blur(1em);
+        inset: 0 0 0 30%;
+        padding: min(30vh, 10rem) 2rem;
+        transform: translatex(100%);
+        transition: transform 350ms ease-out;
+        position: fixed;
+    }
+
+    .mobile-menu {
+        display: block;
+        z-index: 9999;
+        position: absolute;
+        top: 4rem;
+        right: 2rem;
+        background-image: url(images/hamburgermenu.svg);
+        background-repeat: no-repeat;
+        width: 2rem;
+        aspect-ratio: 1;
+    }
+
+    .mobile-menu[aria-expanded="true"] {
+        background-image: url(images/close.svg);
+        background-repeat: no-repeat;
+    }
+    
+    .herocontent {
+        margin-top: 5rem;
+    }
+
+    .herotitle {
+        font-size: 2.4rem;
+    }
+
+    .herosubtitle {
+        font-size: 0.7rem;
+    }
+    
+    .herobtn {
+        margin-bottom: 7rem;
+        padding: 0.8rem;
+        padding-inline: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .aboutus {
+        padding-left: 1rem;
+    }
+
+    .aboutus > h1 {
+        padding-top: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .aboutcontent {
+        flex-direction: column;
+    }
+
+    .aboutcontent > h2 {
+        font-size: 1rem;
+        max-width: 45ch;
+    }
+
+    .aboutcontent > img {
+        width: 20rem;
+    }
+}
