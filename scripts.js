@@ -3,7 +3,7 @@ const navToggle = document.querySelector(".mobile-menu");
 
 const tabContainer = document.querySelector(".tabs-container");
 const tabsList = tabContainer.querySelector("ul");
-const tabButtons = tabsList.querySelectorAll("a");
+const tabButtons = tabsList.querySelectorAll("li");
 const tabPanels = document.querySelectorAll(".panelwrapper");
 
 navToggle.addEventListener("click", () => {
@@ -29,7 +29,7 @@ tabButtons.forEach((tab, index) => {
 });
 
 tabContainer.addEventListener("click", (e) => {
-    const clickedTab = e.target.closest("a");
+    const clickedTab = e.target.closest("li");
     if (!clickedTab) return;
     e.preventDefault();
 
@@ -40,9 +40,13 @@ tabContainer.addEventListener("click", (e) => {
         panel.setAttribute("hidden", true);
         panel.setAttribute("aria-expanded", "false");
         tabButtons[index].setAttribute("aria-expanded", "false");
+        tabButtons[index]
+            .querySelector("a")
+            .setAttribute("aria-expanded", "false");
     });
 
     activePanel.removeAttribute("hidden", false);
     activePanel.setAttribute("aria-expanded", "true");
     clickedTab.setAttribute("aria-expanded", "true");
+    clickedTab.querySelector("a").setAttribute("aria-expanded", "true");
 });

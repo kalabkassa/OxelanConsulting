@@ -274,12 +274,17 @@ ul {
     font-weight: 700;
     color: #364d59;
 }
+.aboutmaincontent > h2 {
+    font-family: "Roboto";
+    color: #364d59;
+    padding-bottom: 1rem;
+}
 
 .aboutmaincontent {
     background-color: #f5f6f7;
     margin-top: 5rem;
     padding: 2.5rem 2.5rem;
-    width: 69ch;
+    width: 89ch;
 }
 
 .aboutmaincontent > h3 {
@@ -493,6 +498,7 @@ a {
     display: flex;
     width: 63%;
     justify-content: space-between;
+    text-align: center;
 }
 
 .tabs-title > li > a {
@@ -500,11 +506,15 @@ a {
     font-family: "Roboto";
     font-weight: 600;
     font-size: 1.05vw;
-    padding: 1vw;
     padding-bottom: 1.25rem;
-    border-bottom: 0.25rem solid #e2e4e6;
 }
 
+.tabs-title > li {
+    border-bottom: 0.25rem solid #e2e4e6;
+    cursor: pointer;
+}
+
+.tabs-title > li[aria-expanded="true"],
 .tabs-title > li > a[aria-expanded="true"] {
     border-color: #0179fd;
     color: #0179fd;
@@ -544,7 +554,9 @@ a {
 /* main services section */
 .servicesmain {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5vw;
     text-align: left;
 }
 
@@ -576,6 +588,7 @@ a {
 
 .servicesmain .tabs-container li {
     padding-top: 2rem;
+    cursor: pointer;
 }
 
 .servicesmain .tabs-container > ul > li > a {
@@ -583,12 +596,35 @@ a {
     font-family: "Open Sans";
     font-size: 1rem;
     font-weight: 400;
-    border-left: 3px solid #0179fd;
+    border-left: 3px solid #d9e3e8;
     padding-left: 1.2rem;
 }
-
+.servicesmain .tabs-container > ul > li > a[aria-expanded="true"] {
+    font-family: "Roboto";
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-color: #0179fd;
+}
 .servicesmain > .panelwrapper[aria-expanded="true"] {
     display: block;
+}
+
+.servicesmain > .panelwrapper > div {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.servicesmain > .panelwrapper > p {
+    width: 90%;
+    padding-left: 1rem;
+}
+.servicesmain > .panelwrapper > h2 {
+    font-family: "Roboto";
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-block: 1rem;
+    color: #52565e;
 }
 
 /* highlightes secion */
