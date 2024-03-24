@@ -8,6 +8,11 @@ body {
     margin: 0;
 }
 
+main {
+    margin: 5rem;
+    margin-left: 13vw;
+}
+
 .container {
     overflow-x: hidden;
 }
@@ -17,7 +22,7 @@ body {
 .socialhub {
     display: flex;
     justify-content: space-between;
-    padding-inline: 2em;
+    padding-inline: 2rem;
     background-color: #017bfd38;
     align-items: center;
     position: relative;
@@ -27,9 +32,11 @@ body {
     color: white;
 }
 
-.socialmedialogos {
+.socialmedialogos,
+.socialmedialogos img {
     display: flex;
     gap: 5%;
+    height: 3vh;
 }
 
 /* hero */
@@ -37,10 +44,17 @@ body {
 .herosection {
     background-image: url(images/hero.png);
     background-size: cover;
+    height: 100vh;
+}
+
+.subherosection {
+    background-image: url(images/hero.png);
+    background-size: cover;
 }
 
 .logo > img {
     padding-right: 1em;
+    width: 15vw;
 }
 
 .herocontent {
@@ -48,15 +62,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    margin-top: 10rem;
+    text-align: center;
 }
 
 .herotitle {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: 7rem;
+    font-size: 11vh;
     color: white;
-    margin-bottom: 3rem;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
 }
 
 .flair {
@@ -70,8 +85,8 @@ body {
 .herosubtitle {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: 1.5rem;
-    color: white;
+    font-size: 2.5vh;
+    color: #ffffffcc;
     margin-bottom: 3.5rem;
     margin-top: 2.5rem;
 }
@@ -83,23 +98,77 @@ body {
     border-radius: 4rem;
     font-family: "Roboto";
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 2.3vh;
     color: white;
-    padding: 1.3rem;
-    padding-inline: 3rem;
+    padding: 2.2vh;
+    padding-inline: 7vh;
     margin-bottom: 16rem;
+    margin-top: 2vh;
+}
+
+.subhero-content {
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.subhero-content h1 {
+    color: white;
+    font-family: "work sans";
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+
+.subhero-content p {
+    color: #0179fd;
+    font-family: "open sans";
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.subhero-content p::before {
+    content: "Home / ";
+    color: #ffffffcc;
 }
 
 /* nav bar section */
-
+.nav li,
+.nav a,
 li,
 a {
     list-style: none;
     color: #ffffff99;
     font-family: "Roboto";
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.2vw;
     text-decoration: none;
+}
+
+.dropdowncontent {
+    display: none;
+    padding-top: 1rem;
+    z-index: 1;
+}
+
+.dropdowncontent > ul {
+    display: block;
+    background-color: #017bfd38;
+    position: absolute;
+}
+
+.dropdowncontent > ul > li {
+    padding: 1rem;
+}
+
+a:hover,
+.dropdown:hover > a {
+    color: #0179fd;
+    font-weight: 400;
+}
+
+.dropdown:hover .dropdowncontent {
+    display: block;
 }
 
 .navbar {
@@ -108,11 +177,12 @@ a {
     align-items: center;
     padding: 2rem;
     padding-inline: 5rem;
+    margin-bottom: 2vh;
 }
 
 ul {
     display: flex;
-    gap: 6rem;
+    gap: 5vw;
 }
 
 .mobile-menu {
@@ -122,13 +192,13 @@ ul {
 /* about section */
 
 .aboutus {
-    padding-left: 16.5rem;
+    padding-left: 14vw;
 }
 
 .aboutus > h1 {
     font-family: "Roboto";
     font-weight: 600;
-    font-size: 2.2rem;
+    font-size: 1.8vw;
     padding-top: 10rem;
     margin-bottom: 1.2rem;
     color: #52565e;
@@ -136,14 +206,16 @@ ul {
 
 .aboutcontent {
     display: flex;
+    width: 90%;
     justify-content: space-between;
 }
 
-.aboutcontent > h2 {
+.aboutcontent > p {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 1.2rem;
-    max-width: 58ch;
+    font-size: 1.2rem;
+    max-width: 36vw;
     margin-top: 2rem;
     color: #364d59;
 }
@@ -151,6 +223,78 @@ ul {
 .aboutcontent > img {
     margin-right: 3rem;
     width: 26rem;
+    width: 22vw;
+    height: min-content;
+}
+
+.aboutmain {
+    display: flex;
+}
+
+.aboutmain > div > h1 {
+    font-family: "Work Sans";
+    font-size: 48px;
+    font-weight: 700;
+    color: #364d59;
+}
+
+.aboutmaincontent {
+    background-color: #f5f6f7;
+    margin-top: 5rem;
+    padding: 2.5rem 2.5rem;
+    width: 69ch;
+}
+
+.aboutmaincontent > h3 {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #838893;
+}
+
+.aboutmaincontent > h1 {
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #52565e;
+    padding-bottom: 1.5rem;
+}
+
+.aboutmaincontent > p {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #364d59;
+    padding-bottom: 2rem;
+    padding-right: 6rem;
+}
+
+.overlay {
+    background-image: url("images/aboutbg.png");
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+    background-color: rgba(0, 0, 0, 0.815);
+    max-height: 32rem;
+    min-width: 44rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 6rem;
+}
+
+.overlayimg {
+    width: min-content;
+    height: min-content;
 }
 
 /* why choose us */
@@ -184,16 +328,26 @@ ul {
 .test > h1::before {
     content: "";
     background-color: white;
-    height: 0.125rem;
+    height: 0.2rem;
     width: 3.15rem;
     position: absolute;
+    transform: translatey(1.1rem);
+}
+
+.test > h1::before {
+    position: absolute;
+    left: 47rem;
+}
+
+.test > h1::after {
+    position: absolute;
+    right: 47rem;
 }
 
 .whychooseuscontent {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    gap: 2rem;
 }
 
 .whychooseuscontent > .child {
@@ -201,17 +355,15 @@ ul {
     border-width: 0.4rem;
     border-color: white;
     border-radius: 2rem;
-    padding-left: 2.2rem;
+    padding: 2.2rem;
     padding-top: 3rem;
-    max-width: 23rem;
-    min-width: 23rem;
-    min-height: 18rem;
 }
 
 .whychooseuscontent > .child > h1 {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 1.4rem;
+    font-size: 1.2vw;
 }
 
 .whychooseuscontent > .child > h2,
@@ -219,13 +371,12 @@ a {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 1rem;
-    text-align: left;
 }
 
 .whychooseuscontent > .child > h2 {
     padding-bottom: 1rem;
     text-align: justify;
-    width: 35ch;
+    width: 15vw;
 }
 
 .whychooseuscontent > .child > .flair {
@@ -257,11 +408,24 @@ a {
     background-color: #028f2e;
     height: 0.15rem;
     width: 3rem;
+    position: absolute;
+    transform: translatey(1.1rem);
+}
+
+.achievments > h1::before {
+    position: absolute;
+    left: 47rem;
+}
+
+.achievments > h1::after {
+    position: absolute;
+    right: 47rem;
 }
 
 .achievments > .wrapper {
     display: flex;
-    gap: 3.3rem;
+    width: 80%;
+    justify-content: space-around;
 }
 
 .textwrapper {
@@ -289,8 +453,8 @@ a {
 }
 
 .tabs-title {
-    width: 63%;
     display: flex;
+    width: 63%;
     justify-content: space-between;
 }
 
@@ -298,22 +462,31 @@ a {
     color: #52565e;
     font-family: "Roboto";
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.05vw;
+    padding: 1vw;
+    padding-bottom: 1.25rem;
+    border-bottom: 0.25rem solid #e2e4e6;
+}
+
+.tabs-title > li > a[aria-expanded="true"] {
+    border-color: #0179fd;
+    color: #0179fd;
 }
 
 .tabs-panels {
     margin-top: 3.12rem;
+    width: 65%;
 }
 
 .panelwrapper[aria-expanded="true"] {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .panelwrapper h1 {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2vw;
     color: #364d59;
     margin-bottom: 2.5rem;
     width: 43ch;
@@ -327,12 +500,66 @@ a {
     width: 55ch;
 }
 
+.panelwrapper img {
+    width: 25vw;
+}
+
+/* main services section */
+.servicesmain {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.servicesmain > div p {
+    width: 50ch;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-weight: 400;
+    color: #364d59;
+}
+
+.servicesmain > div h1 {
+    font-family: "Roboto";
+    font-size: 1.2remx;
+    font-weight: 700;
+    color: #364d59;
+    padding-block: 1rem;
+}
+
+.servicesmain .tabs-container {
+    border: 1px solid #d5d7da;
+    padding: 2rem 1rem;
+    margin-top: 0rem;
+}
+
+.servicesmain .tabs-container ul {
+    display: block;
+}
+
+.servicesmain .tabs-container li {
+    padding-top: 2rem;
+}
+
+.servicesmain .tabs-container > ul > li > a {
+    color: #52565e;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-weight: 400;
+    border-left: 3px solid #0179fd;
+    padding-left: 1.2rem;
+}
+
+.servicesmain > .panelwrapper[aria-expanded="true"] {
+    display: block;
+}
+
 /* highlightes secion */
 .highlightes {
     background-color: #081222;
     display: flex;
     justify-content: center;
-    padding-block: 5rem;
+    padding-block: 11vh;
     margin-top: 5.7rem;
     gap: 1.5rem;
 }
@@ -341,6 +568,7 @@ a {
     display: flex;
     background-color: white;
     padding: 1.5rem 2rem;
+    padding: 3vh 4.2vh;
 }
 
 .highlightes h1 {
@@ -348,7 +576,7 @@ a {
     font-weight: 600;
     font-size: 2.25rem;
     color: #52565e;
-    padding-right: 9.5rem;
+    padding-right: 8vw;
 }
 
 .highlightes h2 {
@@ -374,11 +602,30 @@ a {
     font-size: 2rem;
 }
 
+.blogssection > h1::after,
+.blogssection > h1::before {
+    content: "";
+    background-color: #028f2e;
+    height: 0.15rem;
+    width: 3rem;
+    position: absolute;
+    transform: translatey(1.1rem);
+}
+
+.blogssection > h1::before {
+    position: absolute;
+    left: 45rem;
+}
+
+.blogssection > h1::after {
+    position: absolute;
+    right: 45rem;
+}
+
 .blogssection > .wrapper {
     display: flex;
-    justify-content: center;
-    gap: 2.25rem;
-    max-width: 26rem;
+    justify-content: space-evenly;
+    width: 80%;
     text-align: center;
 }
 
@@ -414,6 +661,176 @@ a {
     background-color: white;
     position: relative;
     bottom: 2.4rem;
+    width: 52ch;
+}
+
+/* blogs main section */
+.blogsmainsection {
+    display: flex;
+    gap: 3rem;
+}
+
+.blog {
+    padding: 1.25rem 1.9rem;
+}
+
+.blog > h1 {
+    color: #52565e;
+    font-family: "Roboto";
+    font-size: 1.75rem;
+    font-weight: 700;
+    width: 40ch;
+}
+
+.blogdisription,
+.blogdisription > h2 {
+    display: flex;
+    font-family: "Open Sans";
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #6c757d;
+    justify-content: space-evenly;
+    width: 50%;
+    padding-block: 0.5rem;
+}
+
+.blog > p {
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-weight: 400;
+    color: #364d59;
+    width: 85ch;
+}
+
+.blogsearch {
+    padding: 1.875rem 1.875rem;
+    box-shadow: 0px 4px 16px 0px #0000001a;
+    height: max-content;
+}
+
+.blogsearch h1 {
+    font-family: "Roboto";
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #52565e;
+    margin-bottom: 1rem;
+}
+
+.blogsearch > div {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 0.75rem;
+}
+
+.blogsearch > div h2,
+.blogsearch > div p {
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-weight: 400;
+    color: #52565e;
+}
+
+.blogsearch > div p {
+    color: #364d5966;
+}
+
+.blogsearch > div p::before {
+    content: "(";
+}
+
+.blogsearch > div p::after {
+    content: ")";
+}
+
+.blogsearch > div > input {
+    height: 2.5rem;
+    width: 18.3rem;
+    margin-bottom: 2.5rem;
+}
+
+.searchbtn {
+    background-color: #0179fd;
+    height: 2.5rem;
+    width: 2.875rem;
+    background-image: url(images/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blogsearch > .searchform {
+    gap: 0;
+}
+
+.recent {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blogsearch > h2 {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.blogsearch > .recentcontent {
+    padding-left: 1rem;
+    display: block;
+}
+
+.blogsearch > .recentcontent h2 {
+    padding-block: 0.5rem;
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 700;
+    width: 30ch;
+}
+
+/* clients secion */
+.clients {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    padding-bottom: 5rem;
+}
+
+.clients > h1 {
+    margin-bottom: 3.5rem;
+    font-size: 2rem;
+}
+
+.clients > h1::after,
+.clients > h1::before {
+    content: "";
+    background-color: #028f2e;
+    height: 0.15rem;
+    width: 3rem;
+    position: absolute;
+    transform: translatey(1.1rem);
+}
+
+.clients > h1::before {
+    position: absolute;
+    left: 45rem;
+}
+
+.clients > h1::after {
+    position: absolute;
+    right: 45rem;
+}
+
+.clients > div {
+    display: flex;
+    gap: 10rem;
+}
+
+.clients img {
+    max-width: 10rem;
 }
 
 /* footer section */
@@ -433,7 +850,8 @@ a {
 
 .footer-wrapper > section {
     display: flex;
-    gap: 10rem;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .copyright {
@@ -442,7 +860,7 @@ a {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 0.9rem;
-    margin-bottom: 3.8rem;
+    margin-bottom: 3rem;
 }
 
 .copyright > h1 {
@@ -459,7 +877,7 @@ a {
 .linkswrapper {
     font-family: "Open Sans";
     display: flex;
-    gap: 2rem;
+    justify-content: space-around;
 }
 
 .links {
@@ -524,6 +942,96 @@ a {
 
 .label {
     display: flex;
+}
+
+/* contact section */
+.contactsection img {
+    width: 3vw;
+}
+
+.contactsection {
+    display: flex;
+    gap: 4rem;
+}
+
+.contactsection div {
+    text-align: center;
+}
+
+.addresssection {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0px 0px 25px 0px #00000014;
+    padding: 2rem;
+}
+
+form > div {
+    width: 90%;
+    display: flex;
+}
+
+input {
+    height: 5vh;
+    font-size: large;
+    padding-left: 0.9vw;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 2px solid #dee2e6;
+    color: #212529bf;
+}
+
+.input {
+    margin-right: 0.2rem;
+}
+
+.subject {
+    width: 90%;
+}
+
+textarea {
+    padding: 0.9vw;
+    font-size: large;
+    border: 2px solid #dee2e6;
+    color: #212529bf;
+    width: 90%;
+    margin-bottom: 2vh;
+}
+
+.msgbtn {
+    color: white;
+    background-color: #0179fd;
+    border: none;
+    border-radius: 5px;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 2.5vh;
+    color: white;
+    padding: 1.5vh;
+    padding-inline: 5vh;
+    width: fit-content;
+}
+
+iframe {
+    width: 32vw;
+    height: 78%;
+}
+
+.card {
+    box-shadow: 0px 0px 25px 0px #00000014;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+}
+
+.card > h1 {
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 @media (max-width: 50em) {
