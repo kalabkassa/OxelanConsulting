@@ -264,27 +264,28 @@ ul {
     height: min-content;
 }
 
-.aboutmain {
-    display: flex;
-}
-
-.aboutmain > div > h1 {
+/* about main section */
+.aboutmain h1 {
     font-family: "Work Sans";
     font-size: 48px;
     font-weight: 700;
     color: #364d59;
 }
-.aboutmaincontent > h2 {
+.aboutmain h2 {
     font-family: "Roboto";
     color: #364d59;
     padding-bottom: 1rem;
 }
 
-.aboutmaincontent {
-    background-color: #f5f6f7;
-    margin-top: 5rem;
+.aboutmain > div {
+    display: flex;
+    justify-content: space-evenly;
     padding: 2.5rem 2.5rem;
-    width: 89ch;
+    width: 100%;
+}
+
+.aboutmaincontent {
+    max-width: 110ch;
 }
 
 .aboutmaincontent > h3 {
@@ -308,16 +309,12 @@ ul {
     padding-bottom: 1.5rem;
 }
 
-.aboutmaincontent > p {
+.aboutmain p {
     font-family: "Open Sans";
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #364d59;
-    padding-bottom: 2rem;
-    padding-right: 6rem;
 }
 
 .overlay {
@@ -330,13 +327,72 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    right: 6rem;
 }
 
-.overlayimg {
-    width: min-content;
-    height: min-content;
+.aboutmain > .cardholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cardholder > div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    gap: 5vw;
+    margin-top: 2rem;
+}
+
+.cardholder > div > .card {
+    width: 50ch;
+}
+
+.cardholder > div > .card:hover {
+    border-color: #0179fd;
+    transform: translateY(-5%);
+}
+
+.cardholder img {
+    width: 5vw;
+    margin-bottom: 2rem;
+}
+
+.aboutmain > .valuesection {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutmain > .valuesection > p {
+    margin-bottom: 2rem;
+}
+
+.aboutmain > section {
+    margin-left: 2rem;
+}
+
+.oursolution > div {
+    display: flex;
+    gap: 2rem;
+}
+
+.oursolution > div > p {
+    margin-top: 2rem;
+    width: 80ch;
+}
+
+.oursolution .card > img {
+    width: 3rem;
+}
+
+.oursolution > .cardholder > div > .card {
+    width: 20ch;
 }
 
 /* why choose us */
@@ -1099,6 +1155,8 @@ iframe {
     box-shadow: 0px 0px 25px 0px #00000014;
     margin-bottom: 1rem;
     padding: 1.5rem;
+    border: 2px solid #fff;
+    border-radius: 1rem;
 }
 
 .card > h1 {
