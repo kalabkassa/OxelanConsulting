@@ -28,17 +28,17 @@
                             <a href="services.html">SERVICES </a>
                             <div class="dropdowncontent">
                                 <ul>
-                                    <li>
-                                        <a href="#">Comprehensive Research</a>
+                                    <li onclick="navto('consultingservices')">
+                                        <a href="#consultingservices">Comprehensive Research</a>
                                     </li>
-                                    <li>
-                                        <a href="#">Strategic Consulting</a>
+                                    <li onclick="navto('trainingservices')">
+                                        <a href="#trainingservices">Strategic Consulting</a>
                                     </li>
-                                    <li>
-                                        <a href="#">Training and Mentorship</a>
+                                    <li onclick="navto('vocationalskills')">
+                                        <a href="#vocationalskills">Training and Mentorship</a>
                                     </li>
-                                    <li>
-                                        <a href="#"
+                                    <li onclick="navto('researchmentorship')">
+                                        <a href="#researchmentorship"
                                             >Business Development Services</a
                                         >
                                     </li>
@@ -80,7 +80,12 @@
                                     Crafting Tomorrow's Success Stories with
                                     OXELAN
                                 </p>
-                                <div class="herobtn"><p>Get Started</p></div>
+                                <div
+                                    class="herobtn"
+                                    onclick="scrollToSection()"
+                                >
+                                    <p>Get Started</p>
+                                </div>
                             </div>
                             <div>
                                 <div class="herotitle">
@@ -94,7 +99,12 @@
                                     Crafting Tomorrow's Success Stories with
                                     OXELAN
                                 </p>
-                                <div class="herobtn"><p>Get Started</p></div>
+                                <div
+                                    class="herobtn"
+                                    onclick="scrollToSection()"
+                                >
+                                    <p>Get Started</p>
+                                </div>
                             </div>
                             <div>
                                 <div class="herotitle">
@@ -108,7 +118,12 @@
                                     Crafting Tomorrow's Success Stories with
                                     OXELAN
                                 </p>
-                                <div class="herobtn"><p>Get Started</p></div>
+                                <div
+                                    class="herobtn"
+                                    onclick="scrollToSection()"
+                                >
+                                    <p>Get Started</p>
+                                </div>
                             </div>
                             <div>
                                 <div class="herotitle">
@@ -122,7 +137,12 @@
                                     Crafting Tomorrow's Success Stories with
                                     OXELAN
                                 </p>
-                                <div class="herobtn"><p>Get Started</p></div>
+                                <div
+                                    class="herobtn"
+                                    onclick="scrollToSection()"
+                                >
+                                    <p>Get Started</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,7 +152,7 @@
                 </div>
             </div>
             <div class="main">
-                <div class="aboutus">
+                <section class="aboutus" id="about">
                     <h1>About Us</h1>
                     <div class="flair"></div>
                     <div class="aboutcontent">
@@ -156,12 +176,12 @@
                         </p>
                         <img src="images/logo.png" alt="" />
                     </div>
-                </div>
-                <div class="whychooseus">
+                </section>
+                <section class="whychooseus">
                     <div class="test">
                         <h1>Why Choose Us?</h1>
                         <div class="whychooseuscontent">
-                            <div class="child a1">
+                            <div class="child animate">
                                 <img src="images/Consultation.png" alt="" />
                                 <h1>
                                     Expertise that <br />
@@ -176,7 +196,7 @@
                                 </h2>
                                 <a href="#">Learn more</a>
                             </div>
-                            <div class="child a2">
+                            <div class="child animate">
                                 <img src="images/Training.png" alt="" />
                                 <h1>
                                     Tailored <br />
@@ -191,7 +211,7 @@
                                 </h2>
                                 <a href="#">Learn more</a>
                             </div>
-                            <div class="child a3">
+                            <div class="child animate">
                                 <img src="images/Learning.png" alt="" />
                                 <h1>
                                     Innovative <br />
@@ -207,7 +227,7 @@
                                 </h2>
                                 <a href="#">Learn more</a>
                             </div>
-                            <div class="child a4">
+                            <div class="child animate">
                                 <img src="images/Statistics.png" alt="" />
                                 <h1>
                                     Proven Track <br />
@@ -224,31 +244,31 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="services">
+                </section>
+                <section class="services">
                     <div class="tabs-container">
                         <ul class="tabs-title">
                             <li href="#consultingservices" aria-expanded="true">
-                                <a aria-expanded="true"
+                                <a href="#consultingservices" aria-expanded="true"
                                     >Comprehensive Research</a
                                 >
                             </li>
                             <li href="#trainingservices" aria-expanded="false">
-                                <a>Strategic Consulting</a>
+                                <a href="#trainingservices">Strategic Consulting</a>
                             </li>
                             <li href="#vocationalskills" aria-expanded="false">
-                                <a>Training and Mentorship</a>
+                                <a href="#vocationalskills">Training and Mentorship</a>
                             </li>
                             <li
                                 href="#researchmentorship"
                                 aria-expanded="false"
                             >
-                                <a>Business Development Services</a>
+                                <a href="#researchmentorship">Business Development Services</a>
                             </li>
                         </ul>
                         <div class="tabs-panels">
                             <div
-                                class="panelwrapper"
+                                class="panelwrapper animate"
                                 id="consultingservices"
                                 aria-expanded="true"
                             >
@@ -268,7 +288,7 @@
                                 <img src="images/Tabpanelbrand.png" alt="" />
                             </div>
                             <div
-                                class="panelwrapper"
+                                class="panelwrapper animate"
                                 id="trainingservices"
                                 aria-expanded="false"
                             >
@@ -290,7 +310,7 @@
                                 <img src="images/train.avif" alt="" />
                             </div>
                             <div
-                                class="panelwrapper"
+                                class="panelwrapper animate"
                                 id="vocationalskills"
                                 aria-expanded="false"
                             >
@@ -312,7 +332,7 @@
                                 <img src="images/vision.avif" alt="" />
                             </div>
                             <div
-                                class="panelwrapper"
+                                class="panelwrapper animate"
                                 id="researchmentorship"
                                 aria-expanded="false"
                             >
@@ -337,47 +357,47 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="highlightes">
+                </section>
+                <section class="highlightes">
                     <div class="wrapper">
                         <img src="images/Smiling.png" alt="" />
                         <div class="child">
-                            <h1>100</h1>
+                            <h1 id="countup">100+</h1>
                             <h2>Satisfied Customers</h2>
                         </div>
                     </div>
                     <div class="wrapper">
                         <img src="images/Smiling.png" alt="" />
                         <div class="child">
-                            <h1>40+</h1>
+                            <h1 id="countup">40+</h1>
                             <h2>Customers</h2>
                         </div>
                     </div>
                     <div class="wrapper">
                         <img src="images/Smiling.png" alt="" />
                         <div class="child">
-                            <h1>20+</h1>
+                            <h1 id="countup">20+</h1>
                             <h2>Experience Team</h2>
                         </div>
                     </div>
                     <div class="wrapper">
                         <img src="images/Smiling.png" alt="" />
                         <div class="child">
-                            <h1>4+</h1>
+                            <h1 id="countup">4+</h1>
                             <h2>Award</h2>
                         </div>
                     </div>
-                </div>
-                <div class="achievments">
+                </section>
+                <section class="achievments">
                     <h1>Our Achievements</h1>
                     <div class="wrapper">
-                        <div class="child">
+                        <div class="child fade">
                             <img src="images/achievement1.png" alt="" />
                             <div class="textwrapper">
                                 <p>Corporate Social Responsibility Award</p>
                             </div>
                         </div>
-                        <div class="child">
+                        <div class="child fade">
                             <img src="images/achievement2.png" alt="" />
                             <div class="textwrapper">
                                 <p>
@@ -385,19 +405,19 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="child">
+                        <div class="child fade">
                             <img src="images/achievement3.png" alt="" />
                             <div class="textwrapper">
                                 <p>Global Excellence in Consulting</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="blogssection">
+                <section class="blogssection">
                     <h1>Blogs & Announcement</h1>
                     <div class="wrapper">
-                        <div>
+                        <div class="fade">
                             <img src="images/blog1.png" alt="" />
                             <div class="date">JUN 12</div>
                             <div class="child">
@@ -412,7 +432,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div>
+                        <div class="fade">
                             <img src="images/blog2.png" alt="" />
                             <div class="date">JUN 12</div>
                             <div class="child">
@@ -427,7 +447,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div>
+                        <div class="fade">
                             <img src="images/blog3.png" alt="" />
                             <div class="date">JUN 12</div>
                             <div class="child">
@@ -441,9 +461,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="clients">
+                <section class="clients">
                     <h1>Popular Clients</h1>
                     <div>
                         <img src="images/pfizer.png" alt="" />
@@ -456,7 +476,7 @@
                         <img src="images/pfizer.png" alt="" />
                         <img src="images/pfizer.png" alt="" />
                     </div>
-                </div>
+                </section>
             </div>
 
             <div class="footer">

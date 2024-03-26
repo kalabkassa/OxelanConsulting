@@ -187,24 +187,48 @@ a {
 
 .dropdowncontent {
     display: none;
-    padding-top: 1rem;
 }
 
 .dropdowncontent > ul {
     display: block;
-    background-color: #017bfdec;
+    background-color: #f5f5f58f;
     position: absolute;
     z-index: 100;
+    border-radius: 0.6rem;
 }
 
 .dropdowncontent > ul > li {
-    padding: 1rem;
+    margin-inline: 0.5rem;
+    padding-inline: 0.5rem;
+    margin-block: 0.6rem;
+    padding-block: 0.6rem;
+    background-color: #acb4bd;
+    border-radius: 0.4rem;
+}
+
+.dropdowncontent > ul > li > a {
+    padding-block: 0.3rem;
+}
+
+.dropdowncontent > ul > li:hover {
+    background-color: white;
 }
 
 a:hover,
 .dropdown:hover > a {
-    color: #0179fd;
+    color: white;
     font-weight: 400;
+}
+
+.dropdown > a::after {
+    content: url(images/expand_more_FILL1_wght400_GRAD0_opsz24.svg);
+    position: absolute;
+}
+
+.dropdowncontent a {
+    color: black;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .dropdown:hover .dropdowncontent {
@@ -523,6 +547,7 @@ ul {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    overflow-clip-margin: ;
 }
 
 .whychooseuscontent > .child {
@@ -534,6 +559,10 @@ ul {
     padding-top: 3rem;
 }
 
+.whychooseuscontent > .child:hover {
+    transform: translateY(-3%);
+}
+
 .whychooseuscontent > .child > h1 {
     font-family: "Roboto";
     font-weight: 700;
@@ -542,10 +571,11 @@ ul {
 }
 
 .whychooseuscontent > .child > h2,
-a {
+.whychooseuscontent > .child > a {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 1rem;
+    color: white;
 }
 
 .whychooseuscontent > .child > h2 {
@@ -559,6 +589,12 @@ a {
     width: 10rem;
     margin-top: 0.5rem;
     margin-bottom: 1.1rem;
+}
+
+.whychooseuscontent > .child > a::after {
+    content: url(images/learnmorearrow.svg);
+    position: relative;
+    left: 0.6rem;
 }
 
 /* achivment section */
@@ -1037,6 +1073,7 @@ a {
 
 .clients img {
     max-width: 10rem;
+    animation: slideRight 6s infinite forwards;
 }
 
 /* footer section */
@@ -1107,6 +1144,10 @@ a {
     font-weight: 400;
     font-size: 0.9rem;
     color: #ffffff99;
+}
+
+.links a:hover {
+    color: white;
 }
 
 .address {
@@ -1276,6 +1317,11 @@ iframe {
     margin-bottom: 1rem;
 }
 
+.contactbutton:hover {
+    transform: translateY(-10%);
+    cursor: pointer;
+}
+
 .contactbutton {
     background-image: url(images/contacts_product_FILL0_wght400_GRAD0_opsz24.svg);
     z-index: 100;
@@ -1382,6 +1428,14 @@ iframe {
 }
 
 /* animation section */
+.animation {
+    animation: slide-in 1s ease-in;
+}
+
+.fadein {
+    animation: fade-in 1s ease-in forwards;
+}
+
 @keyframes slide {
     0%,
     10% {
@@ -1404,5 +1458,36 @@ iframe {
     }
     90% {
         transform: translate(-25%);
+    }
+}
+
+@keyframes slideRight {
+    0%,
+    50% {
+        transform: translateX(-100%);
+    }
+    25%,
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(60%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0.3;
+        scale: 0.7;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
     }
 }

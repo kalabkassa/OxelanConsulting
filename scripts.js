@@ -44,11 +44,44 @@ function toggleContactbutton() {
     contactbuttoncontent.classList.toggle("showcontacts");
 }
 
+function navto(page) {
+    window.location.href = "services.html?" + page;
+}
+
+function getQueryParams() {
+    var queryParams = {};
+    var queryString = window.location.search.substring(1);
+    return queryString;
+}
+
+// Example usage: Get the value of param1
+var queryParams = getQueryParams();
+if (queryParams) {
+    const tabsList = tabContainer.querySelector("ul");
+    const tabButtons = tabsList.querySelectorAll("li");
+    var clickedTab = document.getElementsByClassName(queryParams)[0];
+    const tabPanels = document.querySelectorAll(".panelwrapper");
+    tabPanels.forEach((panel, index) => {
+        panel.setAttribute("hidden", true);
+        panel.setAttribute("aria-expanded", "false");
+        tabButtons[index].setAttribute("aria-expanded", "false");
+        tabButtons[index]
+            .querySelector("a")
+            .setAttribute("aria-expanded", "false");
+    });
+    const activePanelId = clickedTab.getAttribute("href");
+    const activePanel = document.querySelector(activePanelId);
+
+    activePanel.removeAttribute("hidden", false);
+    activePanel.setAttribute("aria-expanded", "true");
+    clickedTab.setAttribute("aria-expanded", "true");
+    clickedTab.querySelector("a").setAttribute("aria-expanded", "true");
+}
+
 navToggle.addEventListener("click", () => {
     const visibility = nav.getAttribute("data-visible");
     const expanded = navToggle.getAttribute("aria-expanded");
 
-    console.log(expanded);
     if (visibility === "false") {
         nav.setAttribute("data-visible", "true");
         navToggle.setAttribute("aria-expanded", "true");
@@ -66,7 +99,6 @@ if (tabContainer) {
         if (index === 0) {
         } else {
             tabPanels[index].setAttribute("hidden", "");
-            console.log(tabPanels[index]);
         }
     });
 
@@ -96,15 +128,91 @@ if (tabContainer) {
 
 const navObserver = new IntersectionObserver(
     (entries) => {
-        console.log(entries);
         navbar.classList.toggle("stickynav", !entries[0].isIntersecting);
     },
-    { rootMargin: "-800px 0px 0px 0px" }
+    { threshold: 0.9 }
 );
 
 const herosection = document.querySelector(".herocontent");
-const subherosection = document.querySelector(".subherocontent");
+const subherosection = document.querySelector(".subherosection");
 
 if (herosection) navObserver.observe(herosection);
 else navObserver.observe(subherosection);
-// navObserver.observe(scrollWatcher);
+
+function scrollToSection() {
+    var section = document.getElementById("about");
+    section.scrollIntoView({ behavior: "smooth" });
+}
+// animation
+
+const sections = document.querySelectorAll("section");
+
+const options = {
+    rootMargin: "100px",
+    threshold: 0.5,
+};
+
+const observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const animate = entry.target.querySelectorAll(".animate");
+        if (animate) {
+            animate.forEach((anima) => {
+                anima.classList.toggle("animation");
+            });
+        }
+        const fade = entry.target.querySelectorAll(".fade");
+        if (fade) {
+            fade.forEach((anima) => {
+                anima.classList.toggle("fadein");
+            });
+        }
+    });
+}, options);
+
+sections.forEach((section) => {
+    observer.observe(section);
+});
+
+function countUp(target, element, duration) {
+    var start = 0;
+    var increment = Math.floor(target / duration);
+    if (!increment) increment = 1;
+
+    // Interval function to update the count
+    var timer = setInterval(function () {
+        start += increment;
+        element.textContent = start + "+";
+        if (start >= target) {
+            clearInterval(timer);
+            element.textContent = target + "+"; // Ensure the target is reached exactly
+        }
+    }, 1000 / duration); // Update every second
+}
+
+// Intersection Observer to trigger countUp function when the h1 element is in view
+var observer2 = new IntersectionObserver(
+    function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                console.log(
+                    parseInt(entry.target.textContent.replace("+", ""))
+                );
+                countUp(
+                    parseInt(entry.target.textContent.replace("+", "")),
+                    entry.target,
+                    40
+                ); // Count up to the number in 3 seconds
+                observer2.unobserve(entry.target); // Stop observing once triggered
+            }
+        });
+    },
+    { threshold: 0.9 }
+);
+
+// Start observing the h1 element
+// observer2.observe(document.getElementById("countup"));
+
+document.querySelectorAll("#countup").forEach((h) => {
+    observer2.observe(h);
+});
