@@ -64,6 +64,7 @@ main {
     align-items: center;
     justify-items: center;
     text-align: center;
+    margin-top: 10vh;
 }
 
 .sliders {
@@ -75,7 +76,6 @@ main {
 span > img {
     width: 3rem;
     border-radius: 50%;
-    transform: translatey(-8rem);
     z-index: 100;
     cursor: pointer;
 }
@@ -94,6 +94,8 @@ span > img {
 
 .herocontent {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
 }
 
@@ -145,7 +147,8 @@ span > img {
 
 .subhero-content {
     text-align: center;
-    padding-bottom: 2vh;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
 }
 
 .subhero-content h1 {
@@ -185,13 +188,13 @@ a {
 .dropdowncontent {
     display: none;
     padding-top: 1rem;
-    z-index: 1;
 }
 
 .dropdowncontent > ul {
     display: block;
-    background-color: #017bfd38;
+    background-color: #017bfdec;
     position: absolute;
+    z-index: 100;
 }
 
 .dropdowncontent > ul > li {
@@ -214,7 +217,20 @@ a:hover,
     align-items: center;
     padding: 2rem;
     padding-inline: 5rem;
-    margin-bottom: 2vh;
+    margin-top: 2vh;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    z-index: 100;
+}
+
+.stickynav {
+    margin: 0;
+    padding-inline: 6rem;
+    padding-block: 0.3rem;
+    background-color: #081222;
+    transition: all 100ms;
+    box-shadow: 0px 4px 16px 10px #00000062;
 }
 
 ul {
@@ -374,7 +390,7 @@ ul {
 }
 
 .aboutmain > section {
-    margin-left: 2rem;
+    padding-inline: 4rem;
 }
 
 .oursolution > div {
@@ -393,6 +409,67 @@ ul {
 
 .oursolution > .cardholder > div > .card {
     width: 20ch;
+}
+.aboutmain section {
+    margin-top: 2rem;
+}
+.ourteam {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+.ourteamwrapper {
+    padding: 10rem;
+    padding-block: 2rem;
+}
+
+.ourteam img {
+    width: 25rem;
+}
+
+.ourteam > p,
+.ourservice > p {
+    width: 55ch;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.ourservice {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.ourservice p {
+    width: 70ch;
+}
+
+.industries {
+    margin-block: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.industries > div:hover {
+    transform: translatey(-10%);
+}
+
+.industries > div > h2 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.industries > div,
+.industries img {
+    width: 10rem;
+}
+
+.foundation {
+    margin-block: 2rem;
 }
 
 /* why choose us */
@@ -1163,6 +1240,60 @@ iframe {
     font-family: Roboto;
     font-size: 1.25rem;
     font-weight: 700;
+}
+
+.contactbuttoncontainer {
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+}
+
+.contactbuttoncontentcontainer {
+    overflow: hidden;
+}
+
+.contactbuttoncontent {
+    transform: translateY(18rem);
+    transition: transform 0.3s ease;
+}
+
+.showcontacts {
+    transform: translateY(0);
+    transition: transform 1s ease;
+}
+
+.contactbutton,
+.phone,
+.whatsup,
+.telegramc,
+.gmail {
+    width: 3.4rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #0f6897;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1rem;
+}
+
+.contactbutton {
+    background-image: url(images/contacts_product_FILL0_wght400_GRAD0_opsz24.svg);
+    z-index: 100;
+}
+
+.phone {
+    background-image: url(images/phone.svg);
+}
+.whatsup {
+    background-image: url(images/logo-whatsapp.svg);
+}
+
+.telegramc {
+    background-image: url(images/telegram-original.svg);
+}
+
+.gmail {
+    background-image: url(images/mail-outline.svg);
 }
 
 @media (max-width: 50em) {
