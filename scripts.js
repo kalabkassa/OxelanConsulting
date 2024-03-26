@@ -48,6 +48,31 @@ function navto(page) {
     window.location.href = "services.html?" + page;
 }
 
+function learnmore(page) {
+    window.location.href = "about.html?" + page;
+}
+
+function whychooseusnav(active) {
+    var lists = document
+        .querySelector(".whychooseusnav")
+        .querySelector("ul")
+        .querySelectorAll("li");
+    lists.forEach((list) => {
+        list.classList.remove("active");
+    });
+    var list = document.getElementsByClassName(active);
+    list[0].classList.add("active");
+
+    var Panels = document
+        .querySelector(".whychooseusmaincontent")
+        .querySelectorAll("div");
+    Panels.forEach((panel) => {
+        panel.setAttribute("aria-current", "fale");
+    });
+    var activePanel = document.getElementById(active);
+    activePanel.setAttribute("aria-current", "true");
+}
+
 function getQueryParams() {
     var queryParams = {};
     var queryString = window.location.search.substring(1);
