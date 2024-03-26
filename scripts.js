@@ -81,7 +81,7 @@ function getQueryParams() {
 
 // Example usage: Get the value of param1
 var queryParams = getQueryParams();
-if (queryParams) {
+if (queryParams && tabContainer) {
     const tabsList = tabContainer.querySelector("ul");
     const tabButtons = tabsList.querySelectorAll("li");
     var clickedTab = document.getElementsByClassName(queryParams)[0];

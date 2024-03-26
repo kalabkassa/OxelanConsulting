@@ -715,11 +715,19 @@ ul {
 }
 
 /* services section */
+.tabs-container > h1 {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    color: #1f4255;
+}
 .tabs-container {
     margin-top: 7.4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .tabs-title {
