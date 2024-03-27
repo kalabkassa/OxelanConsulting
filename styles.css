@@ -335,10 +335,25 @@ ul {
     font-weight: 700;
     color: #364d59;
 }
+
 .aboutmain h2 {
     font-family: "Roboto";
+    font-size: 1.2rem;
     color: #364d59;
     padding-bottom: 1rem;
+    width: 30ch;
+    text-align: justify;
+}
+
+.aboutmain p {
+    width: 45ch;
+    text-align: justify;
+}
+
+.flex {
+    display: flex;
+    word-spacing: -1px;
+    gap: 4rem;
 }
 
 .aboutmain > div {
@@ -369,7 +384,7 @@ ul {
     line-height: 43px;
     letter-spacing: 0em;
     text-align: left;
-    color: #52565e;
+    color: #364d59;
     padding-bottom: 1.5rem;
 }
 
@@ -385,50 +400,63 @@ ul {
     background-image: url("images/aboutbg.png");
     background-repeat: no-repeat;
     background-blend-mode: hard-light;
-    background-color: rgba(0, 0, 0, 0.815);
+    background-color: #000000d0;
     max-height: 32rem;
     min-width: 44rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 8rem;
 }
-
-.aboutmain > .cardholder {
+/* mission and vision */
+.aboutmain > .missionsection {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
+    background-color: #193544;
+    gap: 2rem;
 }
 
-.cardholder > div {
+.missionsection > h1 {
+    color: white;
+    margin-top: 3rem;
+}
+
+.missionsection > .wrapper {
     display: flex;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    gap: 5vw;
-    margin-top: 2rem;
+    width: 80vw;
 }
 
-.cardholder > div > .card p {
-    text-align: center;
-    margin-left: auto;
+.missionsection > .wrapper > * {
     margin-right: auto;
-    width: 35ch;
+    margin-left: auto;
 }
 
-.cardholder > div > .card {
-    width: 50ch;
+.missionsection h2 {
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
-.cardholder > div > .card:hover {
-    border-color: #0179fd;
-    transform: translateY(-5%);
+.missionsection p {
+    color: white;
+    padding-left: 1rem;
+    font-size: 1rem;
+    width: 40ch;
 }
 
-.cardholder img {
-    width: 5vw;
-    margin-bottom: 2rem;
+.missionsection img {
+    width: 22rem;
 }
+
+.missionsection img:hover {
+    scale: 1.2;
+}
+
+/* our values section */
 
 .aboutmain > .valuesection {
     width: 90vw;
@@ -437,19 +465,64 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 3rem;
+}
+
+.valuesection > p {
+    text-align: center;
+    width: 67ch;
+    margin-block: 2rem;
 }
 
 .aboutmain > .valuesection > p {
     margin-bottom: 2rem;
 }
 
-.aboutmain > section {
-    padding-inline: 4rem;
+/* value section */
+
+.valuesection > .cardholder {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    gap: 2rem;
 }
 
+.valuesection > .cardholder > .flipcard {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.valuesection > .cardholder img {
+    width: 20vw;
+}
+
+.flipcard > div {
+    display: none;
+}
+
+.flipcard {
+    border-radius: 50%;
+    box-shadow: 0px 4px 16px 0px #0000001a;
+}
+
+/* our solutions */
+
+.oursolution {
+    background-color: hsl(234, 29%, 20%);
+    padding: 2rem;
+}
+
+.oursolution > h1 {
+    color: #d1cef9;
+}
 .oursolution > div {
     display: flex;
     gap: 2rem;
+}
+
+.oursolution p,
+.oursolution h2 {
+    color: hsl(244, 90%, 89%);
 }
 
 .oursolution > div > p {
@@ -464,9 +537,9 @@ ul {
 .oursolution > .cardholder > div > .card {
     width: 20ch;
 }
-.aboutmain section {
-    padding-top: 2rem;
-}
+
+/* ourteam */
+
 .ourteam {
     display: flex;
     justify-content: space-evenly;
@@ -638,9 +711,9 @@ ul {
 
 /* why choose us main section */
 .whychooseuswrapper {
-    background-color: whitesmoke;
-    padding-bottom: 2rem;
-    border-radius: 3rem;
+    --whychooseuscontentbackground: #122134;
+    --whychooseusbackground: #233345;
+    background-color: var(--whychooseuscontentbackground);
     margin-top: 3rem;
 }
 
@@ -648,22 +721,35 @@ ul {
     display: flex;
     margin-top: 3rem;
     width: 100vw;
-    justify-content: center;
+}
+
+.whychooseusmain > .whychooseusb {
+    background-color: var(--whychooseusbackground);
+    padding-left: 2rem;
+    padding-top: 4rem;
 }
 
 .whychooseusnav {
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
-.whychooseusmaincontent div {
+.whychooseusmaincontent > div {
     display: none;
-    padding-right: 2rem;
+    height: 70vh;
 }
 
 .whychooseusmaincontent p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 2rem;
+    margin-top: 3rem;
+}
+
+.whychooseusmain h1 {
+    padding-right: 2rem;
+}
+
+.whychooseusmaincontent p,
+.whychooseusmain h1,
+.whychooseusnav > ul > li a {
+    color: white;
 }
 
 .whychooseusmaincontent div[aria-current="true"] {
@@ -671,24 +757,48 @@ ul {
 }
 
 .whychooseusnav > ul {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
     gap: 2rem;
 }
 
-.whychooseusnav > ul > li a {
-    color: #364d59;
-}
 .whychooseusnav > ul > li {
     padding: 2rem;
+    position: relative;
+}
+
+.whychooseusnav > ul > li.active::after,
+.whychooseusnav > ul > li.active::before {
+    --border-radius: 2rem;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: var(--border-radius);
+    aspect-ratio: 1;
+    right: 0;
+    background-color: var(--whychooseusbackground);
+}
+
+.whychooseusnav > ul > li.active::after {
+    box-shadow: 10px 10px 0 10px var(--whychooseuscontentbackground);
+    border-radius: 0 0 100vw 0;
+    top: calc(var(--border-radius) * -1);
+}
+
+.whychooseusnav > ul > li.active::before {
+    box-shadow: 10px -10px 0 10px var(--whychooseuscontentbackground);
+    border-radius: 0 100vw 0 0;
+    bottom: calc(var(--border-radius) * -1);
 }
 
 .whychooseusnav > ul > li.active {
-    background-color: white;
+    background-color: var(--whychooseuscontentbackground);
     border-radius: 2rem 0 0 2rem;
 }
 
 .whychooseusmaincontent {
-    background-color: white;
+    background-color: var(--whychooseuscontentbackground);
     padding-left: 10rem;
     padding-top: 4rem;
     border-radius: 2rem;
@@ -739,7 +849,7 @@ ul {
     gap: 2rem;
 }
 
-.achievments > .wrapper > .child img ,
+.achievments > .wrapper > .child img,
 .achievments > .wrapper > .child {
     width: 40vh;
 }
