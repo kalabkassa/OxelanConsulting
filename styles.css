@@ -354,6 +354,7 @@ ul {
     display: flex;
     word-spacing: -1px;
     gap: 4rem;
+    flex-wrap: wrap;
 }
 
 .aboutmain > div {
@@ -508,15 +509,17 @@ ul {
 /* our solutions */
 
 .oursolution {
-    background-color: hsl(234, 29%, 20%);
+    background-color: hsl(200, 50%, 20%);
     padding: 2rem;
 }
 
 .oursolution > h1 {
     color: #d1cef9;
 }
+
 .oursolution > div {
     display: flex;
+    justify-content: space-around;
     gap: 2rem;
 }
 
@@ -528,6 +531,10 @@ ul {
 .oursolution > div > p {
     margin-top: 2rem;
     width: 80ch;
+}
+
+.oursolution .card {
+    display: flex;
 }
 
 .oursolution .card > img {
@@ -554,12 +561,16 @@ ul {
     width: 25rem;
 }
 
+/* ourservices section */
+
 .ourteam > p,
 .ourservice > p {
-    width: 55ch;
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 2rem;
+    width: 45ch;
+}
+
+.ourservicewrapper {
+    padding: 2rem;
+    background-color: whitesmoke;
 }
 
 .ourservice {
@@ -568,8 +579,10 @@ ul {
     margin-top: 2rem;
 }
 
-.ourservice p {
-    width: 70ch;
+/* industries */
+
+.industrieswrapper {
+    padding: 2rem;
 }
 
 .industries {
@@ -594,9 +607,46 @@ ul {
 .industries img {
     width: 10rem;
 }
+/* foundation */
 
-.foundation {
-    margin-block: 2rem;
+.foundationwrapper {
+    padding: 2rem;
+    background-color: hsl(201, 82%, 15%);
+}
+
+.foundationwrapper img,
+.foundationwrapper .imagecontainer {
+    height: 17vw;
+    width: 25vh;
+}
+
+.foundationwrapper .card {
+    display: flex;
+    flex-direction: column;
+    border-color: #6c63ff;
+}
+
+.foundationwrapper p {
+    word-spacing: -3px;
+}
+
+.foundationwrapper p,
+.foundationwrapper > .flex h1 {
+    width: 30ch;
+}
+
+.foundationwrapper > .flex h1 {
+    padding-bottom: 1rem;
+}
+
+.foundationwrapper p,
+.foundationwrapper h1 {
+    color: white;
+}
+
+.foundationwrapper > .flex {
+    padding: 3rem;
+    gap: 2rem;
 }
 
 /* why choose us */
@@ -605,8 +655,6 @@ ul {
     background-position: 20%;
     background-size: cover;
     color: white;
-    border-radius: 1rem;
-    margin: 1rem;
 }
 
 .test {
@@ -1058,7 +1106,6 @@ ul {
 
 /* blogs and anounsments section */
 .blogssection {
-    margin: 1rem;
     padding-top: 3rem;
     margin-block: 4rem;
     display: flex;
@@ -1068,7 +1115,6 @@ ul {
     font-weight: 700;
     background-color: #08264f;
     padding-bottom: 3rem;
-    border-radius: 1rem;
 }
 
 .blogssection > h1 {
