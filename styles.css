@@ -21,24 +21,26 @@ main {
 
 .socialhub {
     display: flex;
-    justify-content: space-between;
-    padding-inline: 2rem;
+    width: 93vw;
+    padding-right: 6rem;
+    padding-left: 2rem;
     background-color: #017bfd38;
     align-items: center;
-    position: relative;
 }
 
 .companyname {
     color: white;
 }
 
-.socialmedialogos,
-.socialmedialogos img {
+.socialmedialogos {
     display: flex;
     gap: 5%;
-    height: 3vh;
+    margin-left: auto;
 }
 
+.socialmedialogos img {
+    height: 3vh;
+}
 /* hero */
 
 .herosection {
