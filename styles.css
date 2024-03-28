@@ -364,10 +364,6 @@ ul {
     width: 100%;
 }
 
-.aboutmaincontent {
-    max-width: 110ch;
-}
-
 .aboutmaincontent > h3 {
     font-family: "Roboto";
     font-size: 18px;
@@ -460,13 +456,15 @@ ul {
 /* our values section */
 
 .aboutmain > .valuesection {
-    width: 90vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 3rem;
+    padding-top: 3rem;
+    background-color: whitesmoke;
+    padding-bottom: 2rem;
 }
 
 .valuesection > p {
@@ -475,11 +473,13 @@ ul {
     margin-block: 2rem;
 }
 
+.card:hover {
+    transform: translateY(-5%);
+}
+
 .aboutmain > .valuesection > p {
     margin-bottom: 2rem;
 }
-
-/* value section */
 
 .valuesection > .cardholder {
     display: flex;
@@ -488,28 +488,75 @@ ul {
     gap: 2rem;
 }
 
-.valuesection > .cardholder > .flipcard {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .valuesection > .cardholder img {
-    width: 20vw;
+    width: 18vw;
+    height: 18vw;
 }
 
-.flipcard > div {
-    display: none;
+.flipcardcontent > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: rotateY(0.5turn);
+    backface-visibility: hidden;
+    background-color: var(--flipcard-color);
+    border-radius: 100vw;
+    box-shadow: 0px 4px 16px 0px #0000001a;
+    padding: 2rem;
+    height: auto;
+    width: auto;
+}
+
+.flipcardcontent p,
+.flipcardcontent h1 {
+    color: hsl(243, 100%, 19%);
+    width: auto;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.flipcardcontent h1 {
+    font-size: 1.4rem;
+    padding-top: 2rem;
+}
+
+.flipcardcontent > h1 {
+    position: absolute;
+    bottom: -1.5rem;
+    left: -3.5rem;
+    font-size: 2.5rem;
+    color: hsl(243, 100%, 19%);
+    width: 12ch;
 }
 
 .flipcard {
-    border-radius: 50%;
+    --flipcard-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100vw;
+    height: 19vw;
+    width: 19vw;
+}
+.flipcard:hover .flipcardcontent {
+    transform: rotateY(0.5turn);
+}
+
+.flipcardcontent {
+    background-color: var(--flipcard-color);
+    position: relative;
+    border-radius: 100vw;
     box-shadow: 0px 4px 16px 0px #0000001a;
+    transform-style: preserve-3d;
+    transition: transform 3s;
+    backface-visibility: hidden;
 }
 
 /* our solutions */
 
 .oursolution {
-    background-color: hsl(200, 50%, 20%);
+    background-color: #193544;
     padding: 2rem;
 }
 
@@ -530,7 +577,7 @@ ul {
 
 .oursolution > div > p {
     margin-top: 2rem;
-    width: 80ch;
+    width: 45ch;
 }
 
 .oursolution .card {
@@ -539,6 +586,11 @@ ul {
 
 .oursolution .card > img {
     width: 3rem;
+    background-color: white;
+    border-radius: 100vw;
+    width: 5rem;
+    aspect-ratio: 1;
+    margin-right: 2rem;
 }
 
 .oursolution > .cardholder > div > .card {
@@ -579,6 +631,20 @@ ul {
     margin-top: 2rem;
 }
 
+.bullet {
+    display: grid;
+    gap: 1rem;
+    list-style: disc;
+}
+
+.bullet .flex p {
+    margin-left: auto;
+}
+
+.bullet .flex h1 {
+    font-size: 2rem;
+}
+
 /* industries */
 
 .industrieswrapper {
@@ -612,6 +678,7 @@ ul {
 .foundationwrapper {
     padding: 2rem;
     background-color: hsl(201, 82%, 15%);
+    background-color: #193544;
 }
 
 .foundationwrapper img,
@@ -623,7 +690,7 @@ ul {
 .foundationwrapper .card {
     display: flex;
     flex-direction: column;
-    border-color: #6c63ff;
+    border-color: hsl(201, 46%, 12%);
 }
 
 .foundationwrapper p {
@@ -760,7 +827,9 @@ ul {
 /* why choose us main section */
 .whychooseuswrapper {
     --whychooseuscontentbackground: #122134;
+    --whychooseuscontentbackground: #193544;
     --whychooseusbackground: #233345;
+    --whychooseusbackground: hsl(201, 46%, 22%);
     background-color: var(--whychooseuscontentbackground);
     margin-top: 3rem;
 }
@@ -1113,7 +1182,7 @@ ul {
     align-items: center;
     font-family: "Roboto";
     font-weight: 700;
-    background-color: #08264f;
+    background-color: #132441;
     padding-bottom: 3rem;
 }
 

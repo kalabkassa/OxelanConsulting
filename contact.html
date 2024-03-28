@@ -3,9 +3,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unlock&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unlock&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="styles.css" />
         <script src="scripts.js" defer></script>
         <title>OXELAN CONSULTING PLC</title>
@@ -24,34 +27,87 @@
                 </div>
                 <div class="navbar">
                     <div class="logo">
-                        <img src="images/WHITE HORZONTAL LOGO.png" alt="" />
+                        <a href="index.html"
+                            ><img src="images/WHITE HORZONTAL LOGO.png" alt=""
+                        /></a>
                     </div>
                     <div class="nav">
                         <ul data-visible="false">
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="about.html">ABOUT</a>
+                                    <div class="dropdowncontent">
+                                        <ul>
+                                            <li
+                                                onclick="navto('consultingservices')"
+                                            >
+                                                <a href="#consultingservices"
+                                                    >Mission and Vision</a
+                                                >
+                                            </li>
+                                            <li
+                                                onclick="navto('trainingservices')"
+                                            >
+                                                <a href="#trainingservices"
+                                                    >Our Values</a
+                                                >
+                                            </li>
+                                            <li
+                                                onclick="navto('vocationalskills')"
+                                            >
+                                                <a href="#vocationalskills"
+                                                    >Our Solutions</a
+                                                >
+                                            </li>
+                                            <li
+                                                onclick="navto('researchmentorship')"
+                                            >
+                                                <a href="#researchmentorship"
+                                                    >Why Choose Us</a
+                                                >
+                                            </li>
+                                            <li
+                                                onclick="navto('researchmentorship')"
+                                            >
+                                                <a href="#researchmentorship"
+                                                    >Industries We Serve</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
                             <li>
                                 <div class="dropdown">
                                     <a href="services.html">SERVICES </a>
                                     <div class="dropdowncontent">
                                         <ul>
-                                            <li>
-                                                <a href="#"
+                                            <li
+                                                onclick="navto('consultingservices')"
+                                            >
+                                                <a href="#consultingservices"
                                                     >Comprehensive Research</a
                                                 >
                                             </li>
-                                            <li>
-                                                <a href="#"
+                                            <li
+                                                onclick="navto('trainingservices')"
+                                            >
+                                                <a href="#trainingservices"
                                                     >Strategic Consulting</a
                                                 >
                                             </li>
-                                            <li>
-                                                <a href="#"
+                                            <li
+                                                onclick="navto('vocationalskills')"
+                                            >
+                                                <a href="#vocationalskills"
                                                     >Training and Mentorship</a
                                                 >
                                             </li>
-                                            <li>
-                                                <a href="#"
+                                            <li
+                                                onclick="navto('researchmentorship')"
+                                            >
+                                                <a href="#researchmentorship"
                                                     >Business Development
                                                     Services</a
                                                 >
@@ -92,7 +148,7 @@
                     <div>
                         <div class="addresssection">
                             <div class="card">
-                                <img src="images/mail.svg" alt="" />
+                                <img src="images/mail_blue.svg" alt="" />
                                 <h1>Email Us</h1>
                                 <p>oxelanconsulting@gmail.com</p>
                             </div>
@@ -102,13 +158,13 @@
                             </div>
                             <div class="card">
                                 <img
-                                    src="images/telegram-original.svg"
+                                    src="images/telegram-original_blue.svg"
                                     alt=""
                                 />
                                 <h1>Telegram Address</h1>
                             </div>
                             <div class="card">
-                                <img src="images/phone.svg" alt="" />
+                                <img src="images/phone_ blue.svg" alt="" />
                                 <h1>Call Us</h1>
                                 <p>+251900055555</p>
                             </div>
@@ -120,9 +176,16 @@
                                     type="text"
                                     placeholder="Full Name"
                                 />
-                                <input type="email" placeholder="Your Email" /><br />
+                                <input
+                                    type="email"
+                                    placeholder="Your Email"
+                                /><br />
                             </div>
-                            <input class="subject" type="text" placeholder="Subject"/><br />
+                            <input
+                                class="subject"
+                                type="text"
+                                placeholder="Subject"
+                            /><br />
                             <textarea
                                 name="message"
                                 id="mesg"

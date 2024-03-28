@@ -71,6 +71,7 @@ function whychooseusnav(active) {
     });
     var activePanel = document.getElementById(active);
     activePanel.setAttribute("aria-current", "true");
+    console.log(active);
 }
 
 function getQueryParams() {
@@ -101,6 +102,8 @@ if (queryParams && tabContainer) {
     activePanel.setAttribute("aria-expanded", "true");
     clickedTab.setAttribute("aria-expanded", "true");
     clickedTab.querySelector("a").setAttribute("aria-expanded", "true");
+} else {
+    console.log(queryParams);
 }
 
 navToggle.addEventListener("click", () => {
