@@ -45,14 +45,14 @@ function toggleContactbutton() {
 }
 
 function navto(page) {
-    window.location.href = "services.html?" + page;
-}
-
-function learnmore(page) {
-    window.location.href = "about.html?" + page;
+    window.location.href = page;
 }
 
 function whychooseusnav(active) {
+    var activePanel = document.getElementById(active);
+    if (!activePanel) return;
+    var section = document.querySelector(".whychooseuswrapper");
+    section.scrollIntoView({ behavior: "smooth" });
     var lists = document
         .querySelector(".whychooseusnav")
         .querySelector("ul")
@@ -69,9 +69,8 @@ function whychooseusnav(active) {
     Panels.forEach((panel) => {
         panel.setAttribute("aria-current", "fale");
     });
-    var activePanel = document.getElementById(active);
+
     activePanel.setAttribute("aria-current", "true");
-    console.log(active);
 }
 
 function getQueryParams() {
@@ -102,8 +101,11 @@ if (queryParams && tabContainer) {
     activePanel.setAttribute("aria-expanded", "true");
     clickedTab.setAttribute("aria-expanded", "true");
     clickedTab.querySelector("a").setAttribute("aria-expanded", "true");
-} else {
+} else if (queryParams) {
+    var section = document.getElementsByClassName(queryParams);
     console.log(queryParams);
+    if (section) section[0].scrollIntoView({ behavior: "smooth" });
+    whychooseusnav(queryParams);
 }
 
 navToggle.addEventListener("click", () => {
