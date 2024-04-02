@@ -29,6 +29,9 @@ main {
 }
 
 .companyname {
+    font-family: "Orbitron";
+    font-weight: 500;
+    text-transform: uppercase;
     color: white;
 }
 
@@ -1419,11 +1422,12 @@ ul {
 .clients > div {
     display: flex;
     gap: 10rem;
+    animation: slideRight 40s ease-in-out infinite forwards;
 }
 
-.clients img {
-    max-width: 10rem;
-    animation: slideRight 6s infinite forwards;
+.clients > div > img {
+    width: fit-content;
+    height: 10rem;
 }
 
 /* footer section */
@@ -1797,11 +1801,11 @@ iframe {
 @keyframes slideRight {
     0%,
     50% {
-        transform: translateX(-100%);
+        transform: translateX(-40%);
     }
     25%,
     100% {
-        transform: translateX(100%);
+        transform: translateX(40%);
     }
 }
 
