@@ -413,12 +413,12 @@ ul {
 /* mission and vision */
 .aboutmain > .missionsection {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
     background-color: #193544;
-    gap: 2rem;
+    gap: 9rem;
 }
 
 .missionsection > h1 {
@@ -447,11 +447,15 @@ ul {
     color: white;
     padding-left: 1rem;
     font-size: 1rem;
-    width: 40ch;
+    width: 30ch;
 }
 
 .missionsection img {
     width: 22rem;
+}
+.missionsection > img {
+    width: 30rem;
+    opacity: 70%;
 }
 
 .missionsection img:hover {
@@ -649,7 +653,12 @@ ul {
 .bullet .flex h1 {
     font-size: 2rem;
 }
-
+.ninty::after {
+    content: "%";
+}
+.ninty::before {
+    content: ">";
+}
 /* industries */
 
 .industrieswrapper {
@@ -1134,19 +1143,32 @@ ul {
 .servicesmain > .panelwrapper p {
     width: 90%;
     padding-left: 1rem;
+    color: white;
     display: none;
 }
-.servicesmain > .panelwrapper > h2 {
+.servicesmain > .panelwrapper > .card > h2 {
     font-family: "Roboto";
     font-size: 1.25rem;
     font-weight: 700;
-    padding-block: 1rem;
-    color: #52565e;
+
+    padding-left: 5%;
+}
+.servicesmain > .panelwrapper > .card > h2::after {
+    content: url(images/expand_more_FILL1_wght400_GRAD0_opsz24.svg);
+    position: absolute;
+    right: 1rem;
 }
 
 .drop {
     display: flex;
     flex-direction: column;
+}
+.servicesmain > .panelwrapper > .card {
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    color: white;
+    background-color: #194e5c;
+    position: relative;
 }
 
 .drop:hover > p {
@@ -1188,7 +1210,12 @@ ul {
     font-weight: 400;
     font-size: 0.9rem;
 }
-
+.hundred::after {
+    content: "%";
+}
+.plus::after {
+    content: "+";
+}
 /* blogs and anounsments section */
 .blogssection {
     padding-top: 3rem;
