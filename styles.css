@@ -1764,6 +1764,30 @@ iframe {
     }
 }
 
+
+
+textarea {
+    width: 22rem;
+    height: 2.7rem;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 2%;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.subscribe-btn {
+    position: absolute;
+    bottom: 6.4%;
+    right: 1%;
+    border-radius: 6%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: #0f6897;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
 /* animation section */
 .animation {
     animation: slide-in 1s ease-in;
