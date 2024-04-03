@@ -1075,7 +1075,8 @@ ul {
     text-align: left;
 }
 
-.servicesmain > div p {
+.servicesmain > div p,
+.servicesmain h4 {
     width: 50ch;
     font-family: "Open Sans";
     font-size: 1rem;
@@ -1130,9 +1131,10 @@ ul {
     padding-bottom: 1rem;
 }
 
-.servicesmain > .panelwrapper > p {
+.servicesmain > .panelwrapper p {
     width: 90%;
     padding-left: 1rem;
+    display: none;
 }
 .servicesmain > .panelwrapper > h2 {
     font-family: "Roboto";
@@ -1140,6 +1142,15 @@ ul {
     font-weight: 700;
     padding-block: 1rem;
     color: #52565e;
+}
+
+.drop {
+    display: flex;
+    flex-direction: column;
+}
+
+.drop:hover > p {
+    display: block;
 }
 
 /* highlightes secion */

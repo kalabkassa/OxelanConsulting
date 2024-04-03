@@ -212,10 +212,10 @@ function countUp(target, element, duration) {
     // Interval function to update the count
     var timer = setInterval(function () {
         start += increment;
-        element.textContent = start + "+";
+        element.textContent = start;
         if (start >= target) {
             clearInterval(timer);
-            element.textContent = target + "+"; // Ensure the target is reached exactly
+            element.textContent = target; // Ensure the target is reached exactly
         }
     }, 1000 / duration); // Update every second
 }
@@ -226,7 +226,7 @@ var observer2 = new IntersectionObserver(
         entries.forEach(function (entry) {
             if (entry.isIntersecting) {
                 console.log(
-                    parseInt(entry.target.textContent.replace("+", ""))
+                    parseInt(entry.target.textContent)
                 );
                 countUp(
                     parseInt(entry.target.textContent.replace("+", "")),
