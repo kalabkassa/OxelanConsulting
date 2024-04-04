@@ -1232,6 +1232,7 @@ ul {
     background-image: url("images/blogs_background2.jpg");
     background-position: 20%;
     background-size: cover;
+    margin-top: 4rem;
 }
 
 .blogssection {
@@ -1245,7 +1246,7 @@ ul {
 }
 
 .blogssection > h1 {
-    margin-bottom: 3.5rem;
+    margin-block: 3.5rem;
     font-size: 2rem;
     color: white;
 }
