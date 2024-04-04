@@ -104,7 +104,7 @@ if (queryParams && tabContainer) {
 } else if (queryParams) {
     var section = document.getElementsByClassName(queryParams);
     console.log(queryParams);
-    if (section) section[0].scrollIntoView({ behavior: "smooth" });
+    if (section) section[0].scrollIntoView(false);
     whychooseusnav(queryParams);
 }
 

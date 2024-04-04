@@ -29,7 +29,7 @@ main {
 }
 
 .companyname {
-    font-family: "Orbitron";
+    font-family: "Roboto";
     font-weight: 500;
     text-transform: uppercase;
     color: white;
@@ -67,7 +67,8 @@ main {
     width: 100vw;
 }
 
-.sliders > div {
+.sliders > div,
+.sliders > div .unique {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -75,6 +76,10 @@ main {
     text-align: center;
     height: 100vh;
     gap: 2rem;
+}
+
+.unique {
+    background-color: #000000cb;
 }
 
 .sliders {
@@ -121,7 +126,7 @@ span > img {
     width: 5rem;
     height: 0.2rem;
     border-radius: 2rem;
-    background-color: #0179fd;
+    background-color: #0e8486;
     content: "";
 }
 
@@ -136,7 +141,7 @@ span > img {
     margin-bottom: auto;
     cursor: pointer;
     color: white;
-    background-color: #0179fd;
+    background-color: #0e8486;
     border: none;
     border-radius: 4rem;
     font-family: "Roboto";
@@ -297,7 +302,7 @@ ul {
     font-size: 1.8vw;
     margin-bottom: 1.2rem;
     padding-top: 10rem;
-    color: #52565e;
+    color: #1f4255;
 }
 
 .aboutus > h1,
@@ -367,6 +372,7 @@ ul {
     justify-content: space-evenly;
     padding: 2.5rem 2.5rem;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .aboutmaincontent > h3 {
@@ -419,6 +425,7 @@ ul {
     margin-top: 4rem;
     background-color: #193544;
     gap: 9rem;
+    flex-wrap: wrap;
 }
 
 .missionsection > h1 {
@@ -498,8 +505,8 @@ ul {
 }
 
 .valuesection > .cardholder img {
-    width: 18vw;
-    height: 18vw;
+    width: 16vw;
+    height: 16vw;
 }
 
 .flipcardcontent > div {
@@ -528,7 +535,6 @@ ul {
 
 .flipcardcontent h1 {
     font-size: 1.4rem;
-    padding-top: 2rem;
 }
 
 .flipcardcontent > h1 {
@@ -536,7 +542,7 @@ ul {
     bottom: -1.5rem;
     left: -3.5rem;
     font-size: 2.5rem;
-    color: hsl(243, 100%, 19%);
+    color: #164e5b;
     width: 12ch;
 }
 
@@ -544,9 +550,9 @@ ul {
     --flipcard-color: white;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 100vw;
-    height: 19vw;
-    width: 19vw;
+    border-radius: 50vw;
+    height: 16vw;
+    width: 16vw;
 }
 .flipcard:hover .flipcardcontent {
     transform: rotateY(0.5turn);
@@ -732,20 +738,19 @@ ul {
 
 /* why choose us */
 .whychooseus {
-    background-image: url("images/whysection.jpeg");
+    background-image: url("images/office_image.jpg");
     background-position: 20%;
     background-size: cover;
     color: white;
 }
 
 .test {
-    background-color: #08264fc9;
+    background-color: #08264fe3;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
     padding-bottom: 7rem;
-    border-radius: 1rem;
 }
 
 .test > h1 {
@@ -950,6 +955,7 @@ ul {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 2rem;
+    color: #1f4255;
 }
 
 /* .achievments > h1::after,
@@ -987,7 +993,7 @@ ul {
 
 .textwrapper {
     color: white;
-    background-color: black;
+    background-color: #164e5b;
     margin-top: -0.5rem;
     min-height: 6rem;
     align-content: center;
@@ -1076,9 +1082,12 @@ ul {
 }
 
 /* main services section */
+.servicemain {
+    margin-left: 2%;
+}
 .servicesmain {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     gap: 5vw;
     text-align: left;
@@ -1086,7 +1095,8 @@ ul {
 
 .servicesmain > div p,
 .servicesmain h4 {
-    width: 50ch;
+    margin-top: 5%;
+    width: 40ch;
     font-family: "Open Sans";
     font-size: 1rem;
     font-weight: 400;
@@ -1137,7 +1147,7 @@ ul {
 .servicesmain > .panelwrapper > div {
     display: flex;
     gap: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
 }
 
 .servicesmain > .panelwrapper p {
@@ -1146,14 +1156,14 @@ ul {
     color: white;
     display: none;
 }
-.servicesmain > .panelwrapper > .card > h2 {
+.servicesmain > .panelwrapper .card > h2 {
     font-family: "Roboto";
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
 
     padding-left: 5%;
 }
-.servicesmain > .panelwrapper > .card > h2::after {
+.servicesmain > .panelwrapper .card > h2::after {
     content: url(images/expand_more_FILL1_wght400_GRAD0_opsz24.svg);
     position: absolute;
     right: 1rem;
@@ -1163,7 +1173,7 @@ ul {
     display: flex;
     flex-direction: column;
 }
-.servicesmain > .panelwrapper > .card {
+.servicesmain > .panelwrapper .card {
     border-bottom-color: #fff;
     border-right-color: #fff;
     color: white;
@@ -1180,7 +1190,7 @@ ul {
     display: flex;
     margin: 1rem;
     border-radius: 1rem;
-    background-color: #081222;
+    background-color: #164e5b;
     padding-inline: 2rem;
     padding-block: 11vh;
     margin-top: 5.7rem;
@@ -1195,6 +1205,7 @@ ul {
     padding: 3vh 4.2vh;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 1rem;
 }
 
 .highlightes h1 {
@@ -1217,15 +1228,19 @@ ul {
     content: "+";
 }
 /* blogs and anounsments section */
+.blogssectionwrapper {
+    background-image: url("images/blogs_background2.jpg");
+    background-position: 20%;
+    background-size: cover;
+}
+
 .blogssection {
-    padding-top: 3rem;
-    margin-block: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: "Roboto";
     font-weight: 700;
-    background-color: #132441;
+    background-color: #08264fa6;
     padding-bottom: 3rem;
 }
 
@@ -1258,8 +1273,15 @@ ul {
 .blogssection > .wrapper {
     display: flex;
     justify-content: space-evenly;
-    width: 80%;
+    width: 100vw;
     text-align: center;
+    flex-wrap: wrap;
+}
+
+.blogsmainsection > .blogssection > .wrapper {
+    display: flex;
+    width: 60vw;
+    flex-wrap: wrap;
 }
 
 .blogssection > .wrapper h1 {
@@ -1297,10 +1319,29 @@ ul {
     width: 52ch;
 }
 
+.blogssection > .wrapper > .fade > img {
+    width: 45ch;
+}
+
 /* blogs main section */
 .blogsmainsection {
     display: flex;
     gap: 3rem;
+    width: 100vw;
+}
+
+.blogsmainsection > .blogssection {
+    background-color: white;
+    width: 60vw;
+}
+
+.blogsmainsection > .blogssection > .wrapper .child {
+    background-color: #164e5b;
+}
+
+.blogsmainsection > .blogssection > .wrapper .child > h1,
+.blogsmainsection > .blogssection > .wrapper .child > p {
+    color: white;
 }
 
 .blog {
@@ -1388,6 +1429,7 @@ ul {
     background-image: url(images/search.svg);
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 5%;
 }
 
 .blogsearch > .searchform {
@@ -1435,6 +1477,7 @@ ul {
 .clients > h1 {
     margin-bottom: 3.5rem;
     font-size: 2rem;
+    color: #1f4255;
 }
 
 /* .clients > h1::after,
@@ -1465,13 +1508,14 @@ ul {
 
 .clients > div > img {
     width: fit-content;
-    height: 10rem;
+    height: 8rem;
 }
 
 /* footer section */
 .footer {
-    background-image: url(images/footer.jpeg);
-    background-position: 10% 80%;
+    background-image: url(images/footer_background.jpg);
+    background-position: 40% 80%;
+    background-repeat: no-repeat;
 }
 
 .footer-wrapper {
@@ -1486,7 +1530,8 @@ ul {
 .footer-wrapper > section {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 4rem;
 }
 
 .copyright {
@@ -1519,7 +1564,7 @@ ul {
     min-width: 220px;
 }
 
-.links > ul {
+.links ul {
     flex-direction: column;
     gap: 1.5rem;
 }
@@ -1543,7 +1588,7 @@ ul {
 }
 
 .address {
-    margin-left: 10rem;
+    margin-left: 5rem;
     position: relative;
     bottom: 0.6rem;
 }
@@ -1616,13 +1661,20 @@ form > div {
 }
 
 input {
-    height: 5vh;
+    height: 3rem;
     font-size: large;
     padding-left: 0.9vw;
     width: 100%;
-    margin-bottom: 1rem;
     border: 2px solid #dee2e6;
+    border-radius: 0.4rem;
     color: #212529bf;
+    margin-top: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #0f6897;
 }
 
 .input {
@@ -1654,6 +1706,7 @@ textarea {
     padding: 1.5vh;
     padding-inline: 5vh;
     width: fit-content;
+    cursor: pointer;
 }
 
 iframe {
@@ -1734,6 +1787,32 @@ iframe {
     background-image: url(images/mail-outline.svg);
 }
 
+.sub-input {
+    height: 3rem;
+    font-size: large;
+    padding-left: 0.9vw;
+    width: 20rem;
+    border: 2px solid #dee2e6;
+    border-radius: 0.4rem;
+    color: #212529bf;
+}
+
+.subscribe-form {
+    position: relative;
+    display: flex;
+    height: fit-content;
+}
+
+.subscribe-btn {
+    position: absolute;
+    border-radius: 6%;
+    padding: 10px 20px;
+    background-color: #0f6897;
+    cursor: pointer;
+    right: 0.4rem;
+    bottom: 0.3vw;
+}
+
 @media (max-width: 50em) {
     .logo img {
         width: 12rem;
@@ -1795,37 +1874,103 @@ iframe {
         margin: 0;
     }
 
+    .whychooseuscontent > .child {
+        width: 60%;
+    }
+
     .tabs-title > li,
     .tabs-title > li > a {
         font-size: 0.7rem;
         padding-bottom: 0.2rem;
     }
+
+    /* achievmentsection */
+
+    .achievments > .wrapper > .child img {
+        width: 100%;
+    }
+    .achievments > .wrapper > .child {
+        width: 70%;
+    }
+
+    /* blogsection */
+
+    .blogssection > .wrapper > .fade > img,
+    .blogssection > .wrapper > .fade > .child {
+        width: 70vw;
+    }
+    /* footersection */
+
+    .address {
+        margin-left: 7%;
+    }
+    .links {
+        margin-top: 5%;
+    }
+    .sub-input {
+        height: 2rem;
+        font-size: small;
+    }
+    .subscribe-btn {
+        height: 0.6rem;
+    }
+
+    /* aboutussection
+     */
+
+    .aboutmain > div {
+        width: 80%;
+        padding: 0;
+        margin-left: 10%;
+    }
+    .aboutmain p {
+        width: 35ch;
+        font-size: medium;
+    }
+    .overlay {
+        min-width: 21rem;
+        max-height: 32rem;
+    }
+    .overlay img {
+        width: 21rem;
+    }
+    .aboutmain > .missionsection {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .aboutmain > .missionsection > .missionsdiv {
+        margin-left: 0%;
+        width: 90%;
+    }
+    .aboutmain > .valuesection {
+        width: 100%;
+        height: 400vh;
+        margin: 0;
+        top: 0;
+        padding-top: 0;
+    }
+    /* .flipcardcontent h1 {
+        font-size: 1rem; */
+    /* } */
+    .valuesection > .cardholder {
+        /* height: 150vh; */
+    }
+    .flipcard {
+        /* height: 40vh; */
+        width: 100vh;
+        padding: 0%;
+        margin: 0;
+    }
+    /* .flipcardcontent {
+        /* height: 40vh; */
+    /* }  */
+
+    .flipcardcontent p {
+        text-align: left;
+        font-size: small;
+    }
 }
 
-
-
-textarea {
-    width: 22rem;
-    height: 2.7rem;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 2%;
-    font-size: medium;
-    font-weight: 400;
-}
-
-.subscribe-btn {
-    position: absolute;
-    bottom: 6.4%;
-    right: 1%;
-    border-radius: 6%;
-    transform: translateY(-50%);
-    padding: 10px 20px;
-    background-color: #0f6897;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
 /* animation section */
 .animation {
     animation: slide-in 1s ease-in;
