@@ -138,7 +138,7 @@ if (tabContainer) {
         e.preventDefault();
 
         const activePanelId = clickedTab.getAttribute("href");
-        const activePanel = document.querySelector(activePanelId);
+        const activePanel = document.querySelectorAll(activePanelId);
 
         tabPanels.forEach((panel, index) => {
             panel.setAttribute("hidden", true);
@@ -149,8 +149,10 @@ if (tabContainer) {
                 .setAttribute("aria-expanded", "false");
         });
 
-        activePanel.removeAttribute("hidden", false);
-        activePanel.setAttribute("aria-expanded", "true");
+        activePanel.forEach((panel) => {
+            panel.removeAttribute("hidden", false);
+            panel.setAttribute("aria-expanded", "true");
+        });
         clickedTab.setAttribute("aria-expanded", "true");
         clickedTab.querySelector("a").setAttribute("aria-expanded", "true");
     });
@@ -225,9 +227,7 @@ var observer2 = new IntersectionObserver(
     function (entries) {
         entries.forEach(function (entry) {
             if (entry.isIntersecting) {
-                console.log(
-                    parseInt(entry.target.textContent)
-                );
+                console.log(parseInt(entry.target.textContent));
                 countUp(
                     parseInt(entry.target.textContent.replace("+", "")),
                     entry.target,
