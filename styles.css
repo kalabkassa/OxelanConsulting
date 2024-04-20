@@ -644,6 +644,7 @@ ul {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .bullet {
@@ -1091,6 +1092,7 @@ ul {
     width: 100%;
     gap: 5vw;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 .servicesmain > div p,
@@ -1243,6 +1245,7 @@ ul {
     font-weight: 700;
     background-color: #08264fa6;
     padding-bottom: 3rem;
+    flex-wrap: wrap;
 }
 
 .blogssection > h1 {
@@ -1329,6 +1332,7 @@ ul {
     display: flex;
     gap: 3rem;
     width: 100vw;
+    flex-wrap: wrap;
 }
 
 .blogsmainsection > .blogssection {
@@ -1526,6 +1530,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-wrapper > section {
@@ -1533,6 +1538,7 @@ ul {
     width: 100%;
     justify-content: center;
     gap: 4rem;
+    flex-wrap: wrap;
 }
 
 .copyright {
@@ -1542,6 +1548,7 @@ ul {
     font-weight: 400;
     font-size: 0.9rem;
     margin-bottom: 3rem;
+    flex-wrap: wrap;
 }
 
 .copyright > h1 {
@@ -1559,6 +1566,7 @@ ul {
     font-family: "Open Sans";
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .links {
@@ -1637,6 +1645,7 @@ ul {
 .contactsection {
     display: flex;
     gap: 4rem;
+    flex-wrap: wrap;
 }
 
 .contactsection div {
@@ -1732,7 +1741,7 @@ iframe {
 .contactbuttoncontainer {
     position: fixed;
     bottom: 2%;
-    left: 2%;
+    right: 5%;
 }
 
 .contactbuttoncontentcontainer {
@@ -1815,6 +1824,22 @@ iframe {
 }
 
 @media (max-width: 50em) {
+    .socialhub {
+        width: 76vw;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .companyname {
+        font-size: small;
+        font-weight: 500;
+    }
+    .socialmedialogos {
+        width: 26vw;
+    }
+    .socialmedialogos img {
+        width: 4.5vw;
+        height: 2vh;
+    }
     .logo img {
         width: 12rem;
     }
@@ -1945,8 +1970,10 @@ iframe {
     }
     .aboutmain > .valuesection {
         width: 100%;
-        height: 400vh;
+        height: 270vh;
         margin: 0;
+        display: flex;
+        justify-content: flex-start;
         top: 0;
         padding-top: 0;
     }
@@ -1954,21 +1981,179 @@ iframe {
         font-size: 1rem; */
     /* } */
     .valuesection > .cardholder {
-        /* height: 150vh; */
+        height: 150vh;
     }
-    .flipcard {
-        /* height: 40vh; */
+    .valuesection > .cardholder .flipcard {
+        height: 40vh;
         width: 100vh;
-        padding: 0%;
-        margin: 0;
     }
-    /* .flipcardcontent {
-        /* height: 40vh; */
-    /* }  */
+    .flipcardcontent {
+        height: 40vh;
+    }
+    .valuesection > .cardholder img {
+        width: 100%;
+        height: 100%;
+    }
 
     .flipcardcontent p {
         text-align: left;
         font-size: small;
+    }
+    .flipcardcontent > h1 {
+        left: -2.5rem;
+    }
+    /* our solutions */
+    .oursolution h2 {
+        width: 20rem;
+    }
+    .oursolution > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .oursolution > div .cardholder {
+        width: 20rem;
+    }
+    .ourteamwrapper {
+        display: flex;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .ourteam {
+        flex-wrap: wrap;
+    }
+    .ourteam img {
+        width: 20rem;
+    }
+    /* why choose us  */
+    .whychooseusmain {
+        height: 425vw;
+    }
+    .whychooseusmain h1 {
+        padding-left: 2rem;
+        padding-right: 0;
+        font-size: 1rem;
+        width: 2rem;
+    }
+    .whychooseusmain > .whychooseusb {
+        width: 8rem;
+        padding-left: 0;
+    }
+    .whychooseusnav > ul {
+        margin-left: 0;
+    }
+    .whychooseusnav > ul > li a {
+        font-size: 1rem;
+        position: relative;
+    }
+    .whychooseusmaincontent {
+        padding-left: 1rem;
+        width: 13rem;
+    }
+    .whychooseusmaincontent p {
+        font-size: 0.7rem;
+    }
+    .aboutmain h2 {
+        width: 20rem;
+    }
+    .bullet .flex {
+        width: 15rem;
+    }
+    .ourservice {
+        margin-top: 0;
+    }
+    .foundationwrapper .card {
+        width: 13rem;
+        margin-left: 0;
+    }
+    .foundationwrapper .flex {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .foundationwrapper p {
+        width: 13rem;
+    }
+    .foundationwrapper > .flex h1 {
+        width: 11rem;
+    }
+    .foundationwrapper img {
+        height: 35vw;
+        width: 35vh;
+        position: absolute;
+        left: 10%;
+    }
+
+    .foundationwrapper .imagecontainer {
+        height: 35vw;
+        width: 25vh;
+    }
+
+    /* industries  */
+    .industries > div > h2 {
+        width: 13rem;
+    }
+    .footer .address {
+        flex-wrap: wrap;
+    }
+    .copyright {
+        margin-left: 20%;
+    }
+    /* servicepage */
+
+    .servicesmain > .panelwrapper > div {
+        flex-wrap: wrap;
+    }
+    .servicesmain {
+        margin-left: 2rem;
+    }
+    .servicesmain > div p {
+        width: 20rem;
+    }
+    .servicesmain h4 {
+        width: 20rem;
+    }
+    .panelwrapper > div {
+        width: 20rem;
+    }
+    .panelwrapper img {
+        width: 20rem;
+    }
+    /* news/blogs  */
+    main {
+        margin-left: 1.8rem;
+    }
+    .blogsearch {
+        width: 15rem;
+        margin-left: 0;
+    }
+    .blogsearch > div > input {
+        height: 2.5rem;
+        width: 12rem;
+        margin-bottom: 2.5rem;
+    }
+    .blogsmainsection > .blogssection > .wrapper {
+        margin-left: 2.7rem;
+    }
+    /* contactsection  */
+    .contactsection {
+        width: 20rem;
+    }
+    .contactsection div {
+        flex-wrap: wrap;
+    }
+    iframe {
+        width: 100%;
+    }
+    .contactsection .card {
+        height: 5rem;
+    }
+    .contactsection img {
+        width: 10vw;
+    }
+    .addresssection .card {
+        display: none;
+    }
+    form {
+        margin-top: 4rem;
     }
 }
 
