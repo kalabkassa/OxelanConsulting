@@ -74,7 +74,6 @@ function whychooseusnav(active) {
 }
 
 function getQueryParams() {
-    var queryParams = {};
     var queryString = window.location.search.substring(1);
     return queryString;
 }
@@ -101,9 +100,9 @@ if (queryParams && tabContainer) {
     activePanel.setAttribute("aria-expanded", "true");
     clickedTab.setAttribute("aria-expanded", "true");
     clickedTab.querySelector("a").setAttribute("aria-expanded", "true");
+    console.log(activePanel);
 } else if (queryParams) {
     var section = document.getElementsByClassName(queryParams);
-    console.log(queryParams);
     if (section) section[0].scrollIntoView(false);
     whychooseusnav(queryParams);
 }

@@ -1,0 +1,102 @@
+{%extends 'edge/base.html' %} {% block content %} {% load static %}
+<div class="container">
+    <div class="subherosection">
+        <div class="socialhub">
+            <div class="companyname">Oxelan consulting PLC</div>
+            <div class="socialmedialogos">
+                <img src="{% static 'edge/images/LinkedIn.png' %}" alt="" />
+                <img src="{% static 'edge/images/Facebook.png' %}" alt="" />
+                <img src="{% static 'edge/images/Instagram.png' %}" alt="" />
+                <img src="{% static 'edge/images/telegram-original.svg' %}" />
+                <img src="{% static 'edge/images/youtube.svg' %}" />
+                <img src="{% static 'edge/images/tiktok.svg' %}" />
+                <img src="{% static 'edge/images/whatsapp.svg' %}" />
+                <img src="{% static 'edge/images/twitter-original.svg' %}" />
+            </div>
+        </div>
+        <div class="subhero-content">
+            <h1>Contact Us</h1>
+            <p>contact</p>
+        </div>
+    </div>
+    <main>
+        <div class="contactsection">
+            <div>
+                <div class="card">
+                    <img
+                        src="{% static 'edge/images/map-marker.svg' %}"
+                        alt=""
+                    />
+                    <h1>Our Address</h1>
+                    <p>Bole Woreda 03, Addis Ababa, Ethiopia</p>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12876.680562447773!2d38.736790047318685!3d9.02387723241332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1710746248031!5m2!1sen!2set"
+                        style="border: 0"
+                        allowfullscreen="true"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </div>
+            <div>
+                <div class="addresssection">
+                    <div class="card">
+                        <img
+                            src="{% static 'edge/images/mail_blue.svg' %}"
+                            alt=""
+                        />
+                        <h1>Email Us</h1>
+                        <p>oxelanconsulting@gmail.com</p>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="{% static 'edge/images/facebook.svg' %}"
+                            alt=""
+                        />
+                        <h1>Facebook Address</h1>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="{% static 'edge/images/telegram-original_blue.svg' %}"
+                            alt=""
+                        />
+                        <h1>Telegram Address</h1>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="{% static 'edge/images/phone_blue.svg' %}"
+                            alt=""
+                        />
+                        <h1>Call Us</h1>
+                        <p>+251900055555</p>
+                    </div>
+                </div>
+                <form action="">
+                    <div>
+                        <input
+                            class="input"
+                            type="text"
+                            placeholder="Full Name"
+                        />
+                        <input type="email" placeholder="Your Email" /><br />
+                    </div>
+                    <input
+                        class="subject"
+                        type="text"
+                        placeholder="Subject"
+                    /><br />
+                    <textarea
+                        name="message"
+                        id="mesg"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                    <div class="msgbtn"><p>Send message</p></div>
+                </form>
+            </div>
+        </div>
+    </main>
+</div>
+{% endblock content %}

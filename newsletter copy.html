@@ -1,0 +1,107 @@
+{%extends 'edge/base.html' %} {% block content %} {% load static %}
+<div class="container">
+    <div class="subherosection">
+        <div class="socialhub">
+            <div class="companyname">Oxelan consulting PLC</div>
+            <div class="socialmedialogos">
+                <img src="{% static 'edge/images/LinkedIn.png' %}" alt="" />
+                <img src="{% static 'edge/images/Facebook.png' %}" alt="" />
+                <img src="{% static 'edge/images/Instagram.png' %}" alt="" />
+                <img src="{% static 'edge/images/telegram-original.svg' %}" />
+                <img src="{% static 'edge/images/youtube.svg' %}" />
+                <img src="{% static 'edge/images/tiktok.svg' %}" />
+                <img src="{% static 'edge/images/whatsapp.svg' %}" />
+                <img src="{% static 'edge/images/twitter-original.svg' %}" />
+            </div>
+        </div>
+        <div class="subhero-content">
+            <h1>Our Latest News</h1>
+            <p>News</p>
+        </div>
+    </div>
+    <main>
+        <div class="blogsmainsection">
+            <div class="blogsearch">
+                <h1>Search</h1>
+                <div class="searchform">
+                    <input type="text" />
+                    <div class="searchbtn"></div>
+                </div>
+                <h1>Categories</h1>
+                <div>
+                    <h2>Blogs</h2>
+                    <p>2</p>
+                </div>
+                <div>
+                    <h2>News</h2>
+                    <p>2</p>
+                </div>
+                <div>
+                    <h2>Vacancy</h2>
+                    <p>2</p>
+                </div>
+                <h1 class="recent">Recent Posts</h1>
+                <div class="recentcontent">
+                    <h2>Continuous Learning and Improvement</h2>
+                    <p>Jul 8, 2023</p>
+                    <h2>Sustainability as a Strategic Imperative</h2>
+                    <p>2023-12-08</p>
+                </div>
+            </div>
+            <div class="blogssection">
+                <div class="wrapper">
+                    <div class="fade">
+                        <img
+                            src="{% static 'edge/images/photo_2024-04-04_14-35-22.jpg' %}"
+                            alt=""
+                        />
+                        <div class="date">JUN 12</div>
+                        <div class="child">
+                            <h1>
+                                Digital Transformation: The Accelerator of
+                                Change
+                            </h1>
+                            <p>
+                                The business landscape is dynamic, requiring a
+                                commitment to continuous learning and
+                                improvement.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fade">
+                        <img
+                            src="{% static 'edge/images/photo_2024-04-04_14-35-21.jpg' %}"
+                            alt=""
+                        />
+                        <div class="date">JUN 12</div>
+                        <div class="child">
+                            <h1>
+                                Innovation Ecosystems: Collaborate to Innovate
+                            </h1>
+                            <p>
+                                Change is inevitable in the business world.
+                                Successful organizations are those that navigate
+                                change effectively.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fade">
+                        <img
+                            src="{% static 'edge/images/photo_2024-04-04_14-37-27.jpg' %}"
+                            alt=""
+                        />
+                        <div class="date">JUN 12</div>
+                        <div class="child">
+                            <h1>Building a Resilient Organizational Culture</h1>
+                            <p>
+                                A resilient organizational culture is vital for
+                                successful strategy execution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+{% endblock content %}
