@@ -17,11 +17,6 @@ main {
     overflow-x: hidden;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
-
 /* social hub secion */
 
 .socialhub {
@@ -52,14 +47,14 @@ img {
 /* hero */
 
 .herosection {
-    background-image: url(images/hero.png);
+    background-image: url(../images/hero.png);
     background-size: cover;
-    height: 100svh;
+    height: 100vh;
     overflow: hidden;
 }
 
 .subherosection {
-    background-image: url(images/hero.png);
+    background-image: url(../images/hero.png);
     background-size: cover;
 }
 
@@ -125,8 +120,7 @@ span > img {
 .herotitle {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: 5rem;
-    font-size: clamp(2.5rem, 4.8vw, 5rem);
+    font-size: min(5vw, 7rem);
     color: white;
     margin-top: auto;
 }
@@ -142,7 +136,7 @@ span > img {
 .herosubtitle {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: clamp(0.9rem, 1.2vw, 2rem);
+    font-size: min(1vw, 1.8rem);
     color: #ffffffcc;
 }
 
@@ -159,7 +153,7 @@ span > img {
     color: white;
     padding: 2.2vh;
     padding-inline: min(12vw, 4rem);
-    margin-top: 4vh;
+    margin-top: 5rem;
 }
 
 .subhero-content {
@@ -198,7 +192,7 @@ a {
     color: #ffffff99;
     font-family: "Roboto";
     font-weight: 500;
-    font-size: clamp(1rem, 1.2vw, 3rem);
+    font-size: min(1.2vw, 1rem);
     text-decoration: none;
 }
 
@@ -238,7 +232,7 @@ a:hover,
 }
 
 .dropdown > a::after {
-    content: url(images/expand_more_FILL1_wght400_GRAD0_opsz24.svg);
+    content: url(../images/expand_more_FILL1_wght400_GRAD0_opsz24.svg);
     position: absolute;
 }
 
@@ -327,7 +321,7 @@ ul {
 .aboutcontent > p {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: clamp(1rem, 1.2vw, 2rem);
+    font-size: min(1vw, 1rem);
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
@@ -383,6 +377,9 @@ ul {
     width: 100%;
     flex-wrap: wrap;
 }
+.aboutmaincontent {
+    padding-top: 5rem;
+}
 
 .aboutmaincontent > h3 {
     font-family: "Roboto";
@@ -414,7 +411,7 @@ ul {
 }
 
 .overlay {
-    background-image: url("images/aboutbg.png");
+    background-image: url(../images/aboutbg.png);
     background-repeat: no-repeat;
     background-blend-mode: hard-light;
     background-color: #000000d0;
@@ -431,7 +428,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    padding-top: 4rem;
     background-color: #193544;
     gap: 9rem;
     flex-wrap: wrap;
@@ -487,7 +484,7 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 5rem;
     background-color: whitesmoke;
     padding-bottom: 2rem;
 }
@@ -582,6 +579,7 @@ ul {
 .oursolution {
     background-color: #193544;
     padding: 2rem;
+    padding-top: 5rem;
 }
 
 .oursolution > h1 {
@@ -679,6 +677,7 @@ ul {
 
 .industrieswrapper {
     padding: 2rem;
+    padding-top: 5rem;
 }
 
 .industries {
@@ -748,7 +747,7 @@ ul {
 
 /* why choose us */
 .whychooseus {
-    background-image: url("images/office_image.jpg");
+    background-image: url(../images/office_image.jpg);
     background-position: 20%;
     background-size: cover;
     color: white;
@@ -800,11 +799,11 @@ ul {
 
 .whychooseuscontent > .child {
     border-style: solid;
-    border-width: 0.4vw;
+    border-width: 0.4rem;
     border-color: white;
     border-radius: 2rem;
-    padding: clamp(1.4rem, 2vw, 3rem);
-    padding-top: clamp(1.4rem, 3vw, 4rem);
+    padding: 2.2rem;
+    padding-top: 3rem;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -812,7 +811,7 @@ ul {
 }
 
 .whychooseuscontent > .child > img {
-    width: clamp(2rem, 3vw, 3rem);
+    width: min-content;
 }
 
 .whychooseuscontent > .child:hover {
@@ -822,14 +821,14 @@ ul {
 .whychooseuscontent > .child > h1 {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: clamp(1rem, 1.2vw, 2rem);
+    font-size: 1.2rem;
 }
 
 .whychooseuscontent > .child > h2,
 .whychooseuscontent > .child > a {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: clamp(0.8rem, 0.9vw, 1rem);
+    font-size: .8rem;
     color: white;
 }
 
@@ -848,7 +847,7 @@ ul {
 }
 
 .whychooseuscontent > .child > a::after {
-    content: url(images/learnmorearrow.svg);
+    content: url(../images/learnmorearrow.svg);
     position: relative;
     left: 0.6rem;
 }
@@ -861,6 +860,7 @@ ul {
     --whychooseusbackground: hsl(201, 46%, 22%);
     background-color: var(--whychooseuscontentbackground);
     margin-top: 3rem;
+    padding-top: 5rem;
 }
 
 .whychooseusmain {
@@ -1021,7 +1021,7 @@ ul {
 .tabs-container > h1 {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: clamp(2rem, 3vw, 8rem);
+    font-size: min(3rem, 8vw);
     margin-bottom: 5rem;
     color: #1f4255;
 }
@@ -1042,7 +1042,7 @@ ul {
     color: #52565e;
     font-family: "Roboto";
     font-weight: 600;
-    font-size: clamp(1rem, 1.3vw, 2rem);
+    font-size: 1.3rem;
     padding: 1rem;
 }
 
@@ -1073,7 +1073,7 @@ ul {
 .panelwrapper h1 {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: clamp(1.2rem, 2vw, 2.2rem);
+    font-size: max(2vw, 1.5rem);
     color: #364d59;
     margin-bottom: 2.5rem;
 }
@@ -1081,7 +1081,7 @@ ul {
 .panelwrapper p {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: clamp(0.8rem, 1.1vw, 1.5rem);
+    font-size: min(4vw, 1.2rem);
     color: #364d59;
     max-width: 40ch;
     text-align: justify;
@@ -1175,7 +1175,7 @@ ul {
     padding-left: 5%;
 }
 .servicesmain > .panelwrapper .card > h2::after {
-    content: url(images/expand_more_FILL1_wght400_GRAD0_opsz24.svg);
+    content: url(../images/expand_more_FILL1_wght400_GRAD0_opsz24.svg);
     position: absolute;
     right: 1rem;
 }
@@ -1213,7 +1213,7 @@ ul {
     display: flex;
     background-color: white;
     padding: 1.5rem 2rem;
-    padding: clamp(1rem, 1vh, 3rem) clamp(1rem, 2vh, 4.5rem);
+    padding: 3vh 4.2vh;
     margin-left: auto;
     margin-right: auto;
     border-radius: 1rem;
@@ -1222,7 +1222,7 @@ ul {
 .highlightes h1 {
     font-family: "Open Sans";
     font-weight: 600;
-    font-size: clamp(1.5rem, 2vw, 3rem);
+    font-size: 2.25rem;
     color: #52565e;
     padding-right: 8vw;
 }
@@ -1230,7 +1230,7 @@ ul {
 .highlightes h2 {
     font-family: "Roboto";
     font-weight: 400;
-    font-size: clamp(.9rem, 1vw, 3rem);
+    font-size: 0.9rem;
 }
 .hundred::after {
     content: "%";
@@ -1240,7 +1240,7 @@ ul {
 }
 /* blogs and anounsments section */
 .blogssectionwrapper {
-    background-image: url("images/blogs_background2.jpg");
+    background-image: url(../images/blogs_background2.jpg);
     background-position: 20%;
     background-size: cover;
     margin-top: 4rem;
@@ -1289,7 +1289,6 @@ ul {
     width: 100vw;
     text-align: center;
     flex-wrap: wrap;
-    gap: 10vh;
 }
 
 .blogsmainsection > .blogssection > .wrapper {
@@ -1299,7 +1298,7 @@ ul {
 }
 
 .blogssection > .wrapper h1 {
-    font-size: clamp(0.9rem, 1vw, 1.5rem);
+    font-size: 1rem;
     color: #05132e;
     padding-bottom: 1.62rem;
     padding-top: 1rem;
@@ -1308,36 +1307,33 @@ ul {
 .blogssection > .wrapper p {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: clamp(0.5rem, 1vw, 1rem);
+    font-size: 0.9rem;
     color: #05132e;
     padding-bottom: 1.62rem;
 }
 
 .blogssection > .wrapper .date {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 1000;
+    position: relative;
+    bottom: 2.4rem;
+    left: 22.5rem;
     background-color: #0179fd;
     padding: 0.5rem;
     width: fit-content;
     color: white;
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: clamp(0.8rem, 0.8vw, 1rem);
+    font-size: 0.81rem;
 }
 
 .blogssection > .wrapper .child {
     background-color: white;
-}
-
-.blogssection > .wrapper > .fade > .img {
     position: relative;
-    height: fit-content;
+    bottom: 2.4rem;
+    width: 52ch;
 }
 
-.blogssection > .wrapper > .fade {
-    width: clamp(20rem, 26vw, 27rem);
+.blogssection > .wrapper > .fade > img {
+    width: 45ch;
 }
 
 /* blogs main section */
@@ -1444,7 +1440,7 @@ ul {
     background-color: #0179fd;
     height: 2.5rem;
     width: 2.875rem;
-    background-image: url(images/search.svg);
+    background-image: url(../images/search.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 5%;
@@ -1531,7 +1527,7 @@ ul {
 
 /* footer section */
 .footer {
-    background-image: url(images/footer_background.jpg);
+    background-image: url(../images/footer_background.jpg);
     background-position: 40% 80%;
     background-repeat: no-repeat;
 }
@@ -1550,7 +1546,7 @@ ul {
     display: flex;
     width: 100%;
     justify-content: center;
-    gap: 4vw;
+    gap: 4rem;
     flex-wrap: wrap;
 }
 
@@ -1559,14 +1555,14 @@ ul {
     gap: 0.3rem;
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: clamp(0.7rem, 0.8vw, 1rem);
+    font-size: 0.9rem;
     margin-bottom: 3rem;
     flex-wrap: wrap;
 }
 
 .copyright > h1 {
     font-weight: 700;
-    font-size: clamp(0.7rem, 0.8vw, 1rem);
+    font-size: 0.9rem;
 }
 
 .footer-wrapper > .flair {
@@ -1578,8 +1574,12 @@ ul {
 .linkswrapper {
     font-family: "Open Sans";
     display: flex;
-    gap: 4vw;
+    justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.links {
+    min-width: 220px;
 }
 
 .links ul {
@@ -1590,14 +1590,14 @@ ul {
 .links > h1 {
     font-family: "Roboto";
     font-weight: 600;
-    font-size: clamp(0.7rem, 0.8vw, 1rem);
+    font-size: 1rem;
     margin-bottom: 1.7rem;
 }
 
 .links a {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: clamp(0.7rem, 0.8vw, 1rem);
+    font-size: 0.9rem;
     color: #ffffff99;
 }
 
@@ -1606,6 +1606,7 @@ ul {
 }
 
 .address {
+    margin-left: 5rem;
     position: relative;
     bottom: 0.6rem;
 }
@@ -1613,7 +1614,7 @@ ul {
 .address p {
     font-family: "Roboto";
     font-weight: 400;
-    font-size: clamp(0.7rem, 0.8vw, 1rem);
+    font-size: 0.9rem;
 }
 
 .address > p {
@@ -1627,7 +1628,7 @@ ul {
 .address h2 {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: clamp(0.7rem, 0.8vw, 1rem);
+    font-size: 0.9rem;
 }
 
 .address h2::after {
@@ -1639,7 +1640,6 @@ ul {
     margin-bottom: 1.25rem;
     position: relative;
     right: 2rem;
-    width: clamp(14rem, 15vw, 15rem);
 }
 
 .label {
@@ -1772,7 +1772,7 @@ iframe {
 .whatsup,
 .telegramc,
 .gmail {
-    width: clamp(3rem, 4vw, 4rem);
+    width: 3.4rem;
     aspect-ratio: 1;
     border-radius: 50%;
     background-color: #0f6897;
@@ -1787,56 +1787,49 @@ iframe {
 }
 
 .contactbutton {
-    background-image: url(images/contacts_product_FILL0_wght400_GRAD0_opsz24.svg);
-    background-size: clamp(1.8rem, 2vw, 4rem);
+    background-image: url(../images/contacts_product_FILL0_wght400_GRAD0_opsz24.svg);
     z-index: 100;
 }
 
 .phone {
-    background-image: url(images/phone.svg);
-    background-size: clamp(1.8rem, 2vw, 4rem);
+    background-image: url(../images/phone.svg);
 }
 .whatsup {
-    background-image: url(images/logo-whatsapp.svg);
-    background-size: clamp(1.8rem, 2vw, 4rem);
+    background-image: url(../images/logo-whatsapp.svg);
 }
 
 .telegramc {
-    background-image: url(images/telegram-original.svg);
-    background-size: clamp(1.8rem, 2vw, 4rem);
+    background-image: url(../images/telegram-original.svg);
 }
 
 .gmail {
-    background-image: url(images/mail-outline.svg);
-    background-size: clamp(1.8rem, 2vw, 4rem);
+    background-image: url(../images/mail-outline.svg);
 }
 
 .sub-input {
-    height: 2.5vw;
-    font-size: clamp(0.5rem, 1.1vw, 1.2rem);
+    height: 3rem;
+    font-size: large;
     padding-left: 0.9vw;
-    width: clamp(15rem, 20vw, 27rem);
+    width: 20rem;
     border: 2px solid #dee2e6;
     border-radius: 0.4rem;
     color: #212529bf;
-    margin: 0;
 }
 
 .subscribe-form {
     position: relative;
+    display: flex;
     height: fit-content;
-    width: fit-content;
-    margin-top: 2rem;
 }
 
 .subscribe-btn {
     position: absolute;
     border-radius: 6%;
-    padding: clamp(0.5rem, 0.6vw, 0.7rem);
+    padding: 10px 20px;
     background-color: #0f6897;
     cursor: pointer;
-    right: 0;
-    bottom: 0.4vw;
+    right: 0.4rem;
+    bottom: 0.3vw;
 }
 
 @media (max-width: 50em) {
@@ -1883,7 +1876,7 @@ iframe {
     .mobile-menu {
         display: block;
         z-index: 9999;
-        background-image: url(images/hamburgermenu.svg);
+        background-image: url(../images/hamburgermenu.svg);
         background-repeat: no-repeat;
         width: 2rem;
         aspect-ratio: 1;
@@ -1894,7 +1887,7 @@ iframe {
         position: absolute;
         top: 2.7rem;
         right: 1.5rem;
-        background-image: url(images/close.svg);
+        background-image: url(../images/close.svg);
         background-repeat: no-repeat;
     }
 
@@ -1937,7 +1930,10 @@ iframe {
 
     /* blogsection */
 
-    
+    .blogssection > .wrapper > .fade > img,
+    .blogssection > .wrapper > .fade > .child {
+        width: 70vw;
+    }
     /* footersection */
 
     .address {

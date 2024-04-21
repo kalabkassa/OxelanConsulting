@@ -1,0 +1,499 @@
+{%extends 'edge/base.html' %} {% block content %} {% load static %}
+<div class="container">
+    <div class="herosection">
+        <div class="socialhub">
+            <div class="companyname">Oxelan consulting PLC</div>
+            <div class="socialmedialogos">
+                <img src="{% static 'edge/images/LinkedIn.png' %}" alt="" />
+                <img src="{% static 'edge/images/Facebook.png' %}" alt="" />
+                <img src="{% static 'edge/images/Instagram.png' %}" alt="" />
+                <img src="{% static 'edge/images/telegram-original.svg' %}" />
+                <img src="{% static 'edge/images/youtube.svg' %}" />
+                <img src="{% static 'edge/images/tiktok.svg' %}" />
+                <img src="{% static 'edge/images/whatsapp.svg' %}" />
+                <img src="{% static 'edge/images/twitter-original.svg' %}" />
+            </div>
+        </div>
+        <div class="herocontent">
+            <span class="left"
+                ><img src="{% static 'edge/images/arrow_back.svg' %}" alt=""
+            /></span>
+            <div class="carousel">
+                <div class="sliders">
+                    <div>
+                        <div class="herotitle">
+                            <p>Empowering Dreams <br />Inspiring Growth</p>
+                        </div>
+                        <div class="flair"></div>
+                        <p class="herosubtitle">
+                            Crafting Tomorrow's Success Stories with OXELAN
+                        </p>
+                        <div class="herobtn" onclick="scrollToSection()">
+                            <p>Get Started</p>
+                        </div>
+                    </div>
+                    <div
+                        style="
+                            background-image: url(static/edge/images/office_image.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: 30%;
+                        "
+                    >
+                        <div class="unique">
+                            <div class="herotitle">
+                                <p>
+                                    Coaching and Mentorship <br />
+                                    for Personal Growth
+                                </p>
+                            </div>
+                            <div class="flair"></div>
+                            <p class="herosubtitle">
+                                Crafting Tomorrow's Success Stories with OXELAN
+                            </p>
+                            <div class="herobtn" onclick="scrollToSection()">
+                                <p>Get Started</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="herotitle">
+                            <p>Leading consultancy <br />Firm in Ethiopia</p>
+                        </div>
+                        <div class="flair"></div>
+                        <p class="herosubtitle">
+                            Crafting Tomorrow's Success Stories with OXELAN
+                        </p>
+                        <div class="herobtn" onclick="scrollToSection()">
+                            <p>Get Started</p>
+                        </div>
+                    </div>
+                    <div
+                        style="
+                            background-image: url(/static/edge/images/office_image.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: 30%;
+                        "
+                    >
+                        <div class="unique">
+                            <div class="herotitle">
+                                <p>
+                                    Enhancing Workforce <br />
+                                    Development in Ethiopia
+                                </p>
+                            </div>
+                            <div class="flair"></div>
+                            <p class="herosubtitle">
+                                Crafting Tomorrow's Success Stories with OXELAN
+                            </p>
+                            <div class="herobtn" onclick="scrollToSection()">
+                                <p>Get Started</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="right"
+                ><img src="{% static 'edge/images/arrow_forward.svg' %}" alt=""
+            /></span>
+        </div>
+    </div>
+    <div class="main">
+        <section class="aboutus" id="about">
+            <h1>About Us</h1>
+            <div class="flair"></div>
+            <div class="aboutcontent">
+                <p>
+                    We have a different mindset and approach, solving complex
+                    client problems while helping you shape your better future.
+                    <br />
+                    Oxelan Consulting PLC is a leading consultancy firm offering
+                    comprehensive services to national and international
+                    clients, including NGOs, governmental organizations, and
+                    private enterprises. Established in 2021, aiming to drive
+                    positive change through research, advisory, and training in
+                    organizational management, business development, investment,
+                    social enterprise support, and sustainable development. With
+                    a team of seasoned professionals in various fields, we
+                    provide tailored solutions to empower clients, guiding them
+                    toward sustainable success and impactful outcomes.
+                </p>
+                <img
+                    src="{% static 'edge/images/Secondary_Vertical_blue.png' %}"
+                    alt=""
+                />
+            </div>
+        </section>
+        <section class="whychooseus">
+            <div class="test">
+                <h1>Why Choose Us?</h1>
+                <div class="whychooseuscontent">
+                    <div class="child animate">
+                        <img
+                            src="{% static 'edge/images/Consultation.png' %}"
+                            alt=""
+                        />
+                        <h1>
+                            Expertise that <br />
+                            Transcends
+                        </h1>
+                        <div class="flair"></div>
+                        <h2>
+                            Our expertise transcends mere solutions; we
+                            specialize in crafting strategies that propel
+                            businesses into uncharted realms of possibility.
+                        </h2>
+                        <a onclick="learnmore('about.html?Expertise')" href="#1"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="child animate">
+                        <img
+                            src="{% static 'edge/images/Training.png' %}"
+                            alt=""
+                        />
+                        <h1>
+                            Tailored <br />
+                            Solutions
+                        </h1>
+                        <div class="flair"></div>
+                        <h2>
+                            We don't just provide solutions; we specialize in
+                            crafting tailored strategies designed to propel
+                            businesses into uncharted realms of possibility.
+                        </h2>
+                        <a onclick="navto('about.html?Tailored')" href="#1"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="child animate">
+                        <img
+                            src="{% static 'edge/images/Learning.png' %}"
+                            alt=""
+                        />
+                        <h1>
+                            Innovative <br />
+                            Thinking
+                        </h1>
+                        <div class="flair"></div>
+                        <h2>
+                            We don't simply provide solutions; we are dedicated
+                            to cultivating innovative thinking and crafting
+                            strategies that propel businesses into uncharted
+                            realms of possibility.
+                        </h2>
+                        <a onclick="navto('about.html?Innovative')" href="#1"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="child animate">
+                        <img
+                            src="{% static 'edge/images/Statistics.png' %}"
+                            alt=""
+                        />
+                        <h1>
+                            Proven Track <br />
+                            Record
+                        </h1>
+                        <div class="flair"></div>
+                        <h2>
+                            Our proven track record speaks volumes about our
+                            commitment to crafting strategies that propel
+                            businesses into new realms of possibility.
+                        </h2>
+                        <a onclick="navto('about.html?Proven')" href="#1"
+                            >Learn more</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="tabs-container">
+                <h1>Our Services</h1>
+                <ul class="tabs-title">
+                    <li href="#consultingservices" aria-expanded="true">
+                        <a href="#consultingservices" aria-expanded="true"
+                            >Comprehensive Research</a
+                        >
+                    </li>
+                    <li href="#trainingservices" aria-expanded="false">
+                        <a href="#trainingservices">Strategic Consulting</a>
+                    </li>
+                    <li href="#vocationalskills" aria-expanded="false">
+                        <a href="#vocationalskills">Training and Mentorship</a>
+                    </li>
+                    <li href="#researchmentorship" aria-expanded="false">
+                        <a href="#researchmentorship"
+                            >Business Development Services</a
+                        >
+                    </li>
+                </ul>
+                <div class="tabs-panels">
+                    <div
+                        class="panelwrapper animate"
+                        id="consultingservices"
+                        aria-expanded="true"
+                    >
+                        <div class="child">
+                            <h1>Comprehensive Research</h1>
+                            <p>
+                                At OXELAN we pride ourselves on our expertise in
+                                executing comprehensive surveys, studies, and
+                                monitoring and evaluation (M&E) frameworks. Our
+                                dedicated research team is committed to
+                                delivering high-quality, tailored solutions that
+                                meet the unique needs of each project or
+                                organization.
+                            </p>
+                        </div>
+                        <img
+                            src="{% static 'edge/images/reasearch.jpeg' %}"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="panelwrapper animate"
+                        id="trainingservices"
+                        aria-expanded="false"
+                    >
+                        <div class="child">
+                            <h1>Strategic Consulting</h1>
+                            <p>
+                                At OXELAN, we specialize in providing strategic
+                                consulting services that empower our clients to
+                                maximize the accuracy and reliability of their
+                                information systems. Our comprehensive approach
+                                encompasses qualitative and quantitative
+                                research, tailored monitoring and evaluation
+                                (M&E) systems, and extensive capacity building
+                                and logistical support.
+                            </p>
+                        </div>
+                        <img
+                            src="{% static 'edge/images/train.avif' %}"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="panelwrapper animate"
+                        id="vocationalskills"
+                        aria-expanded="false"
+                    >
+                        <div class="child">
+                            <h1>Training and Mentorship</h1>
+                            <p>
+                                At OXELAN, we offer comprehensive training and
+                                mentorship services aimed at empowering both
+                                individuals and organizations with the skills
+                                and knowledge necessary for success. Our diverse
+                                range of programs caters to various needs,
+                                encompassing everything from soft skills
+                                enhancement to specialized industry training and
+                                capacity development.
+                            </p>
+                        </div>
+                        <img
+                            src="{% static 'edge/images/vision.avif' %}"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="panelwrapper animate"
+                        id="researchmentorship"
+                        aria-expanded="false"
+                    >
+                        <div class="child">
+                            <h1>Business Development Services</h1>
+                            <p>
+                                Our business development services are
+                                meticulously crafted to catalyze fostering
+                                growth and facilitating expansion within your
+                                organization. We understand the importance of
+                                not only sustaining but also propelling your
+                                business forward in today's competitive
+                                landscape. Through our comprehensive suite of
+                                services, we aim to empower your organization to
+                                reach its full potential and achieve sustainable
+                                success.
+                            </p>
+                        </div>
+                        <img
+                            src="{% static 'edge/images/blog_background.jpg' %}"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="highlightes">
+            <div class="wrapper">
+                <lord-icon
+                    src="https://cdn.lordicon.com/gqjpawbc.json"
+                    trigger="loop"
+                    colors="primary:#08264fc9,secondary:#0179fd"
+                    style="width: 6rem; height: 6rem"
+                >
+                </lord-icon>
+                <div class="child">
+                    <h1 class="hundred" id="countup">100</h1>
+                    <h2>Satisfied Customers</h2>
+                </div>
+            </div>
+            <div class="wrapper">
+                <lord-icon
+                    src="https://cdn.lordicon.com/piwupaqb.json"
+                    trigger="loop"
+                    colors="primary:#08264fc9,secondary:#0179fd"
+                    style="width: 6rem; height: 6rem"
+                >
+                </lord-icon>
+
+                <div class="child">
+                    <h1 class="plus" id="countup">40</h1>
+                    <h2>Customers</h2>
+                </div>
+            </div>
+            <div class="wrapper">
+                <lord-icon
+                    src="https://cdn.lordicon.com/kndkiwmf.json"
+                    trigger="loop"
+                    colors="primary:#08264fc9,secondary:#0179fd"
+                    style="width: 6rem; height: 6rem"
+                >
+                </lord-icon>
+                <div class="child">
+                    <h1 class="plus" id="countup">20</h1>
+                    <h2>Experienced Team</h2>
+                </div>
+            </div>
+            <div class="wrapper">
+                <lord-icon
+                    src="https://cdn.lordicon.com/gedfcmxx.json"
+                    trigger="loop"
+                    colors="primary:#08264fc9,secondary:#0179fd"
+                    style="width: 6rem; height: 6rem"
+                >
+                </lord-icon>
+                <div class="child">
+                    <h1 id="countup">4+</h1>
+                    <h2>Award</h2>
+                </div>
+            </div>
+        </section>
+        <section class="achievments">
+            <h1>Achievements</h1>
+            <div class="wrapper">
+                <div class="child fade">
+                    <img
+                        src="{% static 'edge/images/achievement1.png' %}"
+                        alt=""
+                    />
+                    <div class="textwrapper">
+                        <p>Corporate Social Responsibility Award</p>
+                    </div>
+                </div>
+                <div class="child fade">
+                    <img
+                        src="{% static 'edge/images/achievement2.png' %}"
+                        alt=""
+                    />
+                    <div class="textwrapper">
+                        <p>Sustained Growth for Established Enterprises</p>
+                    </div>
+                </div>
+                <div class="child fade">
+                    <img
+                        src="{% static 'edge/images/achievement3.png' %}"
+                        alt=""
+                    />
+                    <div class="textwrapper">
+                        <p>Global Excellence in Consulting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blogssectionwrapper">
+            <div class="blogssection">
+                <h1>Latest/Blogs</h1>
+                <div class="wrapper">
+                    <div class="fade">
+                        <img
+                            src="{% static 'edge/images/photo_2024-04-04_14-35-22.jpg' %}"
+                            alt=""
+                        />
+                        <div class="date">JUN 12</div>
+                        <div class="child">
+                            <h1>
+                                Digital Transformation: The Accelerator of
+                                Change
+                            </h1>
+                            <p>
+                                The business landscape is dynamic, requiring a
+                                commitment to continuous learning and
+                                improvement.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fade">
+                        <img
+                            src="{% static 'edge/images/photo_2024-04-04_14-35-21.jpg' %}"
+                            alt=""
+                        />
+                        <div class="date">JUN 12</div>
+                        <div class="child">
+                            <h1>
+                                Innovation Ecosystems: Collaborate to Innovate
+                            </h1>
+                            <p>
+                                Change is inevitable in the business world.
+                                Successful organizations are those that navigate
+                                change effectively.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fade">
+                        <img
+                            src="{% static 'edge/images/photo_2024-04-04_14-37-27.jpg' %}"
+                            alt=""
+                        />
+                        <div class="date">JUN 12</div>
+                        <div class="child">
+                            <h1>Building a Resilient Organizational Culture</h1>
+                            <p>
+                                A resilient organizational culture is vital for
+                                successful strategy execution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <h1>Popular Clients</h1>
+            <div>
+                <img src="{% static 'edge/images/Biruhminds.jpeg' %}" alt="" />
+                <img src="{% static 'edge/images/ECD.jpeg' %}" alt="" />
+                <img src="{% static 'edge/images/Fawe.png' %}" alt="" />
+                <img src="{% static 'edge/images/fawe.jpeg' %}" alt="" />
+                <img src="{% static 'edge/images/gamechanger.jpeg' %}" alt="" />
+                <img src="{% static 'edge/images/germen.jpeg' %}" alt="" />
+                <img src="{% static 'edge/images/Almighty.jpg' %}" alt="" />
+                <img
+                    src="{% static 'edge/images/mastercardfoundatin.png' %}"
+                    alt=""
+                />
+                <img
+                    src="{% static 'edge/images/plan_international.png' %}"
+                    alt=""
+                />
+                <img src="{% static 'edge/images/U.S.-Embassy.jpg' %}" alt="" />
+                <img src="{% static 'edge/images/unwomen.png' %}" alt="" />
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock content %}

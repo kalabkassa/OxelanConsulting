@@ -74,7 +74,6 @@ function whychooseusnav(active) {
 }
 
 function getQueryParams() {
-    var queryParams = {};
     var queryString = window.location.search.substring(1);
     return queryString;
 }
@@ -101,10 +100,10 @@ if (queryParams && tabContainer) {
     activePanel.setAttribute("aria-expanded", "true");
     clickedTab.setAttribute("aria-expanded", "true");
     clickedTab.querySelector("a").setAttribute("aria-expanded", "true");
+    console.log(activePanel);
 } else if (queryParams) {
     var section = document.getElementsByClassName(queryParams);
-    console.log(queryParams);
-    if (section) section[0].scrollIntoView({ behavior: "smooth" });
+    if (section) section[0].scrollIntoView(false);
     whychooseusnav(queryParams);
 }
 
@@ -138,7 +137,7 @@ if (tabContainer) {
         e.preventDefault();
 
         const activePanelId = clickedTab.getAttribute("href");
-        const activePanel = document.querySelector(activePanelId);
+        const activePanel = document.querySelectorAll(activePanelId);
 
         tabPanels.forEach((panel, index) => {
             panel.setAttribute("hidden", true);
@@ -149,8 +148,10 @@ if (tabContainer) {
                 .setAttribute("aria-expanded", "false");
         });
 
-        activePanel.removeAttribute("hidden", false);
-        activePanel.setAttribute("aria-expanded", "true");
+        activePanel.forEach((panel) => {
+            panel.removeAttribute("hidden", false);
+            panel.setAttribute("aria-expanded", "true");
+        });
         clickedTab.setAttribute("aria-expanded", "true");
         clickedTab.querySelector("a").setAttribute("aria-expanded", "true");
     });
@@ -212,10 +213,10 @@ function countUp(target, element, duration) {
     // Interval function to update the count
     var timer = setInterval(function () {
         start += increment;
-        element.textContent = start + "+";
+        element.textContent = start;
         if (start >= target) {
             clearInterval(timer);
-            element.textContent = target + "+"; // Ensure the target is reached exactly
+            element.textContent = target; // Ensure the target is reached exactly
         }
     }, 1000 / duration); // Update every second
 }
@@ -225,9 +226,7 @@ var observer2 = new IntersectionObserver(
     function (entries) {
         entries.forEach(function (entry) {
             if (entry.isIntersecting) {
-                console.log(
-                    parseInt(entry.target.textContent.replace("+", ""))
-                );
+                console.log(parseInt(entry.target.textContent));
                 countUp(
                     parseInt(entry.target.textContent.replace("+", "")),
                     entry.target,
