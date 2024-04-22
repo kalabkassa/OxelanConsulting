@@ -17,7 +17,7 @@
         <div class="subhero-content">
             <h1>Contact Us</h1>
             <p>contact</p>
-        </div>
+        </div>  
     </div>
     <main>
         <div class="contactsection">
@@ -73,18 +73,21 @@
                         <p>+251900055555</p>
                     </div>
                 </div>
-                <form action="">
+                <form method="post">
+                    {% csrf_token %}
                     <div>
                         <input
                             class="input"
                             type="text"
+                            name="firstname"
                             placeholder="Full Name"
                         />
-                        <input type="email" placeholder="Your Email" /><br />
+                        <input type="email" name="email" placeholder="Your Email" /><br />
                     </div>
                     <input
                         class="subject"
                         type="text"
+                        name="subject"
                         placeholder="Subject"
                     /><br />
                     <textarea
@@ -93,7 +96,9 @@
                         cols="30"
                         rows="10"
                     ></textarea>
-                    <div class="msgbtn"><p>Send message</p></div>
+                    <button type="submit" class="msgbtn">
+                        <p>Send message</p>
+                    </button>
                 </form>
             </div>
         </div>

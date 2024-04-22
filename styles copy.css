@@ -828,7 +828,7 @@ ul {
 .whychooseuscontent > .child > a {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: white;
 }
 
@@ -1828,8 +1828,10 @@ iframe {
     padding: 10px 20px;
     background-color: #0f6897;
     cursor: pointer;
+    border: none;
     right: 0.4rem;
     bottom: 0.3vw;
+    border:none;
 }
 
 @media (max-width: 50em) {

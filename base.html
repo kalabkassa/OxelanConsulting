@@ -154,14 +154,12 @@
                             </div>
                         </div>
                         <div class="subscribe-form">
-                            <input
-                                class="sub-input"
-                                type="text"
-                                placeholder="Enter Email"
-                            />
-                            <div class="subscribe-btn">
-                                <h2>Subscribe</h2>
-                            </div>
+                            <form method="post">
+                                {% csrf_token %} {{ form.as_p }}
+                                <button type="submit" class="subscribe-btn">
+                                    <h2>Subscribe</h2>
+                                </button>
+                            </form>
                         </div>
                     </div>
                     <div class="linkswrapper">
@@ -230,7 +228,6 @@
                                         >Values</a
                                     >
                                 </li>
-                                
                             </ul>
                         </div>
                         <div class="links">
