@@ -9,8 +9,9 @@ body {
 }
 
 main {
-    margin: 5rem;
-    margin-left: 13vw;
+    padding-top: 1rem;
+    margin: clamp(1rem,1vw,2rem);
+    margin-left: clamp(5rem, 7vw, 10rem);
 }
 
 .container {
@@ -47,7 +48,7 @@ img {
 }
 
 .socialmedialogos img {
-    height: 3vh;
+    height: clamp(1rem, 1vw, 3vw);
 }
 /* hero */
 
@@ -172,7 +173,7 @@ span > img {
     color: white;
     font-family: "work sans";
     font-weight: 500;
-    font-size: 3.5rem;
+    font-size: clamp(1rem, 2.6rem, 3rem);
 }
 
 .subhero-content p {
@@ -350,14 +351,14 @@ ul {
 /* about main section */
 .aboutmain h1 {
     font-family: "Work Sans";
-    font-size: 48px;
+    font-size: clamp(1.6rem, 2.5vw, 3rem);
     font-weight: 700;
     color: #364d59;
 }
 
 .aboutmain h2 {
     font-family: "Roboto";
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1vw, 2rem);
     color: #364d59;
     padding-bottom: 1rem;
     width: 30ch;
@@ -374,6 +375,16 @@ ul {
     word-spacing: -1px;
     gap: 4rem;
     flex-wrap: wrap;
+}
+.missionsdiv .flex {
+    gap: 0;
+}
+
+.netsanet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutmain > div {
@@ -396,7 +407,7 @@ ul {
 
 .aboutmaincontent > h1 {
     font-family: "Roboto";
-    font-size: 36px;
+    font-size: clamp(1.3rem,2vw,3rem);
     font-weight: 700;
     line-height: 43px;
     letter-spacing: 0em;
@@ -407,10 +418,13 @@ ul {
 
 .aboutmain p {
     font-family: "Open Sans";
-    font-size: 16px;
+    font-size: clamp(0.5rem, 0.75vw, 2rem);
     font-weight: 400;
-    line-height: 24px;
     color: #364d59;
+}
+.overlayimg {
+    width: 30vw;
+    margin: 2rem;
 }
 
 .overlay {
@@ -418,8 +432,6 @@ ul {
     background-repeat: no-repeat;
     background-blend-mode: hard-light;
     background-color: #000000d0;
-    max-height: 32rem;
-    min-width: 44rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -433,7 +445,7 @@ ul {
     align-items: center;
     margin-top: 4rem;
     background-color: #193544;
-    gap: 9rem;
+    /* gap: 9rem; */
     flex-wrap: wrap;
 }
 
@@ -458,24 +470,35 @@ ul {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+.missionsection > div > p {
+    width: 58ch;
+    padding-left: 0;
+}
 
 .missionsection p {
     color: white;
     padding-left: 1rem;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 0.9vw, 2rem);
     width: 30ch;
 }
+.netsanet >p {
+    font-size: clamp(0.6rem, 0.8vw, 2rem);
+}
+
 
 .missionsection img {
-    width: 22rem;
+    width: clamp(12rem, 13vw,15rem);
 }
 .missionsection > img {
-    width: 30rem;
+    width: clamp(20rem,28vw,34rem);
     opacity: 70%;
 }
 
 .missionsection img:hover {
     scale: 1.2;
+}
+.width {
+    width: 22vw;
 }
 
 /* our values section */
@@ -539,11 +562,11 @@ ul {
     color: hsl(243, 100%, 19%);
     width: auto;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: clamp(0.6rem, 0.8vw, 2rem);
 }
 
 .flipcardcontent h1 {
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 0.9vw, 2rem);
 }
 
 .flipcardcontent > h1 {
@@ -560,8 +583,8 @@ ul {
     margin-left: auto;
     margin-right: auto;
     border-radius: 50vw;
-    height: 16vw;
-    width: 16vw;
+    height: clamp(14rem,18vw,22rem);
+    width: clamp(14rem,18vw,22rem);
 }
 .flipcard:hover .flipcardcontent {
     transform: rotateY(0.5turn);
@@ -585,7 +608,7 @@ ul {
 }
 
 .oursolution > h1 {
-    color: #d1cef9;
+    color: white;
 }
 
 .oursolution > div {
@@ -596,7 +619,7 @@ ul {
 
 .oursolution p,
 .oursolution h2 {
-    color: hsl(244, 90%, 89%);
+    color: white
 }
 
 .oursolution > div > p {
@@ -695,13 +718,13 @@ ul {
 
 .industries > div > h2 {
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: clamp(0.5rem,0.9vw,2rem);
     text-align: center;
 }
 
 .industries > div,
 .industries img {
-    width: 10rem;
+    width: clamp(5rem,7vw,8rem);
 }
 /* foundation */
 
@@ -713,8 +736,9 @@ ul {
 
 .foundationwrapper img,
 .foundationwrapper .imagecontainer {
-    height: 17vw;
-    width: 25vh;
+    height: clamp(8rem,9vw,10rem);
+    width: clamp(10rem, 12vw, 35vw);
+    margin-bottom: 4rem;
 }
 
 .foundationwrapper .card {
@@ -724,7 +748,7 @@ ul {
 }
 
 .foundationwrapper p {
-    word-spacing: -3px;
+    word-spacing: -1px;
 }
 
 .foundationwrapper p,
@@ -861,7 +885,9 @@ ul {
     --whychooseusbackground: hsl(201, 46%, 22%);
     background-color: var(--whychooseuscontentbackground);
     margin-top: 3rem;
+    
 }
+
 
 .whychooseusmain {
     display: flex;
@@ -907,6 +933,10 @@ ul {
     flex-direction: column;
     margin-left: 3rem;
     gap: 2rem;
+    padding-bottom: 2rem;
+}
+.proven {
+    padding-bottom: 5rem;
 }
 
 .whychooseusnav > ul > li {
@@ -949,6 +979,7 @@ ul {
     padding-top: 4rem;
     border-radius: 2rem;
     width: 60vw;
+    
 }
 
 /* achivment section */
@@ -1103,13 +1134,17 @@ ul {
     text-align: left;
     flex-wrap: wrap;
 }
-
+.servicemain .major {
+    font-size: clamp(0.7rem, 1.5vw, 2rem);
+}
 .servicesmain > div p,
 .servicesmain h4 {
     margin-top: 5%;
     width: 40ch;
+    text-align:justify;
     font-family: "Open Sans";
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 0.8vw, 1rem);
+    
     font-weight: 400;
     color: #364d59;
 }
@@ -1135,19 +1170,21 @@ ul {
 .servicesmain .tabs-container li {
     padding-top: 2rem;
     cursor: pointer;
+    font-size: clamp(0.4rem, 0.6vw, 1rem);
 }
 
 .servicesmain .tabs-container > ul > li > a {
     color: #52565e;
     font-family: "Open Sans";
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 0.9vw, 1rem);
+    
     font-weight: 400;
     border-left: 3px solid #d9e3e8;
     padding-left: 1.2rem;
 }
 .servicesmain .tabs-container > ul > li > a[aria-expanded="true"] {
     font-family: "Roboto";
-    font-size: 1.25rem;
+    font-size: clamp(0.7rem, 0.9vw, 2rem);
     font-weight: 700;
     border-color: #0179fd;
 }
@@ -1169,7 +1206,7 @@ ul {
 }
 .servicesmain > .panelwrapper .card > h2 {
     font-family: "Roboto";
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 0.9vw, 2rem);
     font-weight: 700;
 
     padding-left: 5%;
@@ -1224,7 +1261,7 @@ ul {
     font-weight: 600;
     font-size: clamp(1.5rem, 2vw, 3rem);
     color: #52565e;
-    padding-right: 8vw;
+    padding-right: 2vw;
 }
 
 .highlightes h2 {
@@ -1299,7 +1336,7 @@ ul {
 }
 
 .blogssection > .wrapper h1 {
-    font-size: clamp(0.9rem, 1vw, 1.5rem);
+    font-size: clamp(0.7rem, 0.8vw, 1.5rem);
     color: #05132e;
     padding-bottom: 1.62rem;
     padding-top: 1rem;
@@ -1308,7 +1345,7 @@ ul {
 .blogssection > .wrapper p {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: clamp(0.5rem, 1vw, 1rem);
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
     color: #05132e;
     padding-bottom: 1.62rem;
 }
@@ -1337,7 +1374,7 @@ ul {
 }
 
 .blogssection > .wrapper > .fade {
-    width: clamp(20rem, 26vw, 27rem);
+    width: clamp(20rem, 24vw, 27rem);
 }
 
 /* blogs main section */
@@ -1436,7 +1473,7 @@ ul {
 
 .blogsearch > div > input {
     height: 2.5rem;
-    width: 18.3rem;
+    width: clamp(10rem, 14vw, 19rem);
     margin-bottom: 2.5rem;
 }
 
@@ -1580,6 +1617,7 @@ ul {
     display: flex;
     gap: 4vw;
     flex-wrap: wrap;
+    margin-left: 1rem;
 }
 
 .links ul {
@@ -1656,9 +1694,18 @@ ul {
     gap: 4rem;
     flex-wrap: wrap;
 }
-
+/* .contactsection .card {
+    font-size: clamp(0.9rem, 1.4vw, 2rem);
+} */
+.contactsection .card h1 {
+    font-size: clamp(0.9rem, 1vw, 2rem);
+}
+.contactsection .card p {
+    font-size: clamp(0.4rem, 0.7vw, 2rem);
+}
 .contactsection div {
     text-align: center;
+    /* margin-bottom: 2rem; */
 }
 
 .addresssection {
@@ -1681,7 +1728,7 @@ form > div {
 
 input {
     height: 3rem;
-    font-size: large;
+    font-size: clamp(0.6rem, 0.9vw, 2rem);
     padding-left: 0.9vw;
     width: 100%;
     border: 2px solid #dee2e6;
@@ -1706,7 +1753,7 @@ textarea:focus {
 
 textarea {
     padding: 0.9vw;
-    font-size: large;
+    font-size: clamp(0.6rem, 0.9vw, 2rem);
     border: 2px solid #dee2e6;
     color: #212529bf;
     width: 90%;
@@ -1730,20 +1777,27 @@ textarea {
 
 iframe {
     width: 32vw;
-    height: 78%;
+    height: 70%;
 }
 
 .card {
     box-shadow: 0px 0px 25px 0px #00000014;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;    
     padding: 1.5rem;
     border: 2px solid #fff;
     border-radius: 1rem;
 }
 
+.contactsection .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+}
+
 .card > h1 {
     font-family: Roboto;
-    font-size: 1.25rem;
+    font-size: clamp(0.6rem, 0.9vw, 2rem);
     font-weight: 700;
 }
 
@@ -1758,7 +1812,7 @@ iframe {
 }
 
 .contactbuttoncontent {
-    transform: translateY(18rem);
+    transform: translateY(20rem);
     transition: transform 0.3s ease;
 }
 
@@ -1829,16 +1883,71 @@ iframe {
     margin-top: 2rem;
 }
 
+
 .subscribe-btn {
     position: absolute;
     border-radius: 6%;
     padding: clamp(0.5rem, 0.6vw, 0.7rem);
     background-color: #0f6897;
     cursor: pointer;
+    border:none;
     right: 0;
-    bottom: 0.4vw;
+    bottom: clamp(0rem, 0.19vw, 0.2rem);
 }
+.subscribe-form > form {
+    padding: 0;
+}
+.servicesmain h6 {
+    font-weight: 400;
+}
+.last {
+    margin-bottom: 1rem;
+}
+.popup {
+    width: 20rem;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0.1);
+    text-align: center;
+    padding: 0 1rem 1rem;
+    color: #333;
+    visibility: hidden;
+}
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%)scale(1);
+    transition: transform 0.4s, top 0.4s;
+}
+.popup img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+    margin-top: -3rem;
+    border-radius: 50%;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+.popup h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1.8rem 0 0.5rem;
 
+}
+.popup button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    background: #0E8486;
+    color: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
 @media (max-width: 50em) {
     .socialhub {
         width: 76vw;
@@ -1851,6 +1960,7 @@ iframe {
     }
     .socialmedialogos {
         width: 26vw;
+        margin-left: 0;
     }
     .socialmedialogos img {
         width: 4.5vw;
@@ -1951,7 +2061,7 @@ iframe {
         font-size: small;
     }
     .subscribe-btn {
-        height: 0.6rem;
+        height: 2rem;
     }
 
     /* aboutussection
@@ -1964,7 +2074,23 @@ iframe {
     }
     .aboutmain p {
         width: 35ch;
-        font-size: medium;
+        font-size: 1rem;
+    }
+    .aboutmain .flex p {
+        font-size:1rem;
+
+    }
+    .aboutmain .card p{
+        font-size: 0.7rem;
+    }
+    .ourteamwrapper h1 {
+        margin-left: 1rem;
+    }
+    .industrieswrapper {
+        padding: 2rem;
+    }
+    .width {
+        width: 49vw;
     }
     .overlay {
         min-width: 21rem;
@@ -1983,12 +2109,15 @@ iframe {
     }
     .aboutmain > .valuesection {
         width: 100%;
-        height: 270vh;
+        height: 190vh;
         margin: 0;
         display: flex;
         justify-content: flex-start;
         top: 0;
         padding-top: 0;
+    }
+    .valuesection > p {
+        font-size: 0.9rem;
     }
     /* .flipcardcontent h1 {
         font-size: 1rem; */
@@ -1997,23 +2126,30 @@ iframe {
         height: 150vh;
     }
     .valuesection > .cardholder .flipcard {
-        height: 40vh;
-        width: 100vh;
+        height: 25vh;
+        width: 25vh;
     }
-    .flipcardcontent {
-        height: 40vh;
-    }
+   
     .valuesection > .cardholder img {
         width: 100%;
         height: 100%;
     }
 
     .flipcardcontent p {
-        text-align: left;
-        font-size: small;
+        /* text-align: left; */
+        font-size: 0.6rem;
+        text-align: center;
+        width: 30ch;
+
     }
     .flipcardcontent > h1 {
         left: -2.5rem;
+        font-size: 1.5rem;
+    }
+    .flipcardcontent > div {
+        padding: 1rem;
+        padding-top: 1.5rem;
+        
     }
     /* our solutions */
     .oursolution h2 {
@@ -2101,8 +2237,13 @@ iframe {
     }
 
     /* industries  */
+    .industries {
+        gap: 5rem;
+    }
     .industries > div > h2 {
-        width: 13rem;
+        width: 8rem;
+        left: -3rem;
+        margin-right: 6rem;
     }
     .footer .address {
         flex-wrap: wrap;
@@ -2115,9 +2256,7 @@ iframe {
     .servicesmain > .panelwrapper > div {
         flex-wrap: wrap;
     }
-    .servicesmain {
-        margin-left: 2rem;
-    }
+   
     .servicesmain > div p {
         width: 20rem;
     }
@@ -2140,7 +2279,7 @@ iframe {
     }
     .blogsearch > div > input {
         height: 2.5rem;
-        width: 12rem;
+        width: 50vw;
         margin-bottom: 2.5rem;
     }
     .blogsmainsection > .blogssection > .wrapper {

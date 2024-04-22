@@ -195,11 +195,17 @@
                                 cols="30"
                                 rows="10"
                             ></textarea>
-                            <div class="msgbtn"><p>Send message</p></div>
+                            <button class="msgbtn"><p>Send message</p></button>
                         </form>
                     </div>
                 </div>
             </main>
+            <div class="popup" id="popup">
+                <img src="images/tick.svg" alt="">
+                <h2>Thank you </h2>
+                <p>you have successfuly subscribed to oxelan consulting</p>
+                <button type="button" onclick="closepopup()">OK</button>
+            </div>
             <div class="footer">
                 <div class="footer-wrapper">
                     <section>
@@ -229,14 +235,16 @@
                                 </div>
                             </div>
                             <div class="subscribe-form">
+                                <form action="">
                                 <input
                                     class="sub-input"
                                     type="text"
                                     placeholder="Enter Email"
                                 />
-                                <div class="subscribe-btn">
+                                <button type="button" class="subscribe-btn" onclick="openpopup()">
                                     <h2>Subscribe</h2>
-                                </div>
+                                </button >
+                            </form>
                             </div>
                         </div>
                         <div class="linkswrapper">

@@ -162,11 +162,15 @@
                     <div class="blogssection">
                         <div class="wrapper">
                             <div class="fade">
+                                <div class="img">
+
+                               
                                 <img
                                     src="images/photo_2024-04-04_14-35-22.jpg"
                                     alt=""
                                 />
                                 <div class="date">JUN 12</div>
+                            </div>
                                 <div class="child">
                                     <h1>
                                         Digital Transformation: The Accelerator
@@ -180,11 +184,13 @@
                                 </div>
                             </div>
                             <div class="fade">
+                                <div class="img">
                                 <img
                                     src="images/photo_2024-04-04_14-35-21.jpg"
                                     alt=""
                                 />
                                 <div class="date">JUN 12</div>
+                            </div>
                                 <div class="child">
                                     <h1>
                                         Innovation Ecosystems: Collaborate to
@@ -198,11 +204,13 @@
                                 </div>
                             </div>
                             <div class="fade">
+                                <div class="img">
                                 <img
                                     src="images/photo_2024-04-04_14-37-27.jpg"
                                     alt=""
                                 />
                                 <div class="date">JUN 12</div>
+                            </div>
                                 <div class="child">
                                     <h1>
                                         Building a Resilient Organizational
@@ -218,6 +226,12 @@
                     </div>
                 </div>
             </main>
+            <div class="popup" id="popup">
+                <img src="images/tick.svg" alt="">
+                <h2>Thank you </h2>
+                <p>you have successfuly subscribed to oxelan consulting</p>
+                <button type="button" onclick="closepopup()">OK</button>
+            </div>
             <div class="footer">
                 <div class="footer-wrapper">
                     <section>
@@ -247,14 +261,16 @@
                                 </div>
                             </div>
                             <div class="subscribe-form">
+                                <form action="">
                                 <input
                                     class="sub-input"
                                     type="text"
                                     placeholder="Enter Email"
                                 />
-                                <div class="subscribe-btn">
+                                <button type="button" class="subscribe-btn" onclick="openpopup()">
                                     <h2>Subscribe</h2>
-                                </div>
+                                </button>
+                            </form>
                             </div>
                         </div>
                         <div class="linkswrapper">
