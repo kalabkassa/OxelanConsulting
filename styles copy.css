@@ -9,19 +9,23 @@ body {
 }
 
 main {
-    margin: 5rem;
-    margin-left: 13vw;
+    padding-top: 1rem;
+    margin: clamp(1rem, 1vw, 2rem);
+    margin-left: clamp(5rem, 7vw, 10rem);
 }
 
 .container {
     overflow-x: hidden;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
 /* social hub secion */
 
 .socialhub {
     display: flex;
-    width: 93vw;
     padding-right: 6rem;
     padding-left: 2rem;
     background-color: #017bfd38;
@@ -42,14 +46,14 @@ main {
 }
 
 .socialmedialogos img {
-    height: 3vh;
+    height: clamp(1rem, 1vw, 3vw);
 }
 /* hero */
 
 .herosection {
     background-image: url(../images/hero.png);
     background-size: cover;
-    height: 100vh;
+    height: 100svh;
     overflow: hidden;
 }
 
@@ -120,7 +124,7 @@ span > img {
 .herotitle {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: min(5vw, 7rem);
+    font-size: clamp(2.5rem, 4.8vw, 5rem);
     color: white;
     margin-top: auto;
 }
@@ -136,7 +140,7 @@ span > img {
 .herosubtitle {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: min(1vw, 1.8rem);
+    font-size: clamp(0.9rem, 1.2vw, 2rem);
     color: #ffffffcc;
 }
 
@@ -153,7 +157,7 @@ span > img {
     color: white;
     padding: 2.2vh;
     padding-inline: min(12vw, 4rem);
-    margin-top: 5rem;
+    margin-top: 4vh;
 }
 
 .subhero-content {
@@ -166,7 +170,7 @@ span > img {
     color: white;
     font-family: "work sans";
     font-weight: 500;
-    font-size: 3.5rem;
+    font-size: clamp(1rem, 2.6rem, 3rem);
 }
 
 .subhero-content p {
@@ -192,7 +196,7 @@ a {
     color: #ffffff99;
     font-family: "Roboto";
     font-weight: 500;
-    font-size: min(1.2vw, 1rem);
+    font-size: clamp(1rem, 1.2vw, 3rem);
     text-decoration: none;
 }
 
@@ -321,7 +325,7 @@ ul {
 .aboutcontent > p {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: min(1vw, 1rem);
+    font-size: clamp(1rem, 1.2vw, 2rem);
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
@@ -344,14 +348,14 @@ ul {
 /* about main section */
 .aboutmain h1 {
     font-family: "Work Sans";
-    font-size: 48px;
+    font-size: clamp(1.6rem, 2.5vw, 3rem);
     font-weight: 700;
     color: #364d59;
 }
 
 .aboutmain h2 {
     font-family: "Roboto";
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1vw, 2rem);
     color: #364d59;
     padding-bottom: 1rem;
     width: 30ch;
@@ -369,6 +373,16 @@ ul {
     gap: 4rem;
     flex-wrap: wrap;
 }
+.missionsdiv .flex {
+    gap: 0;
+}
+
+.netsanet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .aboutmain > div {
     display: flex;
@@ -376,9 +390,6 @@ ul {
     padding: 2.5rem 2.5rem;
     width: 100%;
     flex-wrap: wrap;
-}
-.aboutmaincontent {
-    padding-top: 5rem;
 }
 
 .aboutmaincontent > h3 {
@@ -393,7 +404,7 @@ ul {
 
 .aboutmaincontent > h1 {
     font-family: "Roboto";
-    font-size: 36px;
+    font-size: clamp(1.3rem, 2vw, 3rem);
     font-weight: 700;
     line-height: 43px;
     letter-spacing: 0em;
@@ -404,10 +415,13 @@ ul {
 
 .aboutmain p {
     font-family: "Open Sans";
-    font-size: 16px;
+    font-size: clamp(0.5rem, 0.75vw, 2rem);
     font-weight: 400;
-    line-height: 24px;
     color: #364d59;
+}
+.overlayimg {
+    width: 30vw;
+    margin: 2rem;
 }
 
 .overlay {
@@ -415,8 +429,6 @@ ul {
     background-repeat: no-repeat;
     background-blend-mode: hard-light;
     background-color: #000000d0;
-    max-height: 32rem;
-    min-width: 44rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -428,9 +440,8 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
+    margin-top: 4rem;
     background-color: #193544;
-    gap: 9rem;
     flex-wrap: wrap;
 }
 
@@ -455,24 +466,35 @@ ul {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+.missionsection > div > p {
+    width: 58ch;
+    padding-left: 0;
+}
 
 .missionsection p {
     color: white;
     padding-left: 1rem;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 0.9vw, 2rem);
     width: 30ch;
+}
+.netsanet > p {
+    font-size: clamp(0.6rem, 0.8vw, 2rem);
 }
 
 .missionsection img {
-    width: 22rem;
+    width: clamp(12rem, 28vw, 28rem);
+    padding-bottom: 2rem;
 }
 .missionsection > img {
-    width: 30rem;
+    width: clamp(20rem, 28vw, 34rem);
     opacity: 70%;
 }
 
 .missionsection img:hover {
     scale: 1.2;
+}
+.width {
+    width: 22vw;
 }
 
 /* our values section */
@@ -484,7 +506,7 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 3rem;
     background-color: whitesmoke;
     padding-bottom: 2rem;
 }
@@ -536,11 +558,11 @@ ul {
     color: hsl(243, 100%, 19%);
     width: auto;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: clamp(0.6rem, 0.8vw, 2rem);
 }
 
 .flipcardcontent h1 {
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 0.9vw, 2rem);
 }
 
 .flipcardcontent > h1 {
@@ -557,8 +579,8 @@ ul {
     margin-left: auto;
     margin-right: auto;
     border-radius: 50vw;
-    height: 16vw;
-    width: 16vw;
+    height: clamp(14rem, 18vw, 22rem);
+    width: clamp(14rem, 18vw, 22rem);
 }
 .flipcard:hover .flipcardcontent {
     transform: rotateY(0.5turn);
@@ -579,11 +601,10 @@ ul {
 .oursolution {
     background-color: #193544;
     padding: 2rem;
-    padding-top: 5rem;
 }
 
 .oursolution > h1 {
-    color: #d1cef9;
+    color: white;
 }
 
 .oursolution > div {
@@ -594,7 +615,7 @@ ul {
 
 .oursolution p,
 .oursolution h2 {
-    color: hsl(244, 90%, 89%);
+    color: white;
 }
 
 .oursolution > div > p {
@@ -677,7 +698,6 @@ ul {
 
 .industrieswrapper {
     padding: 2rem;
-    padding-top: 5rem;
 }
 
 .industries {
@@ -694,13 +714,13 @@ ul {
 
 .industries > div > h2 {
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: clamp(0.5rem, 0.9vw, 2rem);
     text-align: center;
 }
 
 .industries > div,
 .industries img {
-    width: 10rem;
+    width: clamp(5rem, 7vw, 8rem);
 }
 /* foundation */
 
@@ -712,8 +732,9 @@ ul {
 
 .foundationwrapper img,
 .foundationwrapper .imagecontainer {
-    height: 17vw;
-    width: 25vh;
+    height: clamp(8rem, 9vw, 10rem);
+    width: clamp(10rem, 12vw, 35vw);
+    margin-bottom: 4rem;
 }
 
 .foundationwrapper .card {
@@ -723,7 +744,7 @@ ul {
 }
 
 .foundationwrapper p {
-    word-spacing: -3px;
+    word-spacing: -1px;
 }
 
 .foundationwrapper p,
@@ -799,11 +820,11 @@ ul {
 
 .whychooseuscontent > .child {
     border-style: solid;
-    border-width: 0.4rem;
+    border-width: 0.4vw;
     border-color: white;
     border-radius: 2rem;
-    padding: 2.2rem;
-    padding-top: 3rem;
+    padding: clamp(1.4rem, 2vw, 3rem);
+    padding-top: clamp(1.4rem, 3vw, 4rem);
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -811,7 +832,7 @@ ul {
 }
 
 .whychooseuscontent > .child > img {
-    width: min-content;
+    width: clamp(2rem, 3vw, 3rem);
 }
 
 .whychooseuscontent > .child:hover {
@@ -821,14 +842,14 @@ ul {
 .whychooseuscontent > .child > h1 {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.2vw, 2rem);
 }
 
 .whychooseuscontent > .child > h2,
 .whychooseuscontent > .child > a {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 0.9vw, 1rem);
     color: white;
 }
 
@@ -860,7 +881,6 @@ ul {
     --whychooseusbackground: hsl(201, 46%, 22%);
     background-color: var(--whychooseuscontentbackground);
     margin-top: 3rem;
-    padding-top: 5rem;
 }
 
 .whychooseusmain {
@@ -907,6 +927,10 @@ ul {
     flex-direction: column;
     margin-left: 3rem;
     gap: 2rem;
+    padding-bottom: 2rem;
+}
+.proven {
+    padding-bottom: 5rem;
 }
 
 .whychooseusnav > ul > li {
@@ -1021,7 +1045,7 @@ ul {
 .tabs-container > h1 {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: min(3rem, 8vw);
+    font-size: clamp(2rem, 3vw, 8rem);
     margin-bottom: 5rem;
     color: #1f4255;
 }
@@ -1042,7 +1066,7 @@ ul {
     color: #52565e;
     font-family: "Roboto";
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 1.3vw, 2rem);
     padding: 1rem;
 }
 
@@ -1073,7 +1097,7 @@ ul {
 .panelwrapper h1 {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: max(2vw, 1.5rem);
+    font-size: clamp(1.2rem, 2vw, 2.2rem);
     color: #364d59;
     margin-bottom: 2.5rem;
 }
@@ -1081,7 +1105,7 @@ ul {
 .panelwrapper p {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: min(4vw, 1.2rem);
+    font-size: clamp(0.8rem, 1.1vw, 1.5rem);
     color: #364d59;
     max-width: 40ch;
     text-align: justify;
@@ -1103,13 +1127,44 @@ ul {
     text-align: left;
     flex-wrap: wrap;
 }
-
+.servicemain .major {
+    font-family: "Roboto";
+    font-size: clamp(1.3rem, 2vw, 3rem);
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #364d59;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.flex h4 {
+    font-family: "Roboto";
+    font-size: clamp(0.9rem, 1vw, 2rem);
+    font-weight: 700;
+    text-align: left;
+    color: #364d59;
+    padding-bottom: 1rem;
+}
+.flex h6 {
+    font-family: "Roboto";
+    font-size: clamp(0.7rem, 0.8vw, 0.9rem);
+    font-weight: 700;
+    color: #13222b;
+    padding-bottom: 0.5rem;
+}
+.panelwrapper > .flex {
+    gap: 1rem;
+    flex-grow: 1;
+    justify-content: space-around;
+}
 .servicesmain > div p,
 .servicesmain h4 {
     margin-top: 5%;
     width: 40ch;
+    text-align: justify;
     font-family: "Open Sans";
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 0.8vw, 1rem);
     font-weight: 400;
     color: #364d59;
 }
@@ -1135,19 +1190,20 @@ ul {
 .servicesmain .tabs-container li {
     padding-top: 2rem;
     cursor: pointer;
+    font-size: clamp(0.4rem, 0.6vw, 1rem);
 }
 
 .servicesmain .tabs-container > ul > li > a {
     color: #52565e;
     font-family: "Open Sans";
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 0.9vw, 1rem);
     font-weight: 400;
     border-left: 3px solid #d9e3e8;
     padding-left: 1.2rem;
 }
 .servicesmain .tabs-container > ul > li > a[aria-expanded="true"] {
     font-family: "Roboto";
-    font-size: 1.25rem;
+    font-size: clamp(0.7rem, 0.9vw, 2rem);
     font-weight: 700;
     border-color: #0179fd;
 }
@@ -1169,9 +1225,8 @@ ul {
 }
 .servicesmain > .panelwrapper .card > h2 {
     font-family: "Roboto";
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 0.9vw, 2rem);
     font-weight: 700;
-
     padding-left: 5%;
 }
 .servicesmain > .panelwrapper .card > h2::after {
@@ -1211,9 +1266,9 @@ ul {
 
 .highlightes > .wrapper {
     display: flex;
-    background-color: white;
+    background-color: #193544;
     padding: 1.5rem 2rem;
-    padding: 3vh 4.2vh;
+    padding: clamp(1rem, 1vh, 3rem) clamp(1rem, 2vh, 4.5rem);
     margin-left: auto;
     margin-right: auto;
     border-radius: 1rem;
@@ -1222,15 +1277,16 @@ ul {
 .highlightes h1 {
     font-family: "Open Sans";
     font-weight: 600;
-    font-size: 2.25rem;
-    color: #52565e;
-    padding-right: 8vw;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    color: white;
+    padding-right: 2vw;
 }
 
 .highlightes h2 {
     font-family: "Roboto";
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: clamp(0.9rem, 1vw, 3rem);
+    color: white;
 }
 .hundred::after {
     content: "%";
@@ -1247,6 +1303,7 @@ ul {
 }
 
 .blogssection {
+    font-size: 0.9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1289,6 +1346,7 @@ ul {
     width: 100vw;
     text-align: center;
     flex-wrap: wrap;
+    gap: 10vh;
 }
 
 .blogsmainsection > .blogssection > .wrapper {
@@ -1298,7 +1356,7 @@ ul {
 }
 
 .blogssection > .wrapper h1 {
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 0.8vw, 1.5rem);
     color: #05132e;
     padding-bottom: 1.62rem;
     padding-top: 1rem;
@@ -1307,33 +1365,36 @@ ul {
 .blogssection > .wrapper p {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
     color: #05132e;
     padding-bottom: 1.62rem;
 }
 
 .blogssection > .wrapper .date {
-    position: relative;
-    bottom: 2.4rem;
-    left: 22.5rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
     background-color: #0179fd;
     padding: 0.5rem;
     width: fit-content;
     color: white;
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: 0.81rem;
+    font-size: clamp(0.8rem, 0.8vw, 1rem);
 }
 
 .blogssection > .wrapper .child {
     background-color: white;
-    position: relative;
-    bottom: 2.4rem;
-    width: 52ch;
 }
 
-.blogssection > .wrapper > .fade > img {
-    width: 45ch;
+.blogssection > .wrapper > .fade > .img {
+    position: relative;
+    height: fit-content;
+}
+
+.blogssection > .wrapper > .fade {
+    width: clamp(20rem, 20vw, 27rem);
 }
 
 /* blogs main section */
@@ -1432,7 +1493,7 @@ ul {
 
 .blogsearch > div > input {
     height: 2.5rem;
-    width: 18.3rem;
+    width: clamp(10rem, 14vw, 19rem);
     margin-bottom: 2.5rem;
 }
 
@@ -1522,7 +1583,7 @@ ul {
 
 .clients > div > img {
     width: fit-content;
-    height: 8rem;
+    height: 6rem;
 }
 
 /* footer section */
@@ -1546,7 +1607,7 @@ ul {
     display: flex;
     width: 100%;
     justify-content: center;
-    gap: 4rem;
+    gap: 4vw;
     flex-wrap: wrap;
 }
 
@@ -1555,14 +1616,14 @@ ul {
     gap: 0.3rem;
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: clamp(0.7rem, 0.8vw, 1rem);
     margin-bottom: 3rem;
     flex-wrap: wrap;
 }
 
 .copyright > h1 {
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: clamp(0.7rem, 0.8vw, 1rem);
 }
 
 .footer-wrapper > .flair {
@@ -1574,12 +1635,9 @@ ul {
 .linkswrapper {
     font-family: "Open Sans";
     display: flex;
-    justify-content: space-around;
+    gap: 4vw;
     flex-wrap: wrap;
-}
-
-.links {
-    min-width: 220px;
+    margin-left: 1rem;
 }
 
 .links ul {
@@ -1590,14 +1648,14 @@ ul {
 .links > h1 {
     font-family: "Roboto";
     font-weight: 600;
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 0.8vw, 1rem);
     margin-bottom: 1.7rem;
 }
 
 .links a {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: clamp(0.7rem, 0.8vw, 1rem);
     color: #ffffff99;
 }
 
@@ -1606,7 +1664,6 @@ ul {
 }
 
 .address {
-    margin-left: 5rem;
     position: relative;
     bottom: 0.6rem;
 }
@@ -1614,7 +1671,7 @@ ul {
 .address p {
     font-family: "Roboto";
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: clamp(0.7rem, 0.8vw, 1rem);
 }
 
 .address > p {
@@ -1628,18 +1685,14 @@ ul {
 .address h2 {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: 0.9rem;
-}
-
-.address h2::after {
-    content: ":";
-    padding-right: 0.3rem;
+    font-size: clamp(0.7rem, 0.8vw, 1rem);
 }
 
 .address > img {
     margin-bottom: 1.25rem;
     position: relative;
     right: 2rem;
+    width: clamp(14rem, 15vw, 15rem);
 }
 
 .label {
@@ -1656,7 +1709,12 @@ ul {
     gap: 4rem;
     flex-wrap: wrap;
 }
-
+.contactsection .card h1 {
+    font-size: clamp(0.9rem, 1vw, 2rem);
+}
+.contactsection .card p {
+    font-size: clamp(0.4rem, 0.7vw, 2rem);
+}
 .contactsection div {
     text-align: center;
 }
@@ -1681,7 +1739,7 @@ form > div {
 
 input {
     height: 3rem;
-    font-size: large;
+    font-size: clamp(0.6rem, 0.9vw, 2rem);
     padding-left: 0.9vw;
     width: 100%;
     border: 2px solid #dee2e6;
@@ -1706,7 +1764,7 @@ textarea:focus {
 
 textarea {
     padding: 0.9vw;
-    font-size: large;
+    font-size: clamp(0.6rem, 0.9vw, 2rem);
     border: 2px solid #dee2e6;
     color: #212529bf;
     width: 90%;
@@ -1730,7 +1788,7 @@ textarea {
 
 iframe {
     width: 32vw;
-    height: 78%;
+    height: 70%;
 }
 
 .card {
@@ -1741,9 +1799,16 @@ iframe {
     border-radius: 1rem;
 }
 
+.contactsection .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+}
+
 .card > h1 {
     font-family: Roboto;
-    font-size: 1.25rem;
+    font-size: clamp(0.6rem, 0.9vw, 2rem);
     font-weight: 700;
 }
 
@@ -1758,7 +1823,7 @@ iframe {
 }
 
 .contactbuttoncontent {
-    transform: translateY(18rem);
+    transform: translateY(20rem);
     transition: transform 0.3s ease;
 }
 
@@ -1772,7 +1837,7 @@ iframe {
 .whatsup,
 .telegramc,
 .gmail {
-    width: 3.4rem;
+    width: clamp(3rem, 4vw, 4rem);
     aspect-ratio: 1;
     border-radius: 50%;
     background-color: #0f6897;
@@ -1788,64 +1853,117 @@ iframe {
 
 .contactbutton {
     background-image: url(../images/contacts_product_FILL0_wght400_GRAD0_opsz24.svg);
+    background-size: clamp(1.8rem, 2vw, 4rem);
     z-index: 100;
 }
 
 .phone {
     background-image: url(../images/phone.svg);
+    background-size: clamp(1.8rem, 2vw, 4rem);
 }
 .whatsup {
     background-image: url(../images/logo-whatsapp.svg);
+    background-size: clamp(1.8rem, 2vw, 4rem);
 }
 
 .telegramc {
     background-image: url(../images/telegram-original.svg);
+    background-size: clamp(1.8rem, 2vw, 4rem);
 }
 
 .gmail {
     background-image: url(../images/mail-outline.svg);
+    background-size: clamp(1.8rem, 2vw, 4rem);
 }
 
 .sub-input {
-    height: 3rem;
-    font-size: large;
+    height: 2.5vw;
+    font-size: clamp(0.5rem, 1.1vw, 1.2rem);
     padding-left: 0.9vw;
-    width: 20rem;
+    width: clamp(15rem, 20vw, 27rem);
     border: 2px solid #dee2e6;
     border-radius: 0.4rem;
     color: #212529bf;
+    margin: 0;
 }
 
 .subscribe-form {
     position: relative;
-    display: flex;
     height: fit-content;
+    width: fit-content;
+    margin-top: 2rem;
 }
 
 .subscribe-btn {
     position: absolute;
     border-radius: 6%;
-    padding: 10px 20px;
+    padding: clamp(0.5rem, 0.6vw, 0.7rem);
     background-color: #0f6897;
     cursor: pointer;
     border: none;
-    right: 0.4rem;
-    bottom: 0.3vw;
-    border:none;
+    right: 0;
+    bottom: 1vh;
 }
-
+.subscribe-form > form {
+    padding: 0;
+}
+.servicesmain h6 {
+    font-weight: 400;
+}
+.last {
+    margin-bottom: 1rem;
+}
+.popup {
+    width: 20rem;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 1rem 1rem;
+    color: #333;
+    visibility: hidden;
+}
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.4s, top 0.4s;
+}
+.popup img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+    margin-top: -3rem;
+    border-radius: 50%;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+.popup h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1.8rem 0 0.5rem;
+}
+.popup button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    background: #0e8486;
+    color: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 @media (max-width: 50em) {
     .socialhub {
-        width: 76vw;
         padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-right: 3rem;
     }
     .companyname {
         font-size: small;
         font-weight: 500;
-    }
-    .socialmedialogos {
-        width: 26vw;
     }
     .socialmedialogos img {
         width: 4.5vw;
@@ -1930,12 +2048,6 @@ iframe {
         width: 70%;
     }
 
-    /* blogsection */
-
-    .blogssection > .wrapper > .fade > img,
-    .blogssection > .wrapper > .fade > .child {
-        width: 70vw;
-    }
     /* footersection */
 
     .address {
@@ -1949,7 +2061,7 @@ iframe {
         font-size: small;
     }
     .subscribe-btn {
-        height: 0.6rem;
+        height: 2rem;
     }
 
     /* aboutussection
@@ -1962,7 +2074,22 @@ iframe {
     }
     .aboutmain p {
         width: 35ch;
-        font-size: medium;
+        font-size: 1rem;
+    }
+    .aboutmain .flex p {
+        font-size: 1rem;
+    }
+    .aboutmain .card p {
+        font-size: 0.7rem;
+    }
+    .ourteamwrapper h1 {
+        margin-left: 1rem;
+    }
+    .industrieswrapper {
+        padding: 2rem;
+    }
+    .width {
+        width: 49vw;
     }
     .overlay {
         min-width: 21rem;
@@ -1981,12 +2108,15 @@ iframe {
     }
     .aboutmain > .valuesection {
         width: 100%;
-        height: 270vh;
+        height: 190vh;
         margin: 0;
         display: flex;
         justify-content: flex-start;
         top: 0;
         padding-top: 0;
+    }
+    .valuesection > p {
+        font-size: 0.9rem;
     }
     /* .flipcardcontent h1 {
         font-size: 1rem; */
@@ -1995,23 +2125,28 @@ iframe {
         height: 150vh;
     }
     .valuesection > .cardholder .flipcard {
-        height: 40vh;
-        width: 100vh;
+        height: 25vh;
+        width: 25vh;
     }
-    .flipcardcontent {
-        height: 40vh;
-    }
+
     .valuesection > .cardholder img {
         width: 100%;
         height: 100%;
     }
 
     .flipcardcontent p {
-        text-align: left;
-        font-size: small;
+        /* text-align: left; */
+        font-size: 0.6rem;
+        text-align: center;
+        width: 30ch;
     }
     .flipcardcontent > h1 {
         left: -2.5rem;
+        font-size: 1.5rem;
+    }
+    .flipcardcontent > div {
+        padding: 1rem;
+        padding-top: 1.5rem;
     }
     /* our solutions */
     .oursolution h2 {
@@ -2099,8 +2234,13 @@ iframe {
     }
 
     /* industries  */
+    .industries {
+        gap: 5rem;
+    }
     .industries > div > h2 {
-        width: 13rem;
+        width: 8rem;
+        left: -3rem;
+        margin-right: 6rem;
     }
     .footer .address {
         flex-wrap: wrap;
@@ -2113,9 +2253,7 @@ iframe {
     .servicesmain > .panelwrapper > div {
         flex-wrap: wrap;
     }
-    .servicesmain {
-        margin-left: 2rem;
-    }
+
     .servicesmain > div p {
         width: 20rem;
     }
@@ -2138,7 +2276,7 @@ iframe {
     }
     .blogsearch > div > input {
         height: 2.5rem;
-        width: 12rem;
+        width: 50vw;
         margin-bottom: 2.5rem;
     }
     .blogsmainsection > .blogssection > .wrapper {
@@ -2165,6 +2303,10 @@ iframe {
     }
     form {
         margin-top: 4rem;
+    }
+    .clients > div {
+        animation: mobile_slideRight 90s ease-in-out infinite forwards;
+        gap: 7rem;
     }
 }
 
@@ -2205,11 +2347,22 @@ iframe {
 @keyframes slideRight {
     0%,
     50% {
-        transform: translateX(-40%);
+        transform: translateX(-160%);
     }
     25%,
     100% {
-        transform: translateX(40%);
+        transform: translateX(20%);
+    }
+}
+
+@keyframes mobile_slideRight {
+    0%,
+    50% {
+        transform: translateX(-320%);
+    }
+    25%,
+    100% {
+        transform: translateX(45%);
     }
 }
 

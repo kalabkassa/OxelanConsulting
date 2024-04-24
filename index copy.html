@@ -4,29 +4,31 @@
         <div class="socialhub">
             <div class="companyname">Oxelan consulting PLC</div>
             <div class="socialmedialogos">
-                <img src="{% static 'edge/images/LinkedIn.png' %}" alt="" />
-                <img src="{% static 'edge/images/Facebook.png' %}" alt="" />
-                <img src="{% static 'edge/images/Instagram.png' %}" alt="" />
-                <img src="{% static 'edge/images/telegram-original.svg' %}" />
-                <img src="{% static 'edge/images/youtube.svg' %}" />
-                <img src="{% static 'edge/images/tiktok.svg' %}" />
-                <img src="{% static 'edge/images/whatsapp.svg' %}" />
-                <img src="{% static 'edge/images/twitter-original.svg' %}" />
+                <img loading="lazy" src="{% static 'edge/images/LinkedIn.png' %}" alt="" />
+                <img loading="lazy" src="{% static 'edge/images/Facebook.png' %}" alt="" />
+                <img loading="lazy" src="{% static 'edge/images/Instagram.png' %}" alt="" />
+                <img loading="lazy" src="{% static 'edge/images/telegram-original.svg' %}" />
+                <img loading="lazy" src="{% static 'edge/images/youtube.svg' %}" />
+                <img loading="lazy" src="{% static 'edge/images/tiktok.svg' %}" />
+                <img loading="lazy" src="{% static 'edge/images/whatsapp.svg' %}" />
+                <img loading="lazy" src="{% static 'edge/images/twitter-original.svg' %}" />
             </div>
         </div>
         <div class="herocontent">
             <span class="left"
-                ><img src="{% static 'edge/images/arrow_back.svg' %}" alt=""
+                ><img loading="lazy" src="{% static 'edge/images/arrow_back.svg' %}" alt=""
             /></span>
             <div class="carousel">
                 <div class="sliders">
                     <div>
                         <div class="herotitle">
-                            <p>Empowering Dreams <br />Inspiring Growth</p>
+                            <p>
+                                Unlock Your Potential <br />Ignite Your Passion!
+                            </p>
                         </div>
                         <div class="flair"></div>
                         <p class="herosubtitle">
-                            Crafting Tomorrow's Success Stories with OXELAN
+                            Your Partner in Excellence!
                         </p>
                         <div class="herobtn" onclick="scrollToSection()">
                             <p>Get Started</p>
@@ -43,13 +45,12 @@
                         <div class="unique">
                             <div class="herotitle">
                                 <p>
-                                    Coaching and Mentorship <br />
-                                    for Personal Growth
+                                    Empowering Dreams <br />Inspiring Growth
                                 </p>
                             </div>
                             <div class="flair"></div>
                             <p class="herosubtitle">
-                                Crafting Tomorrow's Success Stories with OXELAN
+                                Your Partner in Excellence!
                             </p>
                             <div class="herobtn" onclick="scrollToSection()">
                                 <p>Get Started</p>
@@ -58,11 +59,13 @@
                     </div>
                     <div>
                         <div class="herotitle">
-                            <p>Leading consultancy <br />Firm in Ethiopia</p>
+                            <p>
+                                Dream boldly, grow fearlessly <br />and conquer the world <br /> together!
+                            </p>
                         </div>
                         <div class="flair"></div>
                         <p class="herosubtitle">
-                            Crafting Tomorrow's Success Stories with OXELAN
+                            Your Partner in Excellence!
                         </p>
                         <div class="herobtn" onclick="scrollToSection()">
                             <p>Get Started</p>
@@ -79,13 +82,12 @@
                         <div class="unique">
                             <div class="herotitle">
                                 <p>
-                                    Enhancing Workforce <br />
-                                    Development in Ethiopia
+                                    Empowering Your Aim of Existence,<br /> Inspiring Growth  That's <br /> Our Promise!
                                 </p>
                             </div>
                             <div class="flair"></div>
                             <p class="herosubtitle">
-                                Crafting Tomorrow's Success Stories with OXELAN
+                                Your Partner in Excellence!
                             </p>
                             <div class="herobtn" onclick="scrollToSection()">
                                 <p>Get Started</p>
@@ -95,7 +97,7 @@
                 </div>
             </div>
             <span class="right"
-                ><img src="{% static 'edge/images/arrow_forward.svg' %}" alt=""
+                ><img loading="lazy" src="{% static 'edge/images/arrow_forward.svg' %}" alt=""
             /></span>
         </div>
     </div>
@@ -119,7 +121,7 @@
                     provide tailored solutions to empower clients, guiding them
                     toward sustainable success and impactful outcomes.
                 </p>
-                <img
+                <img loading="lazy"
                     src="{% static 'edge/images/Secondary_Vertical_blue.png' %}"
                     alt=""
                 />
@@ -130,7 +132,7 @@
                 <h1>Why Choose Us?</h1>
                 <div class="whychooseuscontent">
                     <div class="child animate">
-                        <img
+                        <img loading="lazy"
                             src="{% static 'edge/images/Consultation.png' %}"
                             alt=""
                         />
@@ -144,12 +146,12 @@
                             specialize in crafting strategies that propel
                             businesses into uncharted realms of possibility.
                         </h2>
-                        <a onclick="learnmore('about.html?Expertise')" href="#1"
+                        <a href="{% url 'about' %}?Expertise"
                             >Learn more</a
                         >
                     </div>
                     <div class="child animate">
-                        <img
+                        <img loading="lazy"
                             src="{% static 'edge/images/Training.png' %}"
                             alt=""
                         />
@@ -163,12 +165,12 @@
                             crafting tailored strategies designed to propel
                             businesses into uncharted realms of possibility.
                         </h2>
-                        <a onclick="navto('about.html?Tailored')" href="#1"
+                        <a href="{% url 'about' %}?Tailored"
                             >Learn more</a
                         >
                     </div>
                     <div class="child animate">
-                        <img
+                        <img loading="lazy"
                             src="{% static 'edge/images/Learning.png' %}"
                             alt=""
                         />
@@ -183,12 +185,12 @@
                             strategies that propel businesses into uncharted
                             realms of possibility.
                         </h2>
-                        <a onclick="navto('about.html?Innovative')" href="#1"
+                        <a href="{% url 'about' %}?Innovative"
                             >Learn more</a
                         >
                     </div>
                     <div class="child animate">
-                        <img
+                        <img loading="lazy"
                             src="{% static 'edge/images/Statistics.png' %}"
                             alt=""
                         />
@@ -202,7 +204,7 @@
                             commitment to crafting strategies that propel
                             businesses into new realms of possibility.
                         </h2>
-                        <a onclick="navto('about.html?Proven')" href="#1"
+                        <a href="{% url 'about' %}?Proven"
                             >Learn more</a
                         >
                     </div>
@@ -215,14 +217,14 @@
                 <ul class="tabs-title">
                     <li href="#consultingservices" aria-expanded="true">
                         <a href="#consultingservices" aria-expanded="true"
-                            >Comprehensive Research</a
+                            >Research</a
                         >
                     </li>
                     <li href="#trainingservices" aria-expanded="false">
-                        <a href="#trainingservices">Strategic Consulting</a>
+                        <a href="#trainingservices"> Consulting</a>
                     </li>
                     <li href="#vocationalskills" aria-expanded="false">
-                        <a href="#vocationalskills">Training and Mentorship</a>
+                        <a href="#vocationalskills">Training and Coaching</a>
                     </li>
                     <li href="#researchmentorship" aria-expanded="false">
                         <a href="#researchmentorship"
@@ -248,7 +250,7 @@
                                 organization.
                             </p>
                         </div>
-                        <img
+                        <img loading="lazy"
                             src="{% static 'edge/images/reasearch.jpeg' %}"
                             alt=""
                         />
@@ -271,7 +273,7 @@
                                 and logistical support.
                             </p>
                         </div>
-                        <img
+                        <img loading="lazy"
                             src="{% static 'edge/images/train.avif' %}"
                             alt=""
                         />
@@ -294,7 +296,7 @@
                                 capacity development.
                             </p>
                         </div>
-                        <img
+                        <img loading="lazy"
                             src="{% static 'edge/images/vision.avif' %}"
                             alt=""
                         />
@@ -319,7 +321,7 @@
                                 success.
                             </p>
                         </div>
-                        <img
+                        <img loading="lazy"
                             src="{% static 'edge/images/blog_background.jpg' %}"
                             alt=""
                         />
@@ -333,7 +335,7 @@
                     src="https://cdn.lordicon.com/gqjpawbc.json"
                     trigger="loop"
                     colors="primary:#08264fc9,secondary:#0179fd"
-                    style="width: 6rem; height: 6rem"
+                    style="width: clamp(5rem, 6vw, 7rem); height: clamp(5rem, 6vw, 7rem)"
                 >
                 </lord-icon>
                 <div class="child">
@@ -346,7 +348,7 @@
                     src="https://cdn.lordicon.com/piwupaqb.json"
                     trigger="loop"
                     colors="primary:#08264fc9,secondary:#0179fd"
-                    style="width: 6rem; height: 6rem"
+                    style="width: clamp(5rem, 6vw, 7rem); height: clamp(5rem, 6vw, 7rem)"
                 >
                 </lord-icon>
 
@@ -360,7 +362,7 @@
                     src="https://cdn.lordicon.com/kndkiwmf.json"
                     trigger="loop"
                     colors="primary:#08264fc9,secondary:#0179fd"
-                    style="width: 6rem; height: 6rem"
+                    style="width: clamp(5rem, 6vw, 7rem); height: clamp(5rem, 6vw, 7rem)"
                 >
                 </lord-icon>
                 <div class="child">
@@ -373,7 +375,7 @@
                     src="https://cdn.lordicon.com/gedfcmxx.json"
                     trigger="loop"
                     colors="primary:#08264fc9,secondary:#0179fd"
-                    style="width: 6rem; height: 6rem"
+                    style="width: clamp(5rem, 6vw, 7rem); height: clamp(5rem, 6vw, 7rem)"
                 >
                 </lord-icon>
                 <div class="child">
@@ -381,12 +383,25 @@
                     <h2>Award</h2>
                 </div>
             </div>
+            <div class="wrapper">
+                <lord-icon
+                    src="https://cdn.lordicon.com/ssfrfbhy.json"
+                    trigger="loop"
+                    colors="primary:#08264fc9,secondary:#0179fd"
+                    style="width: clamp(5rem, 6vw, 7rem); height: clamp(5rem, 6vw, 7rem)"
+                >
+                </lord-icon>
+                <div class="child">
+                    <h1 id="countup" class="plus">18000+</h1>
+                    <h2>Trained</h2>
+                </div>
+            </div>
         </section>
         <section class="achievments">
             <h1>Achievements</h1>
             <div class="wrapper">
                 <div class="child fade">
-                    <img
+                    <img loading="lazy"
                         src="{% static 'edge/images/achievement1.png' %}"
                         alt=""
                     />
@@ -395,7 +410,7 @@
                     </div>
                 </div>
                 <div class="child fade">
-                    <img
+                    <img loading="lazy"
                         src="{% static 'edge/images/achievement2.png' %}"
                         alt=""
                     />
@@ -404,7 +419,7 @@
                     </div>
                 </div>
                 <div class="child fade">
-                    <img
+                    <img loading="lazy"
                         src="{% static 'edge/images/achievement3.png' %}"
                         alt=""
                     />
@@ -420,11 +435,13 @@
                 <h1>Latest/Blogs</h1>
                 <div class="wrapper">
                     <div class="fade">
-                        <img
+                        <div class="img loading="lazy"">
+                            <img loading="lazy"
                             src="{% static 'edge/images/photo_2024-04-04_14-35-22.jpg' %}"
                             alt=""
-                        />
-                        <div class="date">JUN 12</div>
+                            />
+                            <div class="date">JUN 12</div>
+                        </div>
                         <div class="child">
                             <h1>
                                 Digital Transformation: The Accelerator of
@@ -438,11 +455,13 @@
                         </div>
                     </div>
                     <div class="fade">
-                        <img
+                        <div class="img loading="lazy"">
+                            <img loading="lazy"
                             src="{% static 'edge/images/photo_2024-04-04_14-35-21.jpg' %}"
                             alt=""
-                        />
-                        <div class="date">JUN 12</div>
+                            />
+                            <div class="date">JUN 12</div>
+                        </div>
                         <div class="child">
                             <h1>
                                 Innovation Ecosystems: Collaborate to Innovate
@@ -455,11 +474,13 @@
                         </div>
                     </div>
                     <div class="fade">
-                        <img
+                        <div class="img loading="lazy"">
+                            <img loading="lazy"
                             src="{% static 'edge/images/photo_2024-04-04_14-37-27.jpg' %}"
                             alt=""
-                        />
-                        <div class="date">JUN 12</div>
+                            />
+                            <div class="date">JUN 12</div>
+                        </div>
                         <div class="child">
                             <h1>Building a Resilient Organizational Culture</h1>
                             <p>
@@ -475,23 +496,23 @@
         <section class="clients">
             <h1>Popular Clients</h1>
             <div>
-                <img src="{% static 'edge/images/Biruhminds.jpeg' %}" alt="" />
-                <img src="{% static 'edge/images/ECD.jpeg' %}" alt="" />
-                <img src="{% static 'edge/images/Fawe.png' %}" alt="" />
-                <img src="{% static 'edge/images/fawe.jpeg' %}" alt="" />
-                <img src="{% static 'edge/images/gamechanger.jpeg' %}" alt="" />
-                <img src="{% static 'edge/images/germen.jpeg' %}" alt="" />
-                <img src="{% static 'edge/images/Almighty.jpg' %}" alt="" />
-                <img
+                <img loading="lazy" src="{% static 'edge/images/Biruhminds.jpeg' %}" alt="" />
+                <img loading="lazy" src="{% static 'edge/images/ECD.jpeg' %}" alt="" />
+                <img loading="lazy" src="{% static 'edge/images/Fawe.png' %}" alt="" />
+                <img loading="lazy" src="{% static 'edge/images/fawe.jpeg' %}" alt="" />
+                <img loading="lazy" src="{% static 'edge/images/gamechanger.jpeg' %}" alt="" />
+                <img loading="lazy" src="{% static 'edge/images/germen.jpeg' %}" alt="" />
+                <img loading="lazy" src="{% static 'edge/images/Almighty.jpg' %}" alt="" />
+                <img loading="lazy"
                     src="{% static 'edge/images/mastercardfoundatin.png' %}"
                     alt=""
                 />
-                <img
+                <img loading="lazy"
                     src="{% static 'edge/images/plan_international.png' %}"
                     alt=""
                 />
-                <img src="{% static 'edge/images/U.S.-Embassy.jpg' %}" alt="" />
-                <img src="{% static 'edge/images/unwomen.png' %}" alt="" />
+                <img loading="lazy" src="{% static 'edge/images/U.S.-Embassy.jpg' %}" alt="" />
+                <img loading="lazy" src="{% static 'edge/images/unwomen.png' %}" alt="" />
             </div>
         </section>
     </div>

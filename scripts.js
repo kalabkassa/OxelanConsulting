@@ -138,14 +138,16 @@ if (tabContainer) {
 
         const activePanelId = clickedTab.getAttribute("href");
         const activePanel = document.querySelectorAll(activePanelId);
+        console.log(activePanel);
+
+        tabButtons.forEach((tab) => {
+            tab.setAttribute("aria-expanded", "false");
+            tab.querySelector("a").setAttribute("aria-expanded", "false");
+        })
 
         tabPanels.forEach((panel, index) => {
             panel.setAttribute("hidden", true);
             panel.setAttribute("aria-expanded", "false");
-            tabButtons[index].setAttribute("aria-expanded", "false");
-            tabButtons[index]
-                .querySelector("a")
-                .setAttribute("aria-expanded", "false");
         });
 
         activePanel.forEach((panel) => {
@@ -161,7 +163,7 @@ const navObserver = new IntersectionObserver(
     (entries) => {
         navbar.classList.toggle("stickynav", !entries[0].isIntersecting);
     },
-    { threshold: 0.9 }
+    { threshold: 0.8 }
 );
 
 const herosection = document.querySelector(".herocontent");
@@ -246,9 +248,9 @@ document.querySelectorAll("#countup").forEach((h) => {
     observer2.observe(h);
 });
 let popup = document.getElementById("popup");
-function openpopup(){
+function openpopup() {
     popup.classList.add("open-popup");
 }
-function closepopup(){
+function closepopup() {
     popup.classList.remove("open-popup");
 }

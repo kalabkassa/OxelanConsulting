@@ -10,7 +10,7 @@ body {
 
 main {
     padding-top: 1rem;
-    margin: clamp(1rem,1vw,2rem);
+    margin: clamp(1rem, 1vw, 2rem);
     margin-left: clamp(5rem, 7vw, 10rem);
 }
 
@@ -22,7 +22,6 @@ img {
     display: block;
     max-width: 100%;
 }
-
 /* social hub secion */
 
 .socialhub {
@@ -126,7 +125,6 @@ span > img {
 .herotitle {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: 5rem;
     font-size: clamp(2.5rem, 4.8vw, 5rem);
     color: white;
     margin-top: auto;
@@ -407,7 +405,7 @@ ul {
 
 .aboutmaincontent > h1 {
     font-family: "Roboto";
-    font-size: clamp(1.3rem,2vw,3rem);
+    font-size: clamp(1.3rem, 2vw, 3rem);
     font-weight: 700;
     line-height: 43px;
     letter-spacing: 0em;
@@ -445,7 +443,6 @@ ul {
     align-items: center;
     margin-top: 4rem;
     background-color: #193544;
-    /* gap: 9rem; */
     flex-wrap: wrap;
 }
 
@@ -481,16 +478,15 @@ ul {
     font-size: clamp(0.8rem, 0.9vw, 2rem);
     width: 30ch;
 }
-.netsanet >p {
+.netsanet > p {
     font-size: clamp(0.6rem, 0.8vw, 2rem);
 }
 
-
 .missionsection img {
-    width: clamp(12rem, 13vw,15rem);
+    width: clamp(12rem, 13vw, 15rem);
 }
 .missionsection > img {
-    width: clamp(20rem,28vw,34rem);
+    width: clamp(20rem, 28vw, 34rem);
     opacity: 70%;
 }
 
@@ -583,8 +579,8 @@ ul {
     margin-left: auto;
     margin-right: auto;
     border-radius: 50vw;
-    height: clamp(14rem,18vw,22rem);
-    width: clamp(14rem,18vw,22rem);
+    height: clamp(14rem, 18vw, 22rem);
+    width: clamp(14rem, 18vw, 22rem);
 }
 .flipcard:hover .flipcardcontent {
     transform: rotateY(0.5turn);
@@ -619,7 +615,7 @@ ul {
 
 .oursolution p,
 .oursolution h2 {
-    color: white
+    color: white;
 }
 
 .oursolution > div > p {
@@ -718,13 +714,13 @@ ul {
 
 .industries > div > h2 {
     margin-top: 1rem;
-    font-size: clamp(0.5rem,0.9vw,2rem);
+    font-size: clamp(0.5rem, 0.9vw, 2rem);
     text-align: center;
 }
 
 .industries > div,
 .industries img {
-    width: clamp(5rem,7vw,8rem);
+    width: clamp(5rem, 7vw, 8rem);
 }
 /* foundation */
 
@@ -736,7 +732,7 @@ ul {
 
 .foundationwrapper img,
 .foundationwrapper .imagecontainer {
-    height: clamp(8rem,9vw,10rem);
+    height: clamp(8rem, 9vw, 10rem);
     width: clamp(10rem, 12vw, 35vw);
     margin-bottom: 4rem;
 }
@@ -885,9 +881,7 @@ ul {
     --whychooseusbackground: hsl(201, 46%, 22%);
     background-color: var(--whychooseuscontentbackground);
     margin-top: 3rem;
-    
 }
-
 
 .whychooseusmain {
     display: flex;
@@ -979,7 +973,6 @@ ul {
     padding-top: 4rem;
     border-radius: 2rem;
     width: 60vw;
-    
 }
 
 /* achivment section */
@@ -1135,16 +1128,43 @@ ul {
     flex-wrap: wrap;
 }
 .servicemain .major {
-    font-size: clamp(0.7rem, 1.5vw, 2rem);
+    font-family: "Roboto";
+    font-size: clamp(1.3rem, 2vw, 3rem);
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #364d59;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.flex h4 {
+    font-family: "Roboto";
+    font-size: clamp(0.9rem, 1vw, 2rem);
+    font-weight: 700;
+    text-align: left;
+    color: #364d59;
+    padding-bottom: 1rem;
+}
+.flex h6 {
+    font-family: "Roboto";
+    font-size: clamp(0.7rem, 0.8vw, 0.9rem);
+    font-weight: 700;
+    color: #13222b;
+    padding-bottom: 0.5rem;
+}
+.panelwrapper > .flex {
+    gap: 1rem;
+    flex-grow: 1;
+    justify-content: space-around;
 }
 .servicesmain > div p,
 .servicesmain h4 {
     margin-top: 5%;
     width: 40ch;
-    text-align:justify;
+    text-align: justify;
     font-family: "Open Sans";
     font-size: clamp(0.7rem, 0.8vw, 1rem);
-    
     font-weight: 400;
     color: #364d59;
 }
@@ -1177,7 +1197,6 @@ ul {
     color: #52565e;
     font-family: "Open Sans";
     font-size: clamp(0.7rem, 0.9vw, 1rem);
-    
     font-weight: 400;
     border-left: 3px solid #d9e3e8;
     padding-left: 1.2rem;
@@ -1208,7 +1227,6 @@ ul {
     font-family: "Roboto";
     font-size: clamp(0.7rem, 0.9vw, 2rem);
     font-weight: 700;
-
     padding-left: 5%;
 }
 .servicesmain > .panelwrapper .card > h2::after {
@@ -1267,7 +1285,7 @@ ul {
 .highlightes h2 {
     font-family: "Roboto";
     font-weight: 400;
-    font-size: clamp(.9rem, 1vw, 3rem);
+    font-size: clamp(0.9rem, 1vw, 3rem);
 }
 .hundred::after {
     content: "%";
@@ -1284,6 +1302,7 @@ ul {
 }
 
 .blogssection {
+    font-size: 0.9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1694,9 +1713,6 @@ ul {
     gap: 4rem;
     flex-wrap: wrap;
 }
-/* .contactsection .card {
-    font-size: clamp(0.9rem, 1.4vw, 2rem);
-} */
 .contactsection .card h1 {
     font-size: clamp(0.9rem, 1vw, 2rem);
 }
@@ -1705,7 +1721,6 @@ ul {
 }
 .contactsection div {
     text-align: center;
-    /* margin-bottom: 2rem; */
 }
 
 .addresssection {
@@ -1782,7 +1797,7 @@ iframe {
 
 .card {
     box-shadow: 0px 0px 25px 0px #00000014;
-    margin-bottom: 1rem;    
+    margin-bottom: 1rem;
     padding: 1.5rem;
     border: 2px solid #fff;
     border-radius: 1rem;
@@ -1883,14 +1898,13 @@ iframe {
     margin-top: 2rem;
 }
 
-
 .subscribe-btn {
     position: absolute;
     border-radius: 6%;
     padding: clamp(0.5rem, 0.6vw, 0.7rem);
     background-color: #0f6897;
     cursor: pointer;
-    border:none;
+    border: none;
     right: 0;
     bottom: clamp(0rem, 0.19vw, 0.2rem);
 }
@@ -1910,7 +1924,7 @@ iframe {
     position: absolute;
     top: 0%;
     left: 50%;
-    transform: translate(-50%, -50%)scale(0.1);
+    transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 0 1rem 1rem;
     color: #333;
@@ -1919,10 +1933,10 @@ iframe {
 .open-popup {
     visibility: visible;
     top: 50%;
-    transform: translate(-50%, -50%)scale(1);
+    transform: translate(-50%, -50%) scale(1);
     transition: transform 0.4s, top 0.4s;
 }
-.popup img{
+.popup img {
     margin-left: auto;
     margin-right: auto;
     width: 10rem;
@@ -1934,19 +1948,17 @@ iframe {
     font-size: 2rem;
     font-weight: 500;
     margin: 1.8rem 0 0.5rem;
-
 }
 .popup button {
     width: 100%;
     margin-top: 1rem;
     padding: 0.5rem 0;
-    background: #0E8486;
+    background: #0e8486;
     color: #fff;
     border: 0;
     outline: none;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-
 }
 @media (max-width: 50em) {
     .socialhub {
@@ -2045,9 +2057,6 @@ iframe {
         width: 70%;
     }
 
-    /* blogsection */
-
-    
     /* footersection */
 
     .address {
@@ -2077,10 +2086,9 @@ iframe {
         font-size: 1rem;
     }
     .aboutmain .flex p {
-        font-size:1rem;
-
+        font-size: 1rem;
     }
-    .aboutmain .card p{
+    .aboutmain .card p {
         font-size: 0.7rem;
     }
     .ourteamwrapper h1 {
@@ -2129,7 +2137,7 @@ iframe {
         height: 25vh;
         width: 25vh;
     }
-   
+
     .valuesection > .cardholder img {
         width: 100%;
         height: 100%;
@@ -2140,7 +2148,6 @@ iframe {
         font-size: 0.6rem;
         text-align: center;
         width: 30ch;
-
     }
     .flipcardcontent > h1 {
         left: -2.5rem;
@@ -2149,7 +2156,6 @@ iframe {
     .flipcardcontent > div {
         padding: 1rem;
         padding-top: 1.5rem;
-        
     }
     /* our solutions */
     .oursolution h2 {
@@ -2256,7 +2262,7 @@ iframe {
     .servicesmain > .panelwrapper > div {
         flex-wrap: wrap;
     }
-   
+
     .servicesmain > div p {
         width: 20rem;
     }
@@ -2307,6 +2313,10 @@ iframe {
     form {
         margin-top: 4rem;
     }
+    .clients > div {
+        animation: mobile_slideRight 90s ease-in-out infinite forwards;
+        gap: 7rem;
+    }
 }
 
 /* animation section */
@@ -2346,11 +2356,22 @@ iframe {
 @keyframes slideRight {
     0%,
     50% {
-        transform: translateX(-40%);
+        transform: translateX(-160%);
     }
     25%,
     100% {
-        transform: translateX(40%);
+        transform: translateX(20%);
+    }
+}
+
+@keyframes mobile_slideRight {
+    0%,
+    50% {
+        transform: translateX(-320%);
+    }
+    25%,
+    100% {
+        transform: translateX(45%);
     }
 }
 
