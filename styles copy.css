@@ -1586,6 +1586,10 @@ ul {
     height: 6rem;
 }
 
+.clients > div:last-child {
+    height: 8rem;
+}
+
 /* footer section */
 .footer {
     background-image: url(../images/footer_background.jpg);

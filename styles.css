@@ -1582,7 +1582,11 @@ ul {
 
 .clients > div > img {
     width: fit-content;
-    height: 8rem;
+    height: 6rem;
+}
+
+.clients > div:last-child {
+    height: 10rem;
 }
 
 /* footer section */
