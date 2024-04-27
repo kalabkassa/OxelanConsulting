@@ -1,19 +1,7 @@
 {%extends 'edge/base.html' %} {% block content %} {% load static %}
 <div class="container">
     <div class="subherosection">
-        <div class="socialhub">
-            <div class="companyname">Oxelan consulting PLC</div>
-            <div class="socialmedialogos">
-                <img src="{% static 'edge/images/LinkedIn.png' %}" alt="" />
-                <img src="{% static 'edge/images/Facebook.png' %}" alt="" />
-                <img src="{% static 'edge/images/Instagram.png' %}" alt="" />
-                <img src="{% static 'edge/images/telegram-original.svg' %}" />
-                <img src="{% static 'edge/images/youtube.svg' %}" />
-                <img src="{% static 'edge/images/tiktok.svg' %}" />
-                <img src="{% static 'edge/images/whatsapp.svg' %}" />
-                <img src="{% static 'edge/images/twitter-original.svg' %}" />
-            </div>
-        </div>
+        {% include 'edge/socialhub.html' %}
         <div class="subhero-content">
             <h1>Contact Us</h1>
             <p>contact</p>
@@ -43,8 +31,10 @@
             <div>
                 <div class="addresssection">
                     <div class="card">
-                        <img src="{% static 'edge/images/mail_blue.svg' %}"
-                        alt="" />
+                        <img
+                            src="{% static 'edge/images/mail_blue.svg' %}"
+                            alt=""
+                        />
                         <h1>Email Us</h1>
                         <p>info@oxelanconsultet.com</p>
                     </div>

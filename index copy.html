@@ -1,19 +1,7 @@
 {%extends 'edge/base.html' %} {% block content %} {% load static %}
 <div class="container">
     <div class="herosection">
-        <div class="socialhub">
-            <div class="companyname">Oxelan consulting PLC</div>
-            <div class="socialmedialogos">
-                <img loading="lazy" src="{% static 'edge/images/LinkedIn.png' %}" alt="" />
-                <img loading="lazy" src="{% static 'edge/images/Facebook.png' %}" alt="" />
-                <img loading="lazy" src="{% static 'edge/images/Instagram.png' %}" alt="" />
-                <img loading="lazy" src="{% static 'edge/images/telegram-original.svg' %}" />
-                <img loading="lazy" src="{% static 'edge/images/youtube.svg' %}" />
-                <img loading="lazy" src="{% static 'edge/images/tiktok.svg' %}" />
-                <img loading="lazy" src="{% static 'edge/images/whatsapp.svg' %}" />
-                <img loading="lazy" src="{% static 'edge/images/twitter-original.svg' %}" />
-            </div>
-        </div>
+        {% include 'edge/socialhub.html' %}
         <div class="herocontent">
             <span class="left"
                 ><img loading="lazy" src="{% static 'edge/images/arrow_back.svg' %}" alt=""
@@ -513,6 +501,7 @@
                 />
                 <img loading="lazy" src="{% static 'edge/images/U.S.-Embassy.jpg' %}" alt="" />
                 <img loading="lazy" src="{% static 'edge/images/UN_Women.png' %}" alt="" />
+                <img loading="lazy" src="{% static 'edge/images/giz.png' %}" alt="" />
             </div>
         </section>
     </div>

@@ -21,12 +21,24 @@ contactbuttoncontainer.setAttribute("class", "contactbuttoncontainer");
 
 const phone = document.createElement("div");
 phone.setAttribute("class", "phone");
+phone.onclick = () => {
+    window.location.href = "tel:+251960308888";
+};
 const whatsup = document.createElement("div");
 whatsup.setAttribute("class", "whatsup");
+whatsup.onclick = () => {
+    window.location.href = "https://api.whatsapp.com/send?phone=251960308888";
+};
 const telegram = document.createElement("div");
 telegram.setAttribute("class", "telegramc");
+telegram.onclick = () => {
+    window.location.href = "tg://https://t.me/OXELAN";
+};
 const gmail = document.createElement("div");
 gmail.setAttribute("class", "gmail");
+gmail.onclick = () => {
+    window.location.href = "mailto:info@oxelanconsultet.com";
+};
 
 contactbuttoncontent.appendChild(phone);
 contactbuttoncontent.appendChild(whatsup);
@@ -85,19 +97,23 @@ if (queryParams && tabContainer) {
     const tabButtons = tabsList.querySelectorAll("li");
     var clickedTab = document.getElementsByClassName(queryParams)[0];
     const tabPanels = document.querySelectorAll(".panelwrapper");
+
+    tabButtons.forEach((tab) => {
+        tab.setAttribute("aria-expanded", "false");
+        tab.querySelector("a").setAttribute("aria-expanded", "false");
+    });
+
     tabPanels.forEach((panel, index) => {
         panel.setAttribute("hidden", true);
         panel.setAttribute("aria-expanded", "false");
-        tabButtons[index].setAttribute("aria-expanded", "false");
-        tabButtons[index]
-            .querySelector("a")
-            .setAttribute("aria-expanded", "false");
     });
     const activePanelId = clickedTab.getAttribute("href");
-    const activePanel = document.querySelector(activePanelId);
+    const activePanel = document.querySelectorAll(activePanelId);
 
-    activePanel.removeAttribute("hidden", false);
-    activePanel.setAttribute("aria-expanded", "true");
+    activePanel.forEach((panel) => {
+        panel.removeAttribute("hidden", false);
+        panel.setAttribute("aria-expanded", "true");
+    });
     clickedTab.setAttribute("aria-expanded", "true");
     clickedTab.querySelector("a").setAttribute("aria-expanded", "true");
     console.log(activePanel);
@@ -143,7 +159,7 @@ if (tabContainer) {
         tabButtons.forEach((tab) => {
             tab.setAttribute("aria-expanded", "false");
             tab.querySelector("a").setAttribute("aria-expanded", "false");
-        })
+        });
 
         tabPanels.forEach((panel, index) => {
             panel.setAttribute("hidden", true);

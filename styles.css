@@ -47,7 +47,7 @@ img {
 }
 
 .socialmedialogos img {
-    height: clamp(1rem, 1vw, 3vw);
+    width: clamp(1rem, 1.8rem, 3vw);
 }
 /* hero */
 
@@ -1598,7 +1598,7 @@ ul {
 
 .footer-wrapper {
     background-color: #031024e1;
-    padding-top: 10.3rem;
+    padding-top: 5rem;
     color: white;
     display: flex;
     flex-direction: column;
@@ -1885,32 +1885,34 @@ iframe {
 }
 
 .sub-input {
-    height: 2.5vw;
-    font-size: clamp(0.5rem, 1.1vw, 1.2rem);
-    padding-left: 0.9vw;
-    width: clamp(15rem, 20vw, 27rem);
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+    width: 100%;
     border: 2px solid #dee2e6;
     border-radius: 0.4rem;
     color: #212529bf;
+    border-radius: 100vw;
+    padding-left: 1rem;
     margin: 0;
 }
 
 .subscribe-form {
+    width: clamp(20rem, 30vw, 30rem);
+    margin-top: 3rem;
+    margin-bottom: 5rem;
     position: relative;
-    height: fit-content;
-    width: fit-content;
-    margin-top: 2rem;
 }
 
 .subscribe-btn {
     position: absolute;
-    border-radius: 6%;
+    border-radius: 100vw;
     padding: clamp(0.5rem, 0.6vw, 0.7rem);
     background-color: #0f6897;
     cursor: pointer;
     border: none;
+    height: 80%;
     right: 0;
-    bottom: clamp(0rem, 0.19vw, 0.2rem);
+    bottom: 10%;
+    font-size: clamp(0.5rem, 0.6vw, 1rem);
 }
 .subscribe-form > form {
     padding: 0;
@@ -2068,13 +2070,6 @@ iframe {
     }
     .links {
         margin-top: 5%;
-    }
-    .sub-input {
-        height: 2rem;
-        font-size: small;
-    }
-    .subscribe-btn {
-        height: 2rem;
     }
 
     /* aboutussection
@@ -2314,9 +2309,6 @@ iframe {
     .addresssection .card {
         display: none;
     }
-    form {
-        margin-top: 4rem;
-    }
     .clients > div {
         animation: mobile_slideRight 90s ease-in-out infinite forwards;
         gap: 7rem;
@@ -2371,7 +2363,7 @@ iframe {
 @keyframes mobile_slideRight {
     0%,
     50% {
-        transform: translateX(-320%);
+        transform: translateX(-250%);
     }
     25%,
     100% {

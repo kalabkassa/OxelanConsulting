@@ -25,7 +25,7 @@
             <div class="logo">
                 <a href="{% url 'home' %}"
                     ><img
-                        src="{% static 'edge/images/WHITE HORZONTAL LOGO.png' %}"
+                        src="{% static 'edge/images/WHITEHORZONTALLOGO.png' %}"
                         alt=""
                 /></a>
             </div>
@@ -119,19 +119,29 @@
         </div>
         <div class="footer">
             <div class="footer-wrapper">
+                <h1>Monthly Insight <br /></h1>
+                <p>Receive our monthly research output.</p>
+                <div class="subscribe-form">
+                    <form method="post">
+                        {% csrf_token %} {{ form }}
+                        <button type="submit" class="subscribe-btn">
+                            <h2>Subscribe</h2>
+                        </button>
+                    </form>
+                </div>
                 <section>
                     <div class="address">
                         <img
-                            src="{% static 'edge/images/WHITE HORZONTAL LOGO.png' %}"
+                            src="{% static 'edge/images/WHITEHORZONTALLOGO.png' %}"
                             alt=""
                         />
                         <p>Bole street, Addis Ababa, Ethiopia</p>
                         <div class="label">
-                            <h2>Phone</h2>
+                            <h2>Phone: &#160;</h2>
                             <p>+251960308888</p>
                         </div>
                         <div class="label">
-                            <h2>Email</h2>
+                            <h2>Email: &#160;</h2>
                             <p>info@oxelanconsultet.com</p>
                         </div>
                         <div class="socialmedialogos">
@@ -158,14 +168,6 @@
                                     src="{% static 'edge/images/telegram.png' %}"
                                 />
                             </div>
-                        </div>
-                        <div class="subscribe-form">
-                            <form method="post">
-                                {% csrf_token %} {{ form.as_p }}
-                                <button type="submit" class="subscribe-btn">
-                                    <h2>Subscribe</h2>
-                                </button>
-                            </form>
                         </div>
                     </div>
                     <div class="linkswrapper">
@@ -242,7 +244,7 @@
                                 <ul>
                                     <li>
                                         <a
-                                            href="www.linkedin.com/in/oxelan-consultet"
+                                            href="https://linkedin.com/in/oxelan-consultet"
                                             >Linkedin</a
                                         >
                                     </li>
@@ -258,7 +260,12 @@
                                             >Instagram</a
                                         >
                                     </li>
-                                    <li><a href="#1">Facebook</a></li>
+                                    <li>
+                                        <a
+                                            href="https://www.facebook.com/people/Oxelan-Consulting-PLC/100095306633988/"
+                                            >Facebook</a
+                                        >
+                                    </li>
                                 </ul>
                                 <ul>
                                     <li>
@@ -273,8 +280,17 @@
                                             >Youtube</a
                                         >
                                     </li>
-                                    <li><a href="">Telegram</a></li>
-                                    <li><a href="#1">Whatsapp</a></li>
+                                    <li>
+                                        <a href="https://t.me/OXELAN"
+                                            >Telegram</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://api.whatsapp.com/send?phone=+251960308888"
+                                            >Whatsapp</a
+                                        >
+                                    </li>
                                 </ul>
                             </div>
                         </div>

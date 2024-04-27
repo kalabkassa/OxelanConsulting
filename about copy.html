@@ -1,20 +1,7 @@
 {%extends 'edge/base.html' %} {% block content %} {% load static %}
 <div class="container">
     <div class="subherosection">
-        <div class="socialhub">
-            <div class="companyname">OXELAN CONSULTING PLC</div>
-            <div class="socialmedialogos">
-                <img src="{% static 'edge/images/LinkedIn.png' %}" alt="" />
-                <img src="{% static 'edge/images/Facebook.png' %}" alt="" />
-                <img src="{% static 'edge/images/Instagram.png' %}" alt="" />
-                <img src="{% static 'edge/images/telegram-original.svg' %}" />
-                <img src="{% static 'edge/images/youtube.svg' %}" />
-                <img src="{% static 'edge/images/tiktok.svg' %}" />
-                <img src="{% static 'edge/images/whatsapp.svg' %}" />
-                <img src="{% static 'edge/images/twitter-original.svg' %}" />
-            </div>
-        </div>
-
+        {% include 'edge/socialhub.html' %}
         <div class="subhero-content">
             <h1>About us</h1>
             <p>About</p>
@@ -122,27 +109,30 @@
                         has undergone rapid transformation due to automation and
                         evolving business landscapes. As CEO, and Founder, I
                         recognize the need for trustworthy and affordable
-                        advisory services in such dynamic times. At Oxelan,
-                        partnership, customer satisfaction and quality service
-                        are our top priorities. We offer a range of consulting
-                        solutions, prioritizing excellence and dedicating extra
-                        effort to ensure our partners and clients' excellence
-                        and success. By fostering strong relationships and
-                        delivering innovative solutions, we strive to meet and
-                        exceed our clients' expectations. As we embrace growth
-                        and new opportunities, we remain grounded in our
-                        commitment to integrity, quality service, and
-                        client-centric approach. I'm excited about the future of
-                        Oxelan Consulting and invite you to connect with us to
-                        explore how we can support you in your excellence. Thank
-                        you for considering us as your trusted partner.
+                        advisory services in such dynamic times. <br /> <br>
+                        At Oxelan, partnership, customer satisfaction and
+                        quality service are our top priorities. We offer a range
+                        of consulting solutions, prioritizing excellence and
+                        dedicating extra effort to ensure our partners and
+                        clients' excellence and success. By fostering strong
+                        relationships and delivering innovative solutions, we
+                        strive to meet and exceed our clients' expectations.
+                        <br /> <br>
+                        As we embrace growth and new opportunities, we remain
+                        grounded in our commitment to integrity, quality
+                        service, and client-centric approach. I'm excited about
+                        the future of Oxelan Consulting and invite you to
+                        connect with us to explore how we can support you in
+                        your excellence. Thank you for considering us as your
+                        trusted partner.
 
                         <br />
                         <br />
                         Respectfully,
                         <br />
                         <br />
-                        Netsanet Birhanu CEO, Oxelan Consulting
+                        Netsanet Birhanu <br />
+                        CEO, Oxelan Consulting
                     </p>
                 </div>
             </div>
